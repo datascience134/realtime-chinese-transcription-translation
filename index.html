@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chinese → English Live Transcribe (TCM Edition)</title>
+<style>
+  :root {
+    --bg: #111418;
+    --panel: #1a1e24;
+    --border: #2a2f37;
+    --text-final: #f2f2f2;
+    --text-nonfinal: #8a8f98;
+    --accent: #4da3ff;
+    --danger: #ff5c5c;
+    --ok: #3ecf8e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text-final);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  header h1 {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+    color: #cfd3d8;
+    flex: 1 1 auto;
+  }
+  select, button, input[type=password] {
+    background: var(--panel);
+    color: var(--text-final);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button#toggleBtn {
+    background: var(--accent);
+    color: #04121f;
+    border: none;
+  }
+  button#toggleBtn.recording {
+    background: var(--danger);
+    color: #2a0000;
+  }
+  #status {
+    font-size: 12px;
+    color: var(--text-nonfinal);
+    padding: 4px 16px;
+  }
+  #status.ok { color: var(--ok); }
+  #status.err { color: var(--danger); }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+  }
+  .pane {
+    flex: 1;
+    background: var(--bg);
+    padding: 20px;
+    overflow-y: auto;
+    min-height: 30vh;
+  }
+  .pane-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-nonfinal);
+    margin-bottom: 10px;
+  }
+  .pane-text {
+    font-size: 22px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+  .nonfinal { color: var(--text-nonfinal); }
+  .settings {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    display: none;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+  }
+  .settings.open { display: flex; }
+  .settings label { color: var(--text-nonfinal); font-size: 12px; }
+  @media (min-width: 800px) {
+    main { flex-direction: row; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Chinese → English Live Transcribe</h1>
+  <select id="providerSelect">
+    <option value="webspeech">Test mode (free: Web Speech + MyMemory)</option>
+    <option value="soniox">Soniox (paid, STT-RT-v5)</option>
+  </select>
+  <button id="settingsBtn">⚙ Settings</button>
+  <button id="toggleBtn">Start</button>
+</header>
+
+<div class="settings" id="settingsPanel">
+  <label>Soniox API key:</label>
+  <input type="password" id="sonioxKey" placeholder="Paste API Key here" style="min-width:260px" />
+  <span style="color:var(--text-nonfinal)">Local use only. Key remains in your browser.</span>
+</div>
+
+<div id="status">Idle</div>
+
+<main>
+  <div class="pane">
+    <div class="pane-label">中文 (Chinese STT)</div>
+    <div class="pane-text" id="zhText"></div>
+  </div>
+  <div class="pane">
+    <div class="pane-label">English (Translation)</div>
+    <div class="pane-text" id="enText"></div>
+  </div>
+</main>
+
+<script>
+const providerSelect = document.getElementById('providerSelect');
+const toggleBtn = document.getElementById('toggleBtn');
+const settingsBtn = document.getElementById('settingsBtn');
+const settingsPanel = document.getElementById('settingsPanel');
+const sonioxKeyInput = document.getElementById('sonioxKey');
+const statusEl = document.getElementById('status');
+const zhTextEl = document.getElementById('zhText');
+const enTextEl = document.getElementById('enText');
+
+let isRecording = false;
+let activeProvider = null;
+
+settingsBtn.addEventListener('click', () => settingsPanel.classList.toggle('open'));
+
+function setStatus(msg, kind) {
+  statusEl.textContent = msg;
+  statusEl.className = kind || '';
+}
+
+function renderZh(finalStr, nonFinalStr) {
+  zhTextEl.innerHTML = escapeHtml(finalStr) +
+    (nonFinalStr ? `<span class="nonfinal">${escapeHtml(nonFinalStr)}</span>` : '');
+  zhTextEl.parentElement.scrollTop = zhTextEl.parentElement.scrollHeight;
+}
+
+function renderEn(finalStr, nonFinalStr) {
+  enTextEl.innerHTML = escapeHtml(finalStr) +
+    (nonFinalStr ? `<span class="nonfinal">${escapeHtml(nonFinalStr)}</span>` : '');
+  enTextEl.parentElement.scrollTop = enTextEl.parentElement.scrollHeight;
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+toggleBtn.addEventListener('click', async () => {
+  if (isRecording) {
+    stop();
+  } else {
+    await start();
+  }
+});
+
+async function start() {
+  const provider = providerSelect.value;
+  activeProvider = provider;
+  zhTextEl.innerHTML = '';
+  enTextEl.innerHTML = '';
+
+  if (provider === 'webspeech') {
+    startWebSpeech();
+  } else if (provider === 'soniox') {
+    const key = sonioxKeyInput.value.trim();
+    if (!key) {
+      setStatus('Enter your Soniox API key in Settings first.', 'err');
+      settingsPanel.classList.add('open');
+      return;
+    }
+    await startSoniox(key);
+  }
+}
+
+function stop() {
+  if (activeProvider === 'webspeech') stopWebSpeech();
+  if (activeProvider === 'soniox') stopSoniox();
+  isRecording = false;
+  toggleBtn.textContent = 'Start';
+  toggleBtn.classList.remove('recording');
+  setStatus('Stopped');
+}
+
+function markRecording() {
+  isRecording = true;
+  toggleBtn.textContent = 'Stop';
+  toggleBtn.classList.add('recording');
+}
+
+/* ---------------------------------------------------------
+   TEST MODE: Web Speech API 
+---------------------------------------------------------- */
+let recognition = null;
+let webspeechFinal = '';
+
+function startWebSpeech() {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    setStatus('Web Speech API not supported in this browser.', 'err');
+    return;
+  }
+  recognition = new SpeechRecognition();
+  recognition.lang = 'zh-CN';
+  recognition.continuous = true;
+  recognition.interimResults = true;
+
+  recognition.onstart = () => {
+    markRecording();
+    setStatus('Listening (test mode: Web Speech + MyMemory)...', 'ok');
+  };
+
+  recognition.onerror = (e) => {
+    setStatus('Web Speech error: ' + e.error, 'err');
+  };
+
+  recognition.onend = () => {
+    // FIX: Added timeout to prevent infinite crash loop if mic access fails repeatedly
+    if (isRecording && activeProvider === 'webspeech') {
+      setTimeout(() => {
+        try { recognition.start(); } catch (e) {}
+      }, 1000); 
+    }
+  };
+
+  recognition.onresult = (event) => {
+    let interim = '';
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const transcript = event.results[i][0].transcript;
+      if (event.results[i].isFinal) {
+        webspeechFinal += transcript;
+        translateWithMyMemory(transcript);
+      } else {
+        interim += transcript;
+      }
+    }
+    renderZh(webspeechFinal, interim);
+  };
+
+  try {
+    recognition.start();
+  } catch (e) {
+    setStatus('Could not start microphone: ' + e.message, 'err');
+  }
+}
+
+function stopWebSpeech() {
+  if (recognition) {
+    recognition.onend = null; 
+    recognition.stop();
+    recognition = null;
+  }
+}
+
+let englishFinalAccum = '';
+async function translateWithMyMemory(zhChunk) {
+  if (!zhChunk.trim()) return;
+  try {
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(zhChunk)}&langpair=zh-CN|en`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const translated = data?.responseData?.translatedText || '[error]';
+    englishFinalAccum += translated + ' ';
+    renderEn(englishFinalAccum, '');
+  } catch (e) {
+    renderEn(englishFinalAccum + ' [network error]', '');
+  }
+}
+
+/* ---------------------------------------------------------
+   SONIOX MODE: WebSocket API
+---------------------------------------------------------- */
+let sonioxWs = null;
+let sonioxAudioContext = null;
+let sonioxWorkletNode = null;
+let sonioxStream = null;
+let sonioxZhFinal = '';
+let sonioxEnFinal = '';
+let sonioxStopping = false;
+let sonioxStopTimeout = null;
+
+async function startSoniox(apiKey) {
+  setStatus('Connecting to Soniox...', '');
+  
+  // FIX: Initialize AudioContext synchronously on click to bypass iOS auto-play blocking
+  sonioxAudioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
+  if (sonioxAudioContext.state === 'suspended') {
+      await sonioxAudioContext.resume();
+  }
+
+  try {
+    sonioxStream = await navigator.mediaDevices.getUserMedia({
+      audio: {
+        channelCount: 1,
+        echoCancellation: true,
+        noiseSuppression: true
+      }
+    });
+  } catch (e) {
+    setStatus('Microphone permission denied.', 'err');
+    return;
+  }
+
+  sonioxWs = new WebSocket('wss://stt-rt.soniox.com/transcribe-websocket');
+
+  sonioxWs.onopen = async () => {
+    const config = {
+      api_key: apiKey,
+      model: 'stt-rt-v5',
+      audio_format: 'pcm_s16le',
+      // Use the AudioContext's *actual* sample rate, not an assumed 16000.
+      // Browsers (esp. mobile Safari) can silently ignore the requested
+      // sampleRate when creating an AudioContext, so hardcoding this value
+      // makes Soniox mis-interpret the byte stream and garble the audio.
+      sample_rate: sonioxAudioContext.sampleRate,
+      num_channels: 1,
+      language_hints: ['zh'],
+      language_hints_strict: true,
+      // TCM vocabulary boosting: Soniox's real field is "context.terms"
+      // (a flat list of domain words), NOT "speech_context.phrases" —
+      // that field doesn't exist in the Soniox API and was silently ignored.
+    //   context: {
+    //     terms: ["气血", "阴阳", "针灸", "脾虚", "湿热", "中药", "推拿", "经络", "辨证论治", "望闻问切"] // add more TCM terms here as you encounter them
+    //   },
+      translation: {
+        type: 'one_way',
+        target_language: 'en'
+      }
+    };
+    sonioxWs.send(JSON.stringify(config));
+    await setupSonioxAudioPipeline();
+    markRecording();
+    setStatus('Listening (Soniox)...', 'ok');
+  };
+
+  sonioxWs.onmessage = (event) => {
+    const res = JSON.parse(event.data);
+    if (res.error_code) {
+      setStatus(`Soniox error ${res.error_code}: ${res.error_message}`, 'err');
+      stop();
+      return;
+    }
+    let zhNonFinal = '';
+    let enNonFinal = '';
+    for (const token of (res.tokens || [])) {
+      if (!token.text) continue;
+      const isTranslation = token.translation_status === 'translation';
+      if (token.is_final) {
+        if (isTranslation) sonioxEnFinal += token.text;
+        else sonioxZhFinal += token.text;
+      } else {
+        if (isTranslation) enNonFinal += token.text;
+        else zhNonFinal += token.text;
+      }
+    }
+    renderZh(sonioxZhFinal, zhNonFinal);
+    renderEn(sonioxEnFinal, enNonFinal);
+    if (res.finished) {
+      // The "finished" message carries the last in-flight tokens; only now
+      // is it safe to actually close the socket (see stopSoniox() below).
+      finalizeSonioxClose();
+      if (isRecording) {
+        // Session ended on the server side (e.g. max stream duration),
+        // not because the user pressed Stop — reset the UI to match.
+        isRecording = false;
+        toggleBtn.textContent = 'Start';
+        toggleBtn.classList.remove('recording');
+        setStatus('Session finished by server.', '');
+      } else {
+        setStatus('Session finished.', '');
+      }
+    }
+  };
+
+  // FIX: Reset UI state properly on WebSocket failures
+  sonioxWs.onerror = () => {
+    setStatus('WebSocket error — check your API key and network.', 'err');
+    stop();
+  };
+  sonioxWs.onclose = () => {
+    if (isRecording) {
+      setStatus('Connection closed.', '');
+      stop();
+    }
+  };
+}
+
+// AudioWorkletNode runs on the dedicated audio rendering thread, unlike the
+// deprecated ScriptProcessorNode (which runs on the main thread and can glitch
+// or drop audio when the main thread is busy — e.g. re-painting the transcript
+// text on a slower phone). It also has no known "silent failure" mode on iOS.
+const PCM_WORKLET_NAME = 'pcm-capture-processor';
+const PCM_WORKLET_SOURCE = `
+  class PCMCaptureProcessor extends AudioWorkletProcessor {
+    constructor() {
+      super();
+      this._chunks = [];
+      this._bufferedLength = 0;
+      this._chunkSize = 4096; // matches the old ScriptProcessor buffer size
+    }
+    process(inputs) {
+      const channel = inputs[0] && inputs[0][0];
+      if (channel && channel.length) {
+        this._chunks.push(channel.slice());
+        this._bufferedLength += channel.length;
+        if (this._bufferedLength >= this._chunkSize) {
+          const merged = new Float32Array(this._bufferedLength);
+          let offset = 0;
+          for (const chunk of this._chunks) {
+            merged.set(chunk, offset);
+            offset += chunk.length;
+          }
+          this.port.postMessage(merged, [merged.buffer]);
+          this._chunks = [];
+          this._bufferedLength = 0;
+        }
+      }
+      return true;
+    }
+  }
+  registerProcessor('${PCM_WORKLET_NAME}', PCMCaptureProcessor);
+`;
+
+async function setupSonioxAudioPipeline() {
+  const blobUrl = URL.createObjectURL(new Blob([PCM_WORKLET_SOURCE], { type: 'application/javascript' }));
+  try {
+    await sonioxAudioContext.audioWorklet.addModule(blobUrl);
+  } finally {
+    URL.revokeObjectURL(blobUrl);
+  }
+
+  const source = sonioxAudioContext.createMediaStreamSource(sonioxStream);
+  sonioxWorkletNode = new AudioWorkletNode(sonioxAudioContext, PCM_WORKLET_NAME);
+
+  sonioxWorkletNode.port.onmessage = (e) => {
+    if (sonioxWs && sonioxWs.readyState === WebSocket.OPEN) {
+      const pcm16 = floatTo16BitPCM(e.data);
+      sonioxWs.send(pcm16);
+    }
+  };
+
+  source.connect(sonioxWorkletNode);
+  // Connect to destination to keep the node "alive" in the audio graph.
+  // The processor never writes to its output, so this stays silent —
+  // no mic feedback/echo through the speakers.
+  sonioxWorkletNode.connect(sonioxAudioContext.destination);
+}
+
+function floatTo16BitPCM(float32Array) {
+  const buffer = new ArrayBuffer(float32Array.length * 2);
+  const view = new DataView(buffer);
+  for (let i = 0; i < float32Array.length; i++) {
+    let s = Math.max(-1, Math.min(1, float32Array[i]));
+    view.setInt16(i * 2, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+  }
+  return buffer;
+}
+
+function stopSoniox() {
+  if (sonioxStopping) return;
+  sonioxStopping = true;
+
+  // Stop capturing new audio right away.
+  if (sonioxWorkletNode) { sonioxWorkletNode.disconnect(); sonioxWorkletNode.port.onmessage = null; sonioxWorkletNode = null; }
+  if (sonioxStream) { sonioxStream.getTracks().forEach(t => t.stop()); sonioxStream = null; }
+
+  if (sonioxWs && sonioxWs.readyState === WebSocket.OPEN) {
+    // Per Soniox docs: send an empty frame to signal end-of-audio, then WAIT
+    // for the server's "finished" response (it still contains the last
+    // pending tokens) before closing — closing immediately, as the previous
+    // version did, drops the last few spoken words every time you hit Stop.
+    sonioxWs.send(new ArrayBuffer(0));
+    sonioxStopTimeout = setTimeout(finalizeSonioxClose, 4000); // safety net if "finished" never arrives
+  } else {
+    finalizeSonioxClose();
+  }
+}
+
+function finalizeSonioxClose() {
+  if (sonioxStopTimeout) { clearTimeout(sonioxStopTimeout); sonioxStopTimeout = null; }
+  if (sonioxAudioContext) { sonioxAudioContext.close(); sonioxAudioContext = null; }
+  if (sonioxWs) { sonioxWs.close(); sonioxWs = null; }
+  sonioxStopping = false;
+}
+</script>
+</body>
+</html>
