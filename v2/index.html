@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chinese → English Live Transcribe (TCM Edition)</title>
+<style>
+  :root {
+    --bg: #111418;
+    --panel: #1a1e24;
+    --border: #2a2f37;
+    --text-final: #f2f2f2;
+    --text-nonfinal: #8a8f98;
+    --accent: #4da3ff;
+    --danger: #ff5c5c;
+    --ok: #3ecf8e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text-final);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  header h1 {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+    color: #cfd3d8;
+    flex: 1 1 auto;
+  }
+  select, button, input[type=password] {
+    background: var(--panel);
+    color: var(--text-final);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button#toggleBtn {
+    background: var(--accent);
+    color: #04121f;
+    border: none;
+  }
+  button#toggleBtn.recording {
+    background: var(--danger);
+    color: #2a0000;
+  }
+  button.subtle {
+    background: transparent;
+    color: var(--text-nonfinal);
+    font-weight: 500;
+  }
+  button.subtle:hover {
+    color: var(--text-final);
+    border-color: var(--accent);
+  }
+  #status {
+    font-size: 12px;
+    color: var(--text-nonfinal);
+    padding: 4px 16px;
+  }
+  #status.ok { color: var(--ok); }
+  #status.err { color: var(--danger); }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+  }
+  .pane {
+    flex: 1;
+    background: var(--bg);
+    padding: 20px;
+    overflow-y: auto;
+    min-height: 30vh;
+  }
+  .pane-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-nonfinal);
+    margin-bottom: 10px;
+  }
+  .pane-text {
+    font-size: 22px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+  .nonfinal { color: var(--text-nonfinal); }
+  .settings {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    display: none;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+  }
+  .settings.open { display: flex; }
+  .settings label { color: var(--text-nonfinal); font-size: 12px; }
+  @media (min-width: 800px) {
+    main { flex-direction: row; }
+  }
+
+  /* ---------------- Files drawer ---------------- */
+  .drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 900;
+  }
+  .drawer-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .files-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(380px, 90vw);
+    background: var(--panel);
+    border-left: 1px solid var(--border);
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+    z-index: 950;
+    display: flex;
+    flex-direction: column;
+  }
+  .files-drawer.open {
+    transform: translateX(0);
+  }
+  .files-drawer-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+  }
+  .files-drawer-header h2 {
+    font-size: 14px;
+    margin: 0;
+    color: #cfd3d8;
+  }
+  .files-drawer-header p {
+    font-size: 11px;
+    color: var(--text-nonfinal);
+    margin: 4px 0 0;
+  }
+  .files-drawer-close {
+    background: transparent;
+    border: none;
+    color: var(--text-nonfinal);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  .files-drawer-close:hover { color: var(--text-final); }
+  .files-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  .files-empty {
+    padding: 32px 16px;
+    color: var(--text-nonfinal);
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .file-item {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+  .file-delete-action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90px;
+    background: var(--danger);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+  }
+  .file-item-content {
+    position: relative;
+    background: var(--panel);
+    padding: 14px 16px;
+    cursor: pointer;
+    touch-action: pan-y;
+    user-select: none;
+  }
+  .file-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-final);
+    margin-bottom: 4px;
+  }
+  .file-meta {
+    font-size: 12px;
+    color: var(--text-nonfinal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .files-drawer-hint {
+    padding: 10px 16px;
+    font-size: 11px;
+    color: var(--text-nonfinal);
+    border-top: 1px solid var(--border);
+    flex: 0 0 auto;
+  }
+
+  /* ---------------- File view modal ---------------- */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal-box {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    width: min(640px, 100%);
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .modal-header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+  }
+  .modal-header h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #cfd3d8;
+  }
+  .modal-close {
+    background: transparent;
+    border: none;
+    color: var(--text-nonfinal);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .modal-close:hover { color: var(--text-final); }
+  .modal-body {
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .modal-pane-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-nonfinal);
+    margin-bottom: 6px;
+  }
+  .modal-pane-text {
+    font-size: 15px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .modal-footer {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 0 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Chinese → English Live Transcribe</h1>
+  <select id="providerSelect">
+    <option value="webspeech">Test mode (free: Web Speech + MyMemory)</option>
+    <option value="soniox">Soniox (paid, STT-RT-v5)</option>
+  </select>
+  <button id="settingsBtn" class="subtle">⚙ Settings</button>
+  <button id="clearBtn" class="subtle">🧹 Clear</button>
+  <button id="clearSaveBtn" class="subtle">💾 Clear &amp; Save</button>
+  <button id="filesBtn" class="subtle">📂 Files (0)</button>
+  <button id="toggleBtn">Start</button>
+</header>
+
+<div class="settings" id="settingsPanel">
+  <label>Soniox API key:</label>
+  <input type="password" id="sonioxKey" placeholder="Paste API Key here" style="min-width:260px" />
+  <span style="color:var(--text-nonfinal)">Local use only. Key remains in your browser.</span>
+</div>
+
+<div id="status">Idle</div>
+
+<main>
+  <div class="pane">
+    <div class="pane-label">中文 (Chinese STT)</div>
+    <div class="pane-text" id="zhText"></div>
+  </div>
+  <div class="pane">
+    <div class="pane-label">English (Translation)</div>
+    <div class="pane-text" id="enText"></div>
+  </div>
+</main>
+
+<!-- Files drawer -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<div class="files-drawer" id="filesDrawer">
+  <div class="files-drawer-header">
+    <div>
+      <h2>Saved transcripts</h2>
+      <p>Tap to open · swipe left to delete</p>
+    </div>
+    <button class="files-drawer-close" id="filesDrawerCloseBtn">✕</button>
+  </div>
+  <div class="files-list" id="filesList"></div>
+  <div class="files-drawer-hint">Saved in this browser only (not synced or backed up). Open a file to download it as .txt.</div>
+</div>
+
+<!-- File view modal -->
+<div class="modal-backdrop" id="fileModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 id="fileModalTitle">Filename</h3>
+      <button class="modal-close" id="fileModalCloseBtn">✕</button>
+    </div>
+    <div class="modal-body">
+      <div>
+        <div class="modal-pane-label">中文 (Chinese)</div>
+        <div class="modal-pane-text" id="fileModalZh"></div>
+      </div>
+      <div>
+        <div class="modal-pane-label">English</div>
+        <div class="modal-pane-text" id="fileModalEn"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="subtle" id="fileModalDownloadBtn">⬇ Download .txt</button>
+      <button class="subtle" id="fileModalCloseBtn2">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const providerSelect = document.getElementById('providerSelect');
+const toggleBtn = document.getElementById('toggleBtn');
+const settingsBtn = document.getElementById('settingsBtn');
+const settingsPanel = document.getElementById('settingsPanel');
+const sonioxKeyInput = document.getElementById('sonioxKey');
+const statusEl = document.getElementById('status');
+const zhTextEl = document.getElementById('zhText');
+const enTextEl = document.getElementById('enText');
+
+let isRecording = false;
+let activeProvider = null;
+
+settingsBtn.addEventListener('click', () => settingsPanel.classList.toggle('open'));
+
+function setStatus(msg, kind) {
+  statusEl.textContent = msg;
+  statusEl.className = kind || '';
+}
+
+function renderZh(finalStr, nonFinalStr) {
+  zhTextEl.innerHTML = escapeHtml(finalStr) +
+    (nonFinalStr ? `<span class="nonfinal">${escapeHtml(nonFinalStr)}</span>` : '');
+  zhTextEl.parentElement.scrollTop = zhTextEl.parentElement.scrollHeight;
+}
+
+function renderEn(finalStr, nonFinalStr) {
+  enTextEl.innerHTML = escapeHtml(finalStr) +
+    (nonFinalStr ? `<span class="nonfinal">${escapeHtml(nonFinalStr)}</span>` : '');
+  enTextEl.parentElement.scrollTop = enTextEl.parentElement.scrollHeight;
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+toggleBtn.addEventListener('click', async () => {
+  if (isRecording) {
+    stop();
+  } else {
+    await start();
+  }
+});
+
+async function start() {
+  const provider = providerSelect.value;
+  activeProvider = provider;
+  zhTextEl.innerHTML = '';
+  enTextEl.innerHTML = '';
+
+  if (provider === 'webspeech') {
+    startWebSpeech();
+  } else if (provider === 'soniox') {
+    const key = sonioxKeyInput.value.trim();
+    if (!key) {
+      setStatus('Enter your Soniox API key in Settings first.', 'err');
+      settingsPanel.classList.add('open');
+      return;
+    }
+    await startSoniox(key);
+  }
+}
+
+function stop() {
+  if (activeProvider === 'webspeech') stopWebSpeech();
+  if (activeProvider === 'soniox') stopSoniox();
+  isRecording = false;
+  toggleBtn.textContent = 'Start';
+  toggleBtn.classList.remove('recording');
+  setStatus('Stopped');
+}
+
+function markRecording() {
+  isRecording = true;
+  toggleBtn.textContent = 'Stop';
+  toggleBtn.classList.add('recording');
+}
+
+/* ---------------------------------------------------------
+   TEST MODE: Web Speech API 
+---------------------------------------------------------- */
+let recognition = null;
+let webspeechFinal = '';
+
+function startWebSpeech() {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    setStatus('Web Speech API not supported in this browser.', 'err');
+    return;
+  }
+  recognition = new SpeechRecognition();
+  recognition.lang = 'zh-CN';
+  recognition.continuous = true;
+  recognition.interimResults = true;
+
+  recognition.onstart = () => {
+    markRecording();
+    setStatus('Listening (test mode: Web Speech + MyMemory)...', 'ok');
+  };
+
+  recognition.onerror = (e) => {
+    setStatus('Web Speech error: ' + e.error, 'err');
+  };
+
+  recognition.onend = () => {
+    // FIX: Added timeout to prevent infinite crash loop if mic access fails repeatedly
+    if (isRecording && activeProvider === 'webspeech') {
+      setTimeout(() => {
+        try { recognition.start(); } catch (e) {}
+      }, 1000); 
+    }
+  };
+
+  recognition.onresult = (event) => {
+    let interim = '';
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const transcript = event.results[i][0].transcript;
+      if (event.results[i].isFinal) {
+        webspeechFinal += transcript;
+        translateWithMyMemory(transcript);
+      } else {
+        interim += transcript;
+      }
+    }
+    renderZh(webspeechFinal, interim);
+  };
+
+  try {
+    recognition.start();
+  } catch (e) {
+    setStatus('Could not start microphone: ' + e.message, 'err');
+  }
+}
+
+function stopWebSpeech() {
+  if (recognition) {
+    recognition.onend = null; 
+    recognition.stop();
+    recognition = null;
+  }
+}
+
+let englishFinalAccum = '';
+async function translateWithMyMemory(zhChunk) {
+  if (!zhChunk.trim()) return;
+  try {
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(zhChunk)}&langpair=zh-CN|en`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const translated = data?.responseData?.translatedText || '[error]';
+    englishFinalAccum += translated + ' ';
+    renderEn(englishFinalAccum, '');
+  } catch (e) {
+    renderEn(englishFinalAccum + ' [network error]', '');
+  }
+}
+
+/* ---------------------------------------------------------
+   SONIOX MODE: WebSocket API
+---------------------------------------------------------- */
+let sonioxWs = null;
+let sonioxAudioContext = null;
+let sonioxWorkletNode = null;
+let sonioxStream = null;
+let sonioxZhFinal = '';
+let sonioxEnFinal = '';
+let sonioxStopping = false;
+let sonioxStopTimeout = null;
+
+async function startSoniox(apiKey) {
+  setStatus('Connecting to Soniox...', '');
+  
+  // FIX: Initialize AudioContext synchronously on click to bypass iOS auto-play blocking
+  sonioxAudioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
+  if (sonioxAudioContext.state === 'suspended') {
+      await sonioxAudioContext.resume();
+  }
+
+  try {
+    sonioxStream = await navigator.mediaDevices.getUserMedia({
+      audio: {
+        channelCount: 1,
+        echoCancellation: true,
+        noiseSuppression: true
+      }
+    });
+  } catch (e) {
+    setStatus('Microphone permission denied.', 'err');
+    return;
+  }
+
+  sonioxWs = new WebSocket('wss://stt-rt.soniox.com/transcribe-websocket');
+
+  sonioxWs.onopen = async () => {
+    const config = {
+      api_key: apiKey,
+      model: 'stt-rt-v5',
+      audio_format: 'pcm_s16le',
+      // Use the AudioContext's *actual* sample rate, not an assumed 16000.
+      // Browsers (esp. mobile Safari) can silently ignore the requested
+      // sampleRate when creating an AudioContext, so hardcoding this value
+      // makes Soniox mis-interpret the byte stream and garble the audio.
+      sample_rate: sonioxAudioContext.sampleRate,
+      num_channels: 1,
+      language_hints: ['zh'],
+      language_hints_strict: true,
+      // TCM vocabulary boosting: Soniox's real field is "context.terms"
+      // (a flat list of domain words), NOT "speech_context.phrases" —
+      // that field doesn't exist in the Soniox API and was silently ignored.
+    //   context: {
+    //     terms: ["气血", "阴阳", "针灸", "脾虚", "湿热", "中药", "推拿", "经络", "辨证论治", "望闻问切"] // add more TCM terms here as you encounter them
+    //   },
+      translation: {
+        type: 'one_way',
+        target_language: 'en'
+      }
+    };
+    sonioxWs.send(JSON.stringify(config));
+    await setupSonioxAudioPipeline();
+    markRecording();
+    setStatus('Listening (Soniox)...', 'ok');
+  };
+
+  sonioxWs.onmessage = (event) => {
+    const res = JSON.parse(event.data);
+    if (res.error_code) {
+      setStatus(`Soniox error ${res.error_code}: ${res.error_message}`, 'err');
+      stop();
+      return;
+    }
+    let zhNonFinal = '';
+    let enNonFinal = '';
+    for (const token of (res.tokens || [])) {
+      if (!token.text) continue;
+      const isTranslation = token.translation_status === 'translation';
+      if (token.is_final) {
+        if (isTranslation) sonioxEnFinal += token.text;
+        else sonioxZhFinal += token.text;
+      } else {
+        if (isTranslation) enNonFinal += token.text;
+        else zhNonFinal += token.text;
+      }
+    }
+    renderZh(sonioxZhFinal, zhNonFinal);
+    renderEn(sonioxEnFinal, enNonFinal);
+    if (res.finished) {
+      // The "finished" message carries the last in-flight tokens; only now
+      // is it safe to actually close the socket (see stopSoniox() below).
+      finalizeSonioxClose();
+      if (isRecording) {
+        // Session ended on the server side (e.g. max stream duration),
+        // not because the user pressed Stop — reset the UI to match.
+        isRecording = false;
+        toggleBtn.textContent = 'Start';
+        toggleBtn.classList.remove('recording');
+        setStatus('Session finished by server.', '');
+      } else {
+        setStatus('Session finished.', '');
+      }
+    }
+  };
+
+  // FIX: Reset UI state properly on WebSocket failures
+  sonioxWs.onerror = () => {
+    setStatus('WebSocket error — check your API key and network.', 'err');
+    stop();
+  };
+  sonioxWs.onclose = () => {
+    if (isRecording) {
+      setStatus('Connection closed.', '');
+      stop();
+    }
+  };
+}
+
+// AudioWorkletNode runs on the dedicated audio rendering thread, unlike the
+// deprecated ScriptProcessorNode (which runs on the main thread and can glitch
+// or drop audio when the main thread is busy — e.g. re-painting the transcript
+// text on a slower phone). It also has no known "silent failure" mode on iOS.
+const PCM_WORKLET_NAME = 'pcm-capture-processor';
+const PCM_WORKLET_SOURCE = `
+  class PCMCaptureProcessor extends AudioWorkletProcessor {
+    constructor() {
+      super();
+      this._chunks = [];
+      this._bufferedLength = 0;
+      this._chunkSize = 4096; // matches the old ScriptProcessor buffer size
+    }
+    process(inputs) {
+      const channel = inputs[0] && inputs[0][0];
+      if (channel && channel.length) {
+        this._chunks.push(channel.slice());
+        this._bufferedLength += channel.length;
+        if (this._bufferedLength >= this._chunkSize) {
+          const merged = new Float32Array(this._bufferedLength);
+          let offset = 0;
+          for (const chunk of this._chunks) {
+            merged.set(chunk, offset);
+            offset += chunk.length;
+          }
+          this.port.postMessage(merged, [merged.buffer]);
+          this._chunks = [];
+          this._bufferedLength = 0;
+        }
+      }
+      return true;
+    }
+  }
+  registerProcessor('${PCM_WORKLET_NAME}', PCMCaptureProcessor);
+`;
+
+async function setupSonioxAudioPipeline() {
+  const blobUrl = URL.createObjectURL(new Blob([PCM_WORKLET_SOURCE], { type: 'application/javascript' }));
+  try {
+    await sonioxAudioContext.audioWorklet.addModule(blobUrl);
+  } finally {
+    URL.revokeObjectURL(blobUrl);
+  }
+
+  const source = sonioxAudioContext.createMediaStreamSource(sonioxStream);
+  sonioxWorkletNode = new AudioWorkletNode(sonioxAudioContext, PCM_WORKLET_NAME);
+
+  sonioxWorkletNode.port.onmessage = (e) => {
+    if (sonioxWs && sonioxWs.readyState === WebSocket.OPEN) {
+      const pcm16 = floatTo16BitPCM(e.data);
+      sonioxWs.send(pcm16);
+    }
+  };
+
+  source.connect(sonioxWorkletNode);
+  // Connect to destination to keep the node "alive" in the audio graph.
+  // The processor never writes to its output, so this stays silent —
+  // no mic feedback/echo through the speakers.
+  sonioxWorkletNode.connect(sonioxAudioContext.destination);
+}
+
+function floatTo16BitPCM(float32Array) {
+  const buffer = new ArrayBuffer(float32Array.length * 2);
+  const view = new DataView(buffer);
+  for (let i = 0; i < float32Array.length; i++) {
+    let s = Math.max(-1, Math.min(1, float32Array[i]));
+    view.setInt16(i * 2, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+  }
+  return buffer;
+}
+
+function stopSoniox() {
+  if (sonioxStopping) return;
+  sonioxStopping = true;
+
+  // Stop capturing new audio right away.
+  if (sonioxWorkletNode) { sonioxWorkletNode.disconnect(); sonioxWorkletNode.port.onmessage = null; sonioxWorkletNode = null; }
+  if (sonioxStream) { sonioxStream.getTracks().forEach(t => t.stop()); sonioxStream = null; }
+
+  if (sonioxWs && sonioxWs.readyState === WebSocket.OPEN) {
+    // Per Soniox docs: send an empty frame to signal end-of-audio, then WAIT
+    // for the server's "finished" response (it still contains the last
+    // pending tokens) before closing — closing immediately, as the previous
+    // version did, drops the last few spoken words every time you hit Stop.
+    sonioxWs.send(new ArrayBuffer(0));
+    sonioxStopTimeout = setTimeout(finalizeSonioxClose, 4000); // safety net if "finished" never arrives
+  } else {
+    finalizeSonioxClose();
+  }
+}
+
+function finalizeSonioxClose() {
+  if (sonioxStopTimeout) { clearTimeout(sonioxStopTimeout); sonioxStopTimeout = null; }
+  if (sonioxAudioContext) { sonioxAudioContext.close(); sonioxAudioContext = null; }
+  if (sonioxWs) { sonioxWs.close(); sonioxWs = null; }
+  sonioxStopping = false;
+}
+
+/* ---------------------------------------------------------
+   CLEAR / CLEAR & SAVE
+   Clearing only touches the on-screen panes and the text
+   accumulator variables — it never stops recognition/Soniox,
+   so listening carries on uninterrupted after a clear.
+---------------------------------------------------------- */
+const clearBtn = document.getElementById('clearBtn');
+const clearSaveBtn = document.getElementById('clearSaveBtn');
+
+function clearPanes() {
+  zhTextEl.innerHTML = '';
+  enTextEl.innerHTML = '';
+  webspeechFinal = '';
+  englishFinalAccum = '';
+  sonioxZhFinal = '';
+  sonioxEnFinal = '';
+}
+
+clearBtn.addEventListener('click', () => {
+  const hasContent = zhTextEl.textContent.trim() || enTextEl.textContent.trim();
+  if (hasContent && !window.confirm('Clear the current transcript without saving? This can\'t be undone.')) {
+    return;
+  }
+  clearPanes();
+  setStatus('Cleared.', '');
+});
+
+clearSaveBtn.addEventListener('click', () => {
+  const zh = zhTextEl.textContent.trim();
+  const en = enTextEl.textContent.trim();
+  if (!zh && !en) {
+    setStatus('Nothing to save — panes are already empty.', '');
+    return;
+  }
+  const name = uniqueFilename(formatFilename(new Date()));
+  saveFileRecord({ name, savedAt: new Date().toISOString(), zh, en });
+  clearPanes();
+  setStatus(`Saved as ${name}`, 'ok');
+  updateFilesBadge();
+});
+
+/* ---------------------------------------------------------
+   FILENAME FORMAT: e.g. 5JUL2026_0741PM = 5 Jul 2026, 7:41pm
+---------------------------------------------------------- */
+function formatFilename(date) {
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  let hours = date.getHours();
+  const minutes = date.getMinutes();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  if (hours === 0) hours = 12;
+  const hh = String(hours).padStart(2, '0');
+  const mm = String(minutes).padStart(2, '0');
+  return `${day}${month}${year}_${hh}${mm}${ampm}`;
+}
+
+/* ---------------------------------------------------------
+   STORAGE (browser localStorage — files live on this device
+   only, which is what makes in-app open/delete possible;
+   an actual downloaded file can't be managed by a webpage).
+---------------------------------------------------------- */
+const STORAGE_INDEX_KEY = 'zhlive_files_index';
+
+function getFilesIndex() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_INDEX_KEY)) || [];
+  } catch (e) { return []; }
+}
+
+function setFilesIndex(idx) {
+  localStorage.setItem(STORAGE_INDEX_KEY, JSON.stringify(idx));
+}
+
+function uniqueFilename(base) {
+  const idx = getFilesIndex();
+  if (!idx.includes(base)) return base;
+  let i = 2;
+  while (idx.includes(`${base}_${i}`)) i++;
+  return `${base}_${i}`;
+}
+
+function saveFileRecord(record) {
+  localStorage.setItem('zhlive_file_' + record.name, JSON.stringify(record));
+  const idx = getFilesIndex();
+  idx.unshift(record.name);
+  setFilesIndex(idx);
+}
+
+function loadFileRecord(name) {
+  try {
+    return JSON.parse(localStorage.getItem('zhlive_file_' + name));
+  } catch (e) { return null; }
+}
+
+function deleteFileRecord(name) {
+  localStorage.removeItem('zhlive_file_' + name);
+  setFilesIndex(getFilesIndex().filter(n => n !== name));
+}
+
+/* ---------------------------------------------------------
+   FILES DRAWER
+---------------------------------------------------------- */
+const filesBtn = document.getElementById('filesBtn');
+const filesDrawer = document.getElementById('filesDrawer');
+const drawerBackdrop = document.getElementById('drawerBackdrop');
+const filesDrawerCloseBtn = document.getElementById('filesDrawerCloseBtn');
+const filesListEl = document.getElementById('filesList');
+
+function updateFilesBadge() {
+  filesBtn.textContent = `📂 Files (${getFilesIndex().length})`;
+}
+
+function openFilesDrawer() {
+  renderFilesList();
+  filesDrawer.classList.add('open');
+  drawerBackdrop.classList.add('open');
+}
+
+function closeFilesDrawer() {
+  filesDrawer.classList.remove('open');
+  drawerBackdrop.classList.remove('open');
+}
+
+filesBtn.addEventListener('click', openFilesDrawer);
+filesDrawerCloseBtn.addEventListener('click', closeFilesDrawer);
+drawerBackdrop.addEventListener('click', closeFilesDrawer);
+
+function renderFilesList() {
+  updateFilesBadge();
+  const idx = getFilesIndex();
+  if (idx.length === 0) {
+    filesListEl.innerHTML = '<div class="files-empty">No saved transcripts yet.<br>Use "Clear &amp; Save" to save one.</div>';
+    return;
+  }
+  filesListEl.innerHTML = '';
+  idx.forEach(name => {
+    const record = loadFileRecord(name);
+    if (!record) return;
+
+    const item = document.createElement('div');
+    item.className = 'file-item';
+
+    const delAction = document.createElement('div');
+    delAction.className = 'file-delete-action';
+    delAction.textContent = 'Delete';
+
+    const content = document.createElement('div');
+    content.className = 'file-item-content';
+    const previewSource = record.zh || record.en || '';
+    const preview = previewSource.slice(0, 44);
+    content.innerHTML =
+      `<div class="file-name">${escapeHtml(name)}</div>` +
+      `<div class="file-meta">${escapeHtml(preview)}${previewSource.length > 44 ? '…' : ''}</div>`;
+
+    item.appendChild(content);
+    item.appendChild(delAction);
+    filesListEl.appendChild(item);
+
+    attachSwipeToDelete(item, content, delAction, name);
+  });
+}
+
+// Pointer Events unify mouse + touch, so the "sliding" delete gesture
+// works both on a phone (finger swipe) and here in preview (click-drag).
+function attachSwipeToDelete(item, content, delAction, name) {
+  const OPEN_OFFSET = -90;
+  let startX = 0;
+  let baseOffset = 0;
+  let liveOffset = 0;
+  let dragging = false;
+  let moved = false;
+
+  function setOffset(px, animate) {
+    content.style.transition = animate ? 'transform 0.2s ease' : 'none';
+    content.style.transform = `translateX(${px}px)`;
+    liveOffset = px;
+  }
+
+  content.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    moved = false;
+    startX = e.clientX;
+    try { content.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+
+  content.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const delta = e.clientX - startX;
+    if (Math.abs(delta) > 4) moved = true;
+    const width = item.offsetWidth || 300;
+    const next = Math.max(-width * 0.9, Math.min(0, baseOffset + delta));
+    setOffset(next, false);
+  });
+
+  function endDrag() {
+    if (!dragging) return;
+    dragging = false;
+    const width = item.offsetWidth || 300;
+    if (liveOffset < -width * 0.55) {
+      // Swiped most of the way — delete it.
+      setOffset(-width, true);
+      setTimeout(() => { deleteFileRecord(name); renderFilesList(); }, 180);
+      return;
+    }
+    if (liveOffset < OPEN_OFFSET / 2) {
+      baseOffset = OPEN_OFFSET;
+      setOffset(OPEN_OFFSET, true);
+    } else {
+      baseOffset = 0;
+      setOffset(0, true);
+    }
+  }
+
+  content.addEventListener('pointerup', endDrag);
+  content.addEventListener('pointercancel', endDrag);
+
+  content.addEventListener('click', () => {
+    if (moved) return; // this click was really the end of a drag
+    if (baseOffset !== 0) {
+      baseOffset = 0;
+      setOffset(0, true);
+      return;
+    }
+    openFile(name);
+  });
+
+  delAction.addEventListener('click', () => {
+    const width = item.offsetWidth || 300;
+    setOffset(-width, true);
+    setTimeout(() => { deleteFileRecord(name); renderFilesList(); }, 180);
+  });
+}
+
+/* ---------------------------------------------------------
+   FILE VIEW MODAL
+---------------------------------------------------------- */
+const fileModal = document.getElementById('fileModal');
+const fileModalTitle = document.getElementById('fileModalTitle');
+const fileModalZh = document.getElementById('fileModalZh');
+const fileModalEn = document.getElementById('fileModalEn');
+const fileModalCloseBtn = document.getElementById('fileModalCloseBtn');
+const fileModalCloseBtn2 = document.getElementById('fileModalCloseBtn2');
+const fileModalDownloadBtn = document.getElementById('fileModalDownloadBtn');
+
+function openFile(name) {
+  const record = loadFileRecord(name);
+  if (!record) return;
+  fileModal.dataset.name = name;
+  fileModalTitle.textContent = record.name;
+  fileModalZh.textContent = record.zh || '(no Chinese text)';
+  fileModalEn.textContent = record.en || '(no English text)';
+  fileModal.classList.add('open');
+}
+
+function closeFileModal() {
+  fileModal.classList.remove('open');
+}
+
+fileModalCloseBtn.addEventListener('click', closeFileModal);
+fileModalCloseBtn2.addEventListener('click', closeFileModal);
+fileModal.addEventListener('click', (e) => {
+  if (e.target === fileModal) closeFileModal();
+});
+
+fileModalDownloadBtn.addEventListener('click', () => {
+  const name = fileModal.dataset.name;
+  const record = loadFileRecord(name);
+  if (!record) return;
+  const content = `Chinese:\n${record.zh}\n\nEnglish:\n${record.en}\n`;
+  const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${name}.txt`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  if (fileModal.classList.contains('open')) closeFileModal();
+  else if (filesDrawer.classList.contains('open')) closeFilesDrawer();
+});
+
+// Init
+updateFilesBadge();
+</script>
+</body>
+</html>
