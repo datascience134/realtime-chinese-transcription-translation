@@ -6,14 +6,14 @@
 <title>Chinese → English Live Transcribe (TCM Edition)</title>
 <style>
   :root {
-    --bg: #111418;
-    --panel: #1a1e24;
-    --border: #2a2f37;
-    --text-final: #f2f2f2;
-    --text-nonfinal: #8a8f98;
-    --accent: #4da3ff;
-    --danger: #ff5c5c;
-    --ok: #3ecf8e;
+    --bg: #ffffff;
+    --panel: #f0f2f5;
+    --border: #d0d5dd;
+    --text-final: #1a1d21;
+    --text-nonfinal: #5f6672;
+    --accent: #1a73e8;
+    --danger: #d93636;
+    --ok: #10935d;
   }
   * { box-sizing: border-box; }
   body {
@@ -37,7 +37,7 @@
     font-size: 15px;
     margin: 0;
     font-weight: 600;
-    color: #cfd3d8;
+    color: var(--text-final);
     flex: 1 1 auto;
   }
   select, button, input[type=password] {
@@ -54,12 +54,12 @@
   }
   button#toggleBtn {
     background: var(--accent);
-    color: #04121f;
+    color: #ffffff;
     border: none;
   }
   button#toggleBtn.recording {
     background: var(--danger);
-    color: #2a0000;
+    color: #ffffff;
   }
   button.subtle {
     background: transparent;
@@ -121,7 +121,7 @@
   .zh-cell { font-size: 22px; }
   .en-cell {
     font-size: 17px;
-    color: #d8dde4;
+    color: #2b2f36;
     border-left: 1px solid var(--border);
   }
   /* Divider under each committed row; dashed under the in-progress live row. */
@@ -150,7 +150,7 @@
     bottom: 18px;
     z-index: 800;
     background: var(--ok);
-    color: #05231a;
+    color: #ffffff;
     border: none;
     border-radius: 999px;
     padding: 12px 18px;
@@ -248,7 +248,7 @@
   .files-drawer-header h2 {
     font-size: 14px;
     margin: 0;
-    color: #cfd3d8;
+    color: var(--text-final);
   }
   .files-drawer-header p {
     font-size: 11px;
@@ -359,7 +359,7 @@
   .modal-header h3 {
     margin: 0;
     font-size: 14px;
-    color: #cfd3d8;
+    color: var(--text-final);
   }
   .modal-close {
     background: transparent;
