@@ -118,7 +118,7 @@
     overflow-wrap: anywhere;
     vertical-align: top;
   }
-  .zh-cell { font-size: 22px; }
+  .zh-cell { font-size: 22px; line-height: 2.15; }
   .en-cell {
     font-size: 17px;
     color: #2b2f36;
@@ -168,18 +168,19 @@
      user-select:none, so it's never part of the selection or the copied text.
      (The previous inline-flex layout was what caused a drag to select
      everything from the top of the pane down to the cursor.) */
-  ruby {
-    ruby-position: over;
-    ruby-align: center;
-    margin: 0 1px;
-  }
-  rt {
-    font-size: 0.48em;
-    line-height: 1.2;
+  .han { position: relative; }
+  .py {
+    position: absolute;
+    left: 50%;
+    bottom: 1.1em;              /* sits just above the hanzi — nudge if needed */
+    transform: translateX(-50%);
+    font-size: 0.46em;
+    line-height: 1;
+    white-space: nowrap;
     color: var(--accent);
-    padding-bottom: 2px;
     user-select: none;
     -webkit-user-select: none;
+    pointer-events: none;
   }
   .settings {
     padding: 12px 16px;
@@ -552,7 +553,7 @@ function zhRenderUnit(seg, pyChars) {
     // themselves stay plain, individually-selectable text.
     let html = '';
     for (let k = 0; k < seg.length; k++) {
-      html += `<ruby>${escapeHtml(seg[k])}<rt>${escapeHtml(pyChars[k] || '')}</rt></ruby>`;
+      html += `<span class="han">${escapeHtml(seg[k])}<span class="py">${escapeHtml(pyChars[k] || '')}</span></span>`;
     }
     return html;
   }
