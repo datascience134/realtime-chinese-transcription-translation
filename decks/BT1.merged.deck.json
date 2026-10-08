@@ -1,0 +1,5374 @@
+[
+  {
+    "slide": 1,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "中医基础理论全国中医药行业高等教育“十四五”规划教材",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn quán guó zhōng yī yào háng yè gāo děng jiào yù shí sì wǔ guī huà jiào cái",
+        "en": "Basic Theory of Traditional Chinese Medicine, 14th Five-Year Plan Higher Education Textbook for the Traditional Chinese Medicine Industry"
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "绪 论主要内容概述：中医学的学科属性一、",
+        "pinyin": "xù lùn zhǔ yào nèi róng gài shù zhōng yī xué de xué kē shǔ xìng yī",
+        "en": "Introduction, Overview of Main Contents: I. Disciplinary Attributes of TCM"
+      },
+      {
+        "zh": "中医学理论体系的形成和发展二、",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì de xíng chéng hé fā zhǎn èr",
+        "en": "II. Formation and Development of the Theoretical System of TCM"
+      },
+      {
+        "zh": "中医学理论体系的主要特点三、",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì de zhǔ yào tè diǎn sān",
+        "en": "III. Main Characteristics of the Theoretical System of TCM"
+      },
+      {
+        "zh": "《中医基础理论》课程的主要内容",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn kè chéng de zhǔ yào nèi róng",
+        "en": "IV. Main Contents of the Course \"Basic Theory of Traditional Chinese Medicine\""
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "概述、",
+        "pinyin": "gài shù",
+        "en": "Overview,"
+      },
+      {
+        "zh": "中医学的学科属性中医学（Traditional Chinese Medicine）中医学（TCM），",
+        "pinyin": "zhōng yī xué de xué kē shǔ xìng zhōng yī xué zhōng yī xué",
+        "en": "Disciplinary Attributes of Traditional Chinese Medicine (TCM),"
+      },
+      {
+        "zh": "是以中医药理论与实践经验为主体，",
+        "pinyin": "shì yǐ zhōng yī yào lǐ lùn yǔ shí jiàn jīng yàn wéi zhǔ tǐ",
+        "en": "TCM takes the theory and clinical practice of Chinese medicine as its core,"
+      },
+      {
+        "zh": "研究人类生命活动中健康与疾病转化规律及其预防、",
+        "pinyin": "yán jiū rén lèi shēng mìng huó dòng zhōng jiàn kāng yǔ jí bìng zhuǎn huà guī lǜ jí qí yù fáng",
+        "en": "studying the laws of transformation between health and disease in human life activities, as well as their prevention,"
+      },
+      {
+        "zh": "诊断、",
+        "pinyin": "zhěn duàn",
+        "en": "diagnosis,"
+      },
+      {
+        "zh": "治疗、",
+        "pinyin": "zhì liáo",
+        "en": "treatment,"
+      },
+      {
+        "zh": "康复和保健的医学科学，",
+        "pinyin": "kāng fù hé bǎo jiàn de yī xué kē xué",
+        "en": "and medical sciences for rehabilitation and health care,"
+      },
+      {
+        "zh": "是以自然科学知识为主体、",
+        "pinyin": "shì yǐ zì rán kē xué zhī shi wéi zhǔ tǐ",
+        "en": "with natural science as its main body,"
+      },
+      {
+        "zh": "注重吸收多学科先进的科技成果，",
+        "pinyin": "zhù zhòng xī shōu duō xué kē xiān jìn de kē jì chéng guǒ",
+        "en": "focusing on absorbing advanced scientific and technological achievements from multiple disciplines,"
+      },
+      {
+        "zh": "促进学术发展与创新的综合性医学科学知识体系，",
+        "pinyin": "cù jìn xué shù fā zhǎn yǔ chuàng xīn de zōng hé xìng yī xué kē xué zhī shi tǐ xì",
+        "en": "forming a comprehensive medical knowledge system that promotes academic development and innovation,"
+      },
+      {
+        "zh": "以人—自然 —社会心理为医学模式。",
+        "pinyin": "yǐ rén zì rán shè huì xīn lǐ wèi yī xué mó shì",
+        "en": "using a 'human-nature-social-psychological' medical model."
+      },
+      {
+        "zh": "。",
+        "pinyin": "",
+        "en": "."
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "1.中医学属于自然科学范畴",
+        "pinyin": "zhōng yī xué shǔ yú zì rán kē xué fàn chóu",
+        "en": "1. TCM belongs to the category of natural science"
+      },
+      {
+        "zh": "自然科学是研究自然界各种物质运动、",
+        "pinyin": "zì rán kē xué shì yán jiū zì rán jiè gè zhǒng wù zhì yùn dòng",
+        "en": "Natural science is a discipline that studies the laws or essence of the motion, change, and development of all matter in the natural world."
+      },
+      {
+        "zh": "变化和发展规律或本质的学科。",
+        "pinyin": "biàn huà hé fā zhǎn guī lǜ huò běn zhì de xué kē",
+        "en": "change and development laws or essence."
+      },
+      {
+        "zh": "中医学研究的对象是人，",
+        "pinyin": "zhōng yī xué yán jiū de duì xiàng shì rén",
+        "en": "The subject of TCM research is the human being,"
+      },
+      {
+        "zh": "主要探讨人体的生、",
+        "pinyin": "zhǔ yào tàn tǎo rén tǐ de shēng",
+        "en": "mainly exploring the life laws of human birth,"
+      },
+      {
+        "zh": "长、",
+        "pinyin": "zhǎng",
+        "en": "growth,"
+      },
+      {
+        "zh": "壮、",
+        "pinyin": "zhuàng",
+        "en": "development (strength),"
+      },
+      {
+        "zh": "老、",
+        "pinyin": "lǎo",
+        "en": "aging,"
+      },
+      {
+        "zh": "已的生命规律，",
+        "pinyin": "yǐ de shēng mìng guī lǜ",
+        "en": "and death,"
+      },
+      {
+        "zh": "人体的形态结构、",
+        "pinyin": "rén tǐ de xíng tài jié gòu",
+        "en": "human morphology and structure,"
+      },
+      {
+        "zh": "生理功能以及疾病的发生发展和防治规律等，",
+        "pinyin": "shēng lǐ gōng néng yǐ jí jí bìng de fā shēng fā zhǎn hé fáng zhì guī lǜ děng",
+        "en": "physiological functions, as well as the laws of the occurrence, development, prevention, and treatment of diseases,"
+      },
+      {
+        "zh": "因而具有自然科学的属性。",
+        "pinyin": "yīn ér jù yǒu zì rán kē xué de shǔ xìng",
+        "en": "therefore, it possesses the attributes of natural science."
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2.中医学具有社会科学特性",
+        "pinyin": "zhōng yī xué jù yǒu shè huì kē xué tè xìng",
+        "en": "2. TCM possesses the characteristics of social science"
+      },
+      {
+        "zh": "社会科学是研究人类社会运动变化和发展规律的学科。",
+        "pinyin": "shè huì kē xué shì yán jiū rén lèi shè huì yùn dòng biàn huà hé fā zhǎn guī lǜ de xué kē",
+        "en": "Social science is a discipline that studies the laws of motion, change, and development of human society."
+      },
+      {
+        "zh": "人不仅具有自然物质（生物）的属性，还具有社会属性。",
+        "pinyin": "rén bù jǐn jù yǒu zì rán wù zhì shēng wù de shǔ xìng hái jù yǒu shè huì shǔ xìng",
+        "en": "Humans not only have natural material (biological) attributes but also social attributes."
+      },
+      {
+        "zh": "人生活在社会中，",
+        "pinyin": "rén shēng huó zài shè huì zhōng",
+        "en": "Humans live in society,"
+      },
+      {
+        "zh": "必然受到社会环境的影响，",
+        "pinyin": "bì rán shòu dào shè huì huán jìng de yǐng xiǎng",
+        "en": "and are inevitably affected by the social environment,"
+      },
+      {
+        "zh": "由此引起一系列有关健康和疾病的医学问题。",
+        "pinyin": "yóu cǐ yǐn qǐ yī xì liè yǒu guān jiàn kāng hé jí bìng de yī xué wèn tí",
+        "en": "which gives rise to a series of medical issues related to health and disease."
+      },
+      {
+        "zh": "社会环境的变更，",
+        "pinyin": "shè huì huán jìng de biàn gēng",
+        "en": "Changes in the social environment,"
+      },
+      {
+        "zh": "人的社会地位、",
+        "pinyin": "rén de shè huì dì wèi",
+        "en": "the human social status,"
+      },
+      {
+        "zh": "经济条件的变化，",
+        "pinyin": "jīng jì tiáo jiàn de biàn huà",
+        "en": "and shifts in economic conditions,"
+      },
+      {
+        "zh": "对人体的身心健康常产生较大影响。",
+        "pinyin": "duì rén tǐ de shēn xīn jiàn kāng cháng chǎn shēng jiào dà yǐng xiǎng",
+        "en": "often have a significant impact on physical and mental health."
+      },
+      {
+        "zh": "因而中医学具有明显的社会科学属性。",
+        "pinyin": "yīn ér zhōng yī xué jù yǒu míng xiǎn de shè huì kē xué shǔ xìng",
+        "en": "Therefore, TCM possesses clear social science attributes."
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "3.中医学受到古代哲学的深刻影响",
+        "pinyin": "zhōng yī xué shòu dào gǔ dài zhé xué de shēn kè yǐng xiǎng",
+        "en": "3. TCM is profoundly influenced by ancient philosophy"
+      },
+      {
+        "zh": "哲学是研究自然、社会和思维中最一般的共同规律的科学。",
+        "pinyin": "zhé xué shì yán jiū zì rán shè huì hé sī wéi zhōng zuì yī bān de gòng tóng guī lǜ de kē xué",
+        "en": "Philosophy is the science that studies the most general common laws of nature, society, and thought."
+      },
+      {
+        "zh": "任何一门自然学科的发展都离不开哲学的作用。",
+        "pinyin": "rèn hé yī mén zì rán xué kē de fā zhǎn dōu lí bu kāi zhé xué de zuò yòng",
+        "en": "The development of any natural discipline cannot be separated from the role of philosophy."
+      },
+      {
+        "zh": "中医学发祥于中国古代，受当时的哲学思想的深刻影响。",
+        "pinyin": "zhōng yī xué fā xiáng yú zhōng guó gǔ dài shòu dāng shí de zhé xué sī xiǎng de shēn kè yǐng xiǎng",
+        "en": "TCM originated in ancient China and was profoundly influenced by the philosophical thought of that time."
+      },
+      {
+        "zh": "中医学在其形成与发展过程中，",
+        "pinyin": "zhōng yī xué zài qí xíng chéng yǔ fā zhǎn guò chéng zhōng",
+        "en": "During its formation and development,"
+      },
+      {
+        "zh": "不断吸取当时的哲学成就，",
+        "pinyin": "bù duàn xī qǔ dāng shí de zhé xué chéng jiù",
+        "en": "TCM continuously absorbed the philosophical achievements of the era,"
+      },
+      {
+        "zh": "用当时盛行的哲学思想如气一元论、",
+        "pinyin": "yòng dāng shí shèng xíng de zhé xué sī xiǎng rú qì yī yuán lùn",
+        "en": "using then-prevailing philosophical ideas such as Monism of Qi (the theory that Qi is the fundamental substance of the universe),"
+      },
+      {
+        "zh": "阴阳、",
+        "pinyin": "yīn yáng",
+        "en": "Yin-Yang,"
+      },
+      {
+        "zh": "五行等，",
+        "pinyin": "wǔ xíng děng",
+        "en": "and the Five Phases (Wu Xing),"
+      },
+      {
+        "zh": "阐述关于生命、",
+        "pinyin": "chǎn shù guān yú shēng mìng",
+        "en": "to explain a series of medical issues regarding life,"
+      },
+      {
+        "zh": "健康、",
+        "pinyin": "jiàn kāng",
+        "en": "health,"
+      },
+      {
+        "zh": "疾病等一系列医学问题，",
+        "pinyin": "jí bìng děng yī xì liè yī xué wèn tí",
+        "en": "and disease,"
+      },
+      {
+        "zh": "构建了自己独特的医学理论体系。",
+        "pinyin": "gòu jiàn le zì jǐ dú tè de yī xué lǐ lùn tǐ xì",
+        "en": "constructing its own unique medical theoretical system."
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "4.中医学是多学科交互渗透的产物",
+        "pinyin": "zhōng yī xué shì duō xué kē jiāo hù shèn tòu de chǎn wù",
+        "en": "4. TCM is the product of interdisciplinary penetration"
+      },
+      {
+        "zh": "除古代哲学思想对中医学理论体系的构建起到过重要作用外，",
+        "pinyin": "chú gǔ dài zhé xué sī xiǎng duì zhōng yī xué lǐ lùn tǐ xì de gòu jiàn qǐ dào guò zhòng yào zuò yòng wài",
+        "en": "Besides the important role played by ancient philosophical thought in constructing the TCM theoretical system,"
+      },
+      {
+        "zh": "古代的天文学、",
+        "pinyin": "gǔ dài de tiān wén xué",
+        "en": "ancient astronomy,"
+      },
+      {
+        "zh": "气象学、",
+        "pinyin": "qì xiàng xué",
+        "en": "meteorology,"
+      },
+      {
+        "zh": "地理学、",
+        "pinyin": "dì lǐ xué",
+        "en": "geography,"
+      },
+      {
+        "zh": "物候学、",
+        "pinyin": "wù hòu xué",
+        "en": "phenology (study of biological cycles),"
+      },
+      {
+        "zh": "农学、",
+        "pinyin": "nóng xué",
+        "en": "agriculture,"
+      },
+      {
+        "zh": "生物学、",
+        "pinyin": "shēng wù xué",
+        "en": "biology,"
+      },
+      {
+        "zh": "矿物学、",
+        "pinyin": "kuàng wù xué",
+        "en": "mineralogy,"
+      },
+      {
+        "zh": "植物学、",
+        "pinyin": "zhí wù xué",
+        "en": "botany,"
+      },
+      {
+        "zh": "军事学、",
+        "pinyin": "jūn shì xué",
+        "en": "military science,"
+      },
+      {
+        "zh": "数学以及酿酒技术、",
+        "pinyin": "shù xué yǐ jí niàng jiǔ jì shù",
+        "en": "mathematics, as well as brewing techniques,"
+      },
+      {
+        "zh": "冶炼技术等，",
+        "pinyin": "yě liàn jì shù děng",
+        "en": "and smelting techniques,"
+      },
+      {
+        "zh": "都曾对中医学理论体系的形成与发展起过重要的促进作用。",
+        "pinyin": "dōu céng duì zhōng yī xué lǐ lùn tǐ xì de xíng chéng yǔ fā zhǎn qǐ guò zhòng yào de cù jìn zuò yòng",
+        "en": "all played important roles in promoting the formation and development of the TCM theoretical system."
+      },
+      {
+        "zh": "如气象学知识促进了六淫病因学说的产生，",
+        "pinyin": "rú qì xiàng xué zhī shi cù jìn le liù yín bìng yīn xué shuō de chǎn shēng",
+        "en": "For example, meteorological knowledge promoted the emergence of the etiology of the Six Excesses (six climatic pathogenic factors),"
+      },
+      {
+        "zh": "兵法知识奠基了治病原则与方法，",
+        "pinyin": "bīng fǎ zhī shi diàn jī le zhì bìng yuán zé yǔ fāng fǎ",
+        "en": "military strategy provided the foundation for treatment principles and methods,"
+      },
+      {
+        "zh": "对四时物候变化的认识促成了“天人相应”思想的建立等。",
+        "pinyin": "duì sì shí wù hòu biàn huà de rèn shi cù chéng le tiān rén xiāng yìng sī xiǎng de jiàn lì děng",
+        "en": "and the understanding of seasonal phenological changes led to the establishment of the idea of 'correspondence between heaven and humanity'."
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "中医学是多学科交互渗透的产物",
+        "pinyin": "zhōng yī xué shì duō xué kē jiāo hù shèn tòu de chǎn wù",
+        "en": "TCM is the product of interdisciplinary penetration"
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "一、",
+        "pinyin": "yī",
+        "en": "I."
+      },
+      {
+        "zh": "中医学理论体系的形成和发展中医学理论体系是以气一元论和阴阳五行学说为哲学基础，",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì de xíng chéng hé fā zhǎn zhōng yī xué lǐ lùn tǐ xì shì yǐ qì yī yuán lùn hé yīn yáng wǔ xíng xué shuō wèi zhé xué jī chǔ",
+        "en": "Formation and Development of the TCM Theoretical System: The TCM theoretical system takes Monism of Qi and the theories of Yin-Yang and the Five Phases as its philosophical foundation,"
+      },
+      {
+        "zh": "以象思维、",
+        "pinyin": "yǐ xiàng sī wéi",
+        "en": "using image-thinking (holistic, symbolic reasoning),"
+      },
+      {
+        "zh": "系统思维和变易思维为主要思维模式，",
+        "pinyin": "xì tǒng sī wéi hé biàn yì sī wéi wéi zhǔ yào sī wéi mó shì",
+        "en": "systems thinking, and change-based thinking as its main cognitive modes,"
+      },
+      {
+        "zh": "以整体观念为指导思想，",
+        "pinyin": "yǐ zhěng tǐ guān niàn wèi zhǐ dǎo sī xiǎng",
+        "en": "with the holistic concept as its guiding ideology,"
+      },
+      {
+        "zh": "以藏象、",
+        "pinyin": "yǐ zàng xiàng",
+        "en": "the theoretical core consisting of Zang-Xiang (visceral manifestation),"
+      },
+      {
+        "zh": "经络和精气血津液神等为理论核心，",
+        "pinyin": "jīng luò hé jīng qì xuè jīn yè shén děng wèi lǐ lùn hé xīn",
+        "en": "meridians, and Essence-Qi-Blood-Body Fluids-Spirit,"
+      },
+      {
+        "zh": "以辨证论治为诊疗特点，",
+        "pinyin": "yǐ biàn zhèng lùn zhì wèi zhěn liáo tè diǎn",
+        "en": "and characterized by 'Pattern Differentiation and Treatment' (Bian Zheng Lun Zhi) in diagnosis and treatment,"
+      },
+      {
+        "zh": "包括理、",
+        "pinyin": "bāo kuò lǐ",
+        "en": "comprising theory (Li),"
+      },
+      {
+        "zh": "法、",
+        "pinyin": "fǎ",
+        "en": "Method (Fa),"
+      },
+      {
+        "zh": "方、",
+        "pinyin": "fāng",
+        "en": "Formula (Fang),"
+      },
+      {
+        "zh": "药在内的医学理论体系。",
+        "pinyin": "yào zài nèi de yī xué lǐ lùn tǐ xì",
+        "en": "and medicinals (Yao)."
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（一）中医学理论体系的形成中医学理论体系形成于战国至两汉时期。",
+        "pinyin": "yī zhōng yī xué lǐ lùn tǐ xì de xíng chéng zhōng yī xué lǐ lùn tǐ xì xíng chéng yú zhàn guó zhì liǎng hàn shí qī",
+        "en": "(I) Formation of the TCM theoretical system: The TCM theoretical system was formed between the Warring States period and the two Han dynasties."
+      },
+      {
+        "zh": "《黄帝内经》、",
+        "pinyin": "huáng dì nèi jīng",
+        "en": "The publication of medical classics such as the 'Huangdi Neijing',"
+      },
+      {
+        "zh": "《难经》、",
+        "pinyin": "nàn jīng",
+        "en": "'Nanjing',"
+      },
+      {
+        "zh": "《伤寒杂病论》、",
+        "pinyin": "shāng hán zá bìng lùn",
+        "en": "'Shanghan Zabing Lun',"
+      },
+      {
+        "zh": "《神农本草经》等医学专著的成书，",
+        "pinyin": "shén nóng běn cǎo jīng děng yī xué zhuān zhù de chéng shū",
+        "en": "and 'Shennong Bencao Jing' (Divine Farmer's Classic of Materia Medica),"
+      },
+      {
+        "zh": "标志着中医学理论体系的初步形成。",
+        "pinyin": "biāo zhì zhe zhōng yī xué lǐ lùn tǐ xì de chū bù xíng chéng",
+        "en": "marks the preliminary formation of the TCM theoretical system."
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "1.中医学理论体系形成的条件",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì xíng chéng de tiáo jiàn",
+        "en": "1. Conditions for the formation of the TCM theoretical system"
+      },
+      {
+        "zh": "（1）社会文化基础（2）科学技术基础（3）医药实践基础（4）古代哲学思想对医学的渗透",
+        "pinyin": "shè huì wén huà jī chǔ kē xué jì shù jī chǔ yī yào shí jiàn jī chǔ gǔ dài zhé xué sī xiǎng duì yī xué de shèn tòu",
+        "en": "(1) Socio-cultural basis; (2) Scientific and technological basis; (3) Pharmaceutical practice basis; (4) Penetration of ancient philosophical thought into medicine."
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2.中医学理论体系确立的标志",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì què lì de biāo zhì",
+        "en": "2. Symbols of the establishment of the TCM theoretical system"
+      },
+      {
+        "zh": "《黄帝内经》、",
+        "pinyin": "huáng dì nèi jīng",
+        "en": "The publication of medical classics such as the 'Huangdi Neijing',"
+      },
+      {
+        "zh": "《难经》、",
+        "pinyin": "nàn jīng",
+        "en": "'Nanjing',"
+      },
+      {
+        "zh": "《伤寒杂病论》、",
+        "pinyin": "shāng hán zá bìng lùn",
+        "en": "'Shanghan Zabing Lun',"
+      },
+      {
+        "zh": "《神农本草经》等医学典籍的问世，",
+        "pinyin": "shén nóng běn cǎo jīng děng yī xué diǎn jí de wèn shì",
+        "en": "and 'Shennong Bencao Jing',"
+      },
+      {
+        "zh": "标志着中医学理论体系的基本确立。",
+        "pinyin": "biāo zhì zhe zhōng yī xué lǐ lùn tǐ xì de jī běn què lì",
+        "en": "marks the basic establishment of the TCM theoretical system."
+      },
+      {
+        "zh": "理论框架的建立《内经》：整体观念、",
+        "pinyin": "lǐ lùn kuàng jià de jiàn lì nèi jīng zhěng tǐ guān niàn",
+        "en": "Establishment of the theoretical framework: 'Neijing': Holistic concept,"
+      },
+      {
+        "zh": "藏象经络、",
+        "pinyin": "zàng xiàng jīng luò",
+        "en": "Zang-Xiang and meridians,"
+      },
+      {
+        "zh": "精气神《难经》：经络《伤寒杂病论》：辨证论治治疗技术的建立《神农本草经》：中药学理论",
+        "pinyin": "jīng qì shén nàn jīng jīng luò shāng hán zá bìng lùn biàn zhèng lùn zhì zhì liáo jì shù de jiàn lì shén nóng běn cǎo jīng zhōng yào xué lǐ lùn",
+        "en": "Essence-Qi-Spirit. 'Nanjing': Meridians. 'Shanghan Zabing Lun': Pattern differentiation and treatment. Establishment of treatment techniques. 'Shennong Bencao Jing': Theory of Chinese Materia Medica."
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（1）《黄帝内经》分《素问》和《灵枢》两部，",
+        "pinyin": "huáng dì nèi jīng fēn sù wèn hé líng shū liǎng bù",
+        "en": "(1) The 'Huangdi Neijing' is divided into two parts, 'Suwen' (Basic Questions) and 'Lingshu' (Spiritual Pivot),"
+      },
+      {
+        "zh": "各十八卷，",
+        "pinyin": "gè shí bā juǎn",
+        "en": "each consisting of 18 volumes,"
+      },
+      {
+        "zh": "共162篇。",
+        "pinyin": "gòng piān",
+        "en": "totaling 162 chapters."
+      },
+      {
+        "zh": "标志着中医学理论体系的形成。",
+        "pinyin": "biāo zhì zhe zhōng yī xué lǐ lùn tǐ xì de xíng chéng",
+        "en": "It marks the formation of the TCM theoretical system."
+      },
+      {
+        "zh": "中医学由经验医学上升为理论医学。",
+        "pinyin": "zhōng yī xué yóu jīng yàn yī xué shàng shēng wèi lǐ lùn yī xué",
+        "en": "TCM rose from empirical medicine to theoretical medicine."
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "《内经》作者:是先秦至西汉历代医家 医学 理论和 临床 经 验的总结。",
+        "pinyin": "nèi jīng zuò zhě shì xiān qín zhì xī hàn lì dài yī jiā yī xué lǐ lùn hé lín chuáng jīng yàn de zǒng jié",
+        "en": "Author of 'Neijing': A summary of medical theory and clinical experience of physicians from the Pre-Qin period to the Western Han dynasty."
+      },
+      {
+        "zh": "托名黄帝：《辞海》:传说中原各族的共同祖先。",
+        "pinyin": "tuō míng huáng dì cí hǎi chuán shuō zhōng yuán gè zú de gòng tóng zǔ xiān",
+        "en": "Attributed to the Yellow Emperor: 'Cihai' (Dictionary): The legendary common ancestor of all Central Plain tribes."
+      },
+      {
+        "zh": "姬姓，号轩辕氏、有熊氏，少典之子。",
+        "pinyin": "jī xìng hào xuān yuán shì yǒu xióng shì shǎo diǎn zhī zi",
+        "en": "Surname Ji, titles Xuanyuan Shi, Youxiong Shi, son of Shaodian."
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "《内经》奠定了藏象、",
+        "pinyin": "nèi jīng diàn dìng le zàng xiàng",
+        "en": "'Neijing' established the foundation of Zang-Xiang,"
+      },
+      {
+        "zh": "经络理论的基础；",
+        "pinyin": "jīng luò lǐ lùn de jī chǔ",
+        "en": "and meridian theory;"
+      },
+      {
+        "zh": "对疾病的发生、",
+        "pinyin": "duì jí bìng de fā shēng",
+        "en": "systematically elaborated on the occurrence,"
+      },
+      {
+        "zh": "发展，",
+        "pinyin": "fā zhǎn",
+        "en": "development,"
+      },
+      {
+        "zh": "病证的诊断、",
+        "pinyin": "bìng zhèng de zhěn duàn",
+        "en": "diagnosis of disease patterns,"
+      },
+      {
+        "zh": "治疗等进行了系统的阐述，",
+        "pinyin": "zhì liáo děng jìn xíng le xì tǒng de chǎn shù",
+        "en": "and treatment,"
+      },
+      {
+        "zh": "提出“治未病”的观点，",
+        "pinyin": "tí chū zhì wèi bìng de guān diǎn",
+        "en": "proposed the concept of 'treating unmanifested disease' (preventive medicine),"
+      },
+      {
+        "zh": "对临床实践具有重要的指导意义。",
+        "pinyin": "duì lín chuáng shí jiàn jù yǒu zhòng yào de zhǐ dǎo yì yì",
+        "en": "and has important guiding significance for clinical practice."
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（2）《难经》成书于汉之前，秦越人（扁鹊）所著。",
+        "pinyin": "nàn jīng chéng shū yú hàn zhī qián qín yuè rén biǎn què suǒ zhù",
+        "en": "(2) 'Nanjing' was written before the Han dynasty by Qin Yueren (Bian Que)."
+      },
+      {
+        "zh": "扁鹊中国历史上第一个进入正史的医家。",
+        "pinyin": "biǎn què zhōng guó lì shǐ shàng dì yī gè jìn rù zhèng shǐ de yī jiā",
+        "en": "Bian Que is the first physician in Chinese history to be recorded in official dynastic history."
+      }
+    ]
+  },
+  {
+    "slide": 17,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "“难” ：质难以问答的方式探讨医学理论，",
+        "pinyin": "nán zhì nàn yǐ wèn dá de fāng shì tàn tǎo yī xué lǐ lùn",
+        "en": "'Nan' (Difficult): Exploring medical theory through a question-and-answer format,"
+      },
+      {
+        "zh": "共 81个问答（《八十一经》）。",
+        "pinyin": "gòng gè wèn dá bā shí yī jīng",
+        "en": "totaling 81 questions and answers (also known as the 'Eighty-One Difficult Issues')."
+      },
+      {
+        "zh": "内容丰富，在脉诊和针灸治疗方面较《黄帝内经》更为详细。",
+        "pinyin": "nèi róng fēng fù zài mài zhěn hé zhēn jiǔ zhì liáo fāng miàn jiào huáng dì nèi jīng gèng wéi xiáng xì",
+        "en": "Rich in content, and more detailed than the 'Huangdi Neijing' regarding pulse diagnosis and acupuncture treatment."
+      }
+    ]
+  },
+  {
+    "slide": 18,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（3)《伤寒杂病论》·东汉末年 张仲景所著。",
+        "pinyin": "shāng hán zá bìng lùn dōng hàn mò nián zhāng zhòng jǐng suǒ zhù",
+        "en": "(3) 'Shanghan Zabing Lun': Written by Zhang Zhongjing at the end of the Eastern Han dynasty."
+      },
+      {
+        "zh": "中医基础理论与临床紧密结合，确立了辨证论治原则。",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn yǔ lín chuáng jǐn mì jié hé què lì le biàn zhèng lùn zhì yuán zé",
+        "en": "It tightly integrates basic TCM theory with clinical practice, establishing the principle of pattern differentiation and treatment."
+      },
+      {
+        "zh": "晋代·王叔和等整理：《伤寒论》：外感疾病（六经辨证）张仲景《金匮要略》：内伤疾病（脏腑辨证）（约150～219年）",
+        "pinyin": "jìn dài wáng shū hé děng zhěng lǐ shāng hán lùn wài gǎn jí bìng liù jīng biàn zhèng zhāng zhòng jǐng jīn guì yào lüè nèi shāng jí bìng zàng fǔ biàn zhèng yuē nián",
+        "en": "Compiled by Wang Shuhe and others in the Jin dynasty: 'Shanghan Lun' (Treatise on Cold Damage): Exogenous diseases (Six Channels Differentiation); Zhang Zhongjing's 'Jinkui Yaolue' (Essential Prescriptions from the Golden Cabinet): Internal injury diseases (Zang-Fu organ differentiation). (Approx. 150-219 AD)."
+      }
+    ]
+  },
+  {
+    "slide": 19,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "麻黄汤、小柴胡汤等经方沿用至今。",
+        "pinyin": "má huáng tāng xiǎo chái hú tāng děng jīng fāng yán yòng zhì jīn",
+        "en": "Classical formulas like Mahuang Tang (Ephedra Decoction) and Xiao Chaihu Tang (Minor Bupleurum Decoction) are still in use today."
+      },
+      {
+        "zh": "唐代传入日本、朝鲜，称汉方医学。",
+        "pinyin": "táng dài chuán rù rì běn cháo xiǎn chēng hàn fāng yī xué",
+        "en": "Introduced to Japan and Korea during the Tang dynasty, it is called Kampo medicine."
+      },
+      {
+        "zh": "150 首方被日本药界制成颗粒，医疗保险可以报销。",
+        "pinyin": "shǒu fāng bèi rì běn yào jiè zhì chéng kē lì yī liáo bǎo xiǎn kě yǐ bào xiāo",
+        "en": "150 formulas are processed into granules by the Japanese pharmaceutical industry and are covered by medical insurance."
+      },
+      {
+        "zh": "称之为“医方之祖”，张仲景 医圣祠药精效宏。",
+        "pinyin": "chēng zhī wéi yī fāng zhī zǔ zhāng zhòng jǐng yī shèng cí yào jīng xiào hóng",
+        "en": "Known as the 'Ancestor of Medical Formulas', Zhang Zhongjing's Temple of the Medical Sage is revered for its potent and effective medicine."
+      }
+    ]
+  },
+  {
+    "slide": 20,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（4） 《神农本草经》中国现存最早的药物学专著，",
+        "pinyin": "shén nóng běn cǎo jīng zhōng guó xiàn cún zuì zǎo de yào wù xué zhuān zhù",
+        "en": "(4) 'Shennong Bencao Jing': The earliest extant book on pharmacology in China,"
+      },
+      {
+        "zh": "载药：365种。",
+        "pinyin": "zài yào zhǒng",
+        "en": "recording 365 types of medicinal substances."
+      },
+      {
+        "zh": "分类：上、中、下三品分类。",
+        "pinyin": "fēn lèi shàng zhōng xià sān pǐn fēn lèi",
+        "en": "Classification: Classified into Superior, Medium, and Inferior grades."
+      },
+      {
+        "zh": "药性理论：君、臣、佐、使，四气五味，七情合和。",
+        "pinyin": "yào xìng lǐ lùn jūn chén zuǒ shǐ sì qì wǔ wèi qī qíng hé hé",
+        "en": "Theory of medicinal properties: Sovereign, Minister, Assistant, and Envoy, Four Natures and Five Flavors, and Seven Emotions of herb combinations."
+      },
+      {
+        "zh": "价值：奠定了中药学理论基础。",
+        "pinyin": "jià zhí diàn dìng le zhōng yào xué lǐ lùn jī chǔ",
+        "en": "Value: Established the theoretical foundation of Chinese Materia Medica."
+      }
+    ]
+  },
+  {
+    "slide": 21,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（二）中医学理论体系的发展汉代以后，",
+        "pinyin": "èr zhōng yī xué lǐ lùn tǐ xì de fā zhǎn hàn dài yǐ hòu",
+        "en": "(II) Development of the TCM Theoretical System: After the Han Dynasty,"
+      },
+      {
+        "zh": "医学理论不断创新，",
+        "pinyin": "yī xué lǐ lùn bù duàn chuàng xīn",
+        "en": "medical theories were continuously innovated,"
+      },
+      {
+        "zh": "治疗技术不断提高，",
+        "pinyin": "zhì liáo jì shù bù duàn tí gāo",
+        "en": "therapeutic techniques were constantly improved,"
+      },
+      {
+        "zh": "中医学进入了全面发展时期。",
+        "pinyin": "zhōng yī xué jìn rù le quán miàn fā zhǎn shí qī",
+        "en": "and Traditional Chinese Medicine entered a period of comprehensive development."
+      },
+      {
+        "zh": "1.魏晋隋唐时期",
+        "pinyin": "wèi jìn suí táng shí qī",
+        "en": "1. The Wei, Jin, Sui, and Tang Dynasties"
+      },
+      {
+        "zh": "晋·王叔和《脉经》，第一部脉学专著。",
+        "pinyin": "jìn wáng shū hé mài jīng dì yī bù mài xué zhuān zhù",
+        "en": "Wang Shuhe (Jin Dynasty) wrote the 'Pulse Classic' (Mai Jing), the first monograph on sphygmology (the study of pulse diagnosis)."
+      },
+      {
+        "zh": "晋·皇甫谧《针灸甲乙经》，最早的针灸学专著。",
+        "pinyin": "jìn huáng fǔ mì zhēn jiǔ jiǎ yǐ jīng zuì zǎo de zhēn jiǔ xué zhuān zhù",
+        "en": "Huangfu Mi (Jin Dynasty) wrote the 'A-B Classic of Acupuncture and Moxibustion' (Zhenjiu Jiayi Jing), the earliest monograph on acupuncture and moxibustion."
+      },
+      {
+        "zh": "晋·葛洪《肘后备急方》为中医学第一部临床急症著作。",
+        "pinyin": "jìn gě hóng zhǒu hòu bèi jí fāng wèi zhōng yī xué dì yī bù lín chuáng jí zhèng zhù zuò",
+        "en": "Ge Hong (Jin Dynasty) wrote 'Emergency Prescriptions Kept Up One's Sleeve' (Zhouhou Beiji Fang), the first TCM work on clinical emergency medicine."
+      },
+      {
+        "zh": "隋·巢元方《诸病源候论》，第一部病因病机证候学专著。",
+        "pinyin": "suí cháo yuán fāng zhū bìng yuán hòu lùn dì yī bù bìng yīn bìng jī zhèng hòu xué zhuān zhù",
+        "en": "Chao Yuanfang (Sui Dynasty) wrote 'General Treatise on the Causes and Manifestations of Disease' (Zhu Bing Yuan Hou Lun), the first monograph on the study of disease etiology, pathogenesis, and patterns (syndromes)."
+      },
+      {
+        "zh": "唐·孙思邈《备急千金要方》和《千金翼方》第一部医学百科全书，",
+        "pinyin": "táng sūn sī miǎo bèi jí qiān jīn yào fāng hé qiān jīn yì fāng dì yī bù yī xué bǎi kē quán shū",
+        "en": "Sun Simiao (Tang Dynasty) wrote the 'Essential Formulas for Emergencies Worth a Thousand Gold' (Beiji Qianjin Yaofang) and the 'Supplement to the Essential Formulas Worth a Thousand Gold' (Qianjin Yifang), the first medical encyclopedias,"
+      },
+      {
+        "zh": "代表了盛唐医学发展水平。",
+        "pinyin": "dài biǎo le shèng táng yī xué fā zhǎn shuǐ píng",
+        "en": "which represent the level of medical development during the peak of the Tang Dynasty."
+      },
+      {
+        "zh": "提出了“大医精诚”，开中国医学伦理学之先河。",
+        "pinyin": "tí chū le dà yī jīng chéng kāi zhōng guó yī xué lún lǐ xué zhī xiān hé",
+        "en": "He proposed 'The Sincerity of the Great Physician,' pioneering the field of Chinese medical ethics."
+      }
+    ]
+  },
+  {
+    "slide": 22,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2.宋金元时期 （公元960-1368年）",
+        "pinyin": "sòng jīn yuán shí qī gōng yuán nián",
+        "en": "2. The Song, Jin, and Yuan Dynasties (960–1368 AD)"
+      },
+      {
+        "zh": "北宋·钱已（字仲阳）著成《小儿药证直诀》，",
+        "pinyin": "běi sòng qián yǐ zì zhòng yáng zhù chéng xiǎo ér yào zhèng zhí jué",
+        "en": "Qian Yi (courtesy name Zhongyang) of the Northern Song Dynasty authored 'Key to Therapeutics of Children's Diseases' (Xiao'er Yaozheng Zhijue),"
+      },
+      {
+        "zh": "系统论述了小儿体质、",
+        "pinyin": "xì tǒng lùn shù le xiǎo ér tǐ zhì",
+        "en": "systematically discussing pediatric constitution,"
+      },
+      {
+        "zh": "病机及治疗特点。",
+        "pinyin": "bìng jī jí zhì liáo tè diǎn",
+        "en": "pathogenesis, and treatment characteristics."
+      },
+      {
+        "zh": "南宋·陈言（字无择）著成《三因极一病证方论》，",
+        "pinyin": "nán sòng chén yán zì wú zé zhù chéng sān yīn jí yī bìng zhèng fāng lùn",
+        "en": "Chen Yan (courtesy name Wuze) of the Southern Song Dynasty authored 'Treatise on Three Categories of Pathogenic Factors and Formulas' (Sanyin Jiyi Bingzheng Fanglun),"
+      },
+      {
+        "zh": "简称《三因方》——三因学说。",
+        "pinyin": "jiǎn chēng sān yīn fāng sān yīn xué shuō",
+        "en": "abbreviated as 'Sanyin Fang,' which introduced the Three-Cause Theory."
+      }
+    ]
+  },
+  {
+    "slide": 23,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "金元四大家刘完素（字守真），",
+        "pinyin": "jīn yuán sì dà jiā liú wán sù zì shǒu zhēn",
+        "en": "One of the Four Great Masters of the Jin and Yuan Dynasties, Liu Wansu (courtesy name Shouzhen),"
+      },
+      {
+        "zh": "创河间学派（后人尊称刘河间），",
+        "pinyin": "chuàng hé jiān xué pài hòu rén zūn chēng liú hé jiān",
+        "en": "founded the Hejian School (later generations respectfully called him Liu Hejian),"
+      },
+      {
+        "zh": "倡导火热论—寒凉派。",
+        "pinyin": "chàng dǎo huǒ rè lùn hán liáng pài",
+        "en": "advocating the 'Fire-Heat Theory'—the Cold-Cool School."
+      },
+      {
+        "zh": "张从正（字子和，",
+        "pinyin": "zhāng cóng zhèng zì zi hé",
+        "en": "Zhang Congzheng (courtesy name Zihe,"
+      },
+      {
+        "zh": "号戴人），",
+        "pinyin": "hào dài rén",
+        "en": "alias Dairen),"
+      },
+      {
+        "zh": "倡“邪非人身所有，",
+        "pinyin": "chàng xié fēi rén shēn suǒ yǒu",
+        "en": "advocated that 'pathogens are not native to the human body;'"
+      },
+      {
+        "zh": "邪去则正安”—攻邪派。",
+        "pinyin": "xié qù zé zhèng ān gōng xié pài",
+        "en": "once pathogens are removed, the righteous (healthy) qi is restored—the Purgative (Attack) School."
+      },
+      {
+        "zh": "李杲（字明之，",
+        "pinyin": "lǐ gǎo zì míng zhī",
+        "en": "Li Gao (courtesy name Mingzhi,"
+      },
+      {
+        "zh": "号东垣老人），",
+        "pinyin": "hào dōng yuán lǎo rén",
+        "en": "alias Elder Dongyuan),"
+      },
+      {
+        "zh": "倡“百病皆由脾胃衰而生也”—补土派。",
+        "pinyin": "chàng bǎi bìng jiē yóu pí wèi shuāi ér shēng yě bǔ tǔ pài",
+        "en": "advocated that 'all diseases arise from the weakening of the Spleen and Stomach'—the Earth-Supplementing School."
+      },
+      {
+        "zh": "朱震亨（字彦修，",
+        "pinyin": "zhū zhèn hēng zì yàn xiū",
+        "en": "Zhu Zhenheng (courtesy name Yanxiu,"
+      },
+      {
+        "zh": "号丹溪翁，",
+        "pinyin": "hào dān xī wēng",
+        "en": "alias Danxi Weng,"
+      },
+      {
+        "zh": "后人尊称朱丹溪），",
+        "pinyin": "hòu rén zūn chēng zhū dān xī",
+        "en": "later generations respectfully called him Zhu Danxi),"
+      },
+      {
+        "zh": "倡“阳常有余，",
+        "pinyin": "chàng yáng cháng yǒu yú",
+        "en": "advocated that 'Yang is often in excess,'"
+      },
+      {
+        "zh": "阴常不足”—滋阴派。",
+        "pinyin": "yīn cháng bù zú zī yīn pài",
+        "en": "and 'Yin is often deficient'—the Yin-Nourishing School."
+      }
+    ]
+  },
+  {
+    "slide": 25,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "刘完素（公元1120--1200年）字守真，",
+        "pinyin": "liú wán sù gōng yuán nián zì shǒu zhēn",
+        "en": "Liu Wansu (1120–1200 AD), courtesy name Shouzhen,"
+      },
+      {
+        "zh": "河北河间人，",
+        "pinyin": "hé běi hé jiān rén",
+        "en": "was from Hejian, Hebei,"
+      },
+      {
+        "zh": "故亦称刘河间，",
+        "pinyin": "gù yì chēng liú hé jiān",
+        "en": "hence he is also known as Liu Hejian,"
+      },
+      {
+        "zh": "别号守真子，",
+        "pinyin": "bié hào shǒu zhēn zi",
+        "en": "with the alternative alias Shouzhenzi,"
+      },
+      {
+        "zh": "自号，",
+        "pinyin": "zì hào",
+        "en": "and he styled himself,"
+      },
+      {
+        "zh": "通玄处士。",
+        "pinyin": "tōng xuán chǔ shì",
+        "en": "the Recluse of Profound Truth."
+      },
+      {
+        "zh": "是宋金医学界最早敢于创新并且影响较大的一位医家，",
+        "pinyin": "shì sòng jīn yī xué jiè zuì zǎo gǎn yú chuàng xīn bìng qiě yǐng xiǎng jiào dà de yī wèi yī jiā",
+        "en": "He was the earliest physician in the Song and Jin medical community to dare to innovate and was highly influential."
+      },
+      {
+        "zh": "刘氏认为“法之与术，",
+        "pinyin": "liú shì rèn wéi fǎ zhī yǔ shù",
+        "en": "Liu believed that 'all methods and techniques',"
+      },
+      {
+        "zh": "悉出《内经》之玄机”，",
+        "pinyin": "xī chū nèi jīng zhī xuán jī",
+        "en": "derive entirely from the profound mechanisms of the 'Inner Canon' (Huangdi Neijing)."
+      },
+      {
+        "zh": "创造性地发挥了《内经》病机十九条的理论，",
+        "pinyin": "chuàng zào xìng dì fā huī le nèi jīng bìng jī shí jiǔ tiáo de lǐ lùn",
+        "en": "He creatively expanded upon the 'Nineteen Pathogenic Mechanisms' theory from the 'Inner Canon',"
+      },
+      {
+        "zh": "认为疾病多因火热而起，",
+        "pinyin": "rèn wéi jí bìng duō yīn huǒ rè ér qǐ",
+        "en": "believing that most diseases arise due to fire and heat."
+      },
+      {
+        "zh": "倡“六气皆从火化”说，",
+        "pinyin": "chàng liù qì jiē cóng huǒ huà shuō",
+        "en": "He advocated the theory that 'the six qi all transform into fire,'"
+      },
+      {
+        "zh": "治疗多用寒凉药，",
+        "pinyin": "zhì liáo duō yòng hán liáng yào",
+        "en": "and in treatment, he often used cold and cool herbs,"
+      },
+      {
+        "zh": "世称“寒凉派”。",
+        "pinyin": "shì chēng hán liáng pài",
+        "en": "becoming known in the world as the 'Cold-Cool School.'"
+      }
+    ]
+  },
+  {
+    "slide": 26,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "李杲（公元1180-1251年），",
+        "pinyin": "lǐ gǎo gōng yuán nián",
+        "en": "Li Gao (1180–1251 AD),"
+      },
+      {
+        "zh": "字明之，",
+        "pinyin": "zì míng zhī",
+        "en": "courtesy name Mingzhi,"
+      },
+      {
+        "zh": "号东垣老人，",
+        "pinyin": "hào dōng yuán lǎo rén",
+        "en": "alias Elder Dongyuan,"
+      },
+      {
+        "zh": "是著名医家张元素的高徒，",
+        "pinyin": "shì zhù míng yī jiā zhāng yuán sù de gāo tú",
+        "en": "was a top student of the famous physician Zhang Yuansu."
+      },
+      {
+        "zh": "他发探了张氏脏腑辨证之长，",
+        "pinyin": "tā fā tàn le zhāng shì zàng fǔ biàn zhèng zhī zhǎng",
+        "en": "He explored the strengths of Zhang's Zang-Fu organ differentiation,"
+      },
+      {
+        "zh": "区分了外感与内伤。",
+        "pinyin": "qū fēn le wài gǎn yǔ nèi shāng",
+        "en": "distinguishing between external contraction (exterior patterns) and internal damage (internal conditions)."
+      },
+      {
+        "zh": "认为“人以胃气为本”，“内伤脾胃，百病由生”。",
+        "pinyin": "rèn wéi rén yǐ wèi qì wèi běn nèi shāng pí wèi bǎi bìng yóu shēng",
+        "en": "He believed that 'humans are rooted in Stomach qi,' and 'when the Spleen and Stomach are damaged, the hundred diseases are born.'"
+      },
+      {
+        "zh": "首创内伤学说理论，代表作是《脾胃论》。",
+        "pinyin": "shǒu chuàng nèi shāng xué shuō lǐ lùn dài biǎo zuò shì pí wèi lùn",
+        "en": "He pioneered the theory of Internal Damage, and his representative work is the 'Treatise on the Spleen and Stomach' (Piwei Lun)."
+      },
+      {
+        "zh": "他采取了一套以“调理脾胃”，",
+        "pinyin": "tā cǎi qǔ le yī tào yǐ tiáo lǐ pí wèi",
+        "en": "He adopted a set of therapeutic methods primarily focused on 'regulating the Spleen and Stomach'"
+      },
+      {
+        "zh": "“升举清阳”为主的治疗方法，",
+        "pinyin": "shēng jǔ qīng yáng wéi zhǔ de zhì liáo fāng fǎ",
+        "en": "and 'raising the clear Yang qi,'"
+      },
+      {
+        "zh": "世称“补土派”。",
+        "pinyin": "shì chēng bǔ tǔ pài",
+        "en": "becoming known in the world as the 'Earth-Supplementing School.'"
+      },
+      {
+        "zh": "所创的不少著名方剂，",
+        "pinyin": "suǒ chuàng de bù shǎo zhù míng fāng jì",
+        "en": "Many famous formulas he created,"
+      },
+      {
+        "zh": "如升阳益胃汤、",
+        "pinyin": "rú shēng yáng yì wèi tāng",
+        "en": "such as Raising Yang and Benefiting the Stomach Decoction,"
+      },
+      {
+        "zh": "补中益气汤（丸）、",
+        "pinyin": "bǔ zhōng yì qì tāng wán",
+        "en": "Decoction (or Pills) to Supplement the Center and Benefit Qi,"
+      },
+      {
+        "zh": "调中益气汤等等为后世广泛应用。",
+        "pinyin": "diào zhōng yì qì tāng děng děng wèi hòu shì guǎng fàn yìng yòng",
+        "en": "and Regulating the Center and Benefiting Qi Decoction, etc., are widely used by later generations."
+      },
+      {
+        "zh": "其著作多由其徒罗谦甫整理。",
+        "pinyin": "qí zhù zuò duō yóu qí tú luó qiān fǔ zhěng lǐ",
+        "en": "His works were mostly compiled by his student Luo Qianfu."
+      }
+    ]
+  },
+  {
+    "slide": 27,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "张从正（约公元1156-1228年），字子和，号戴人。",
+        "pinyin": "zhāng cóng zhèng yuē gōng yuán nián zì zi hé hào dài rén",
+        "en": "Zhang Congzheng (approx. 1156–1228 AD), courtesy name Zihe, alias Dairen."
+      },
+      {
+        "zh": "也是-位具有革新思想的医家，",
+        "pinyin": "yě shì wèi jù yǒu gé xīn sī xiǎng de yī jiā",
+        "en": "He was also a physician with innovative ideas."
+      },
+      {
+        "zh": "其代表作是《儒门事亲》（其中前三卷为张氏亲撰），",
+        "pinyin": "qí dài biǎo zuò shì rú mén shì qīn qí zhōng qián sān juǎn wèi zhāng shì qīn zhuàn",
+        "en": "His representative work is 'Confucian's Duties to their Parents' (Rumen Shiqin) (the first three volumes of which were written by Zhang himself)."
+      },
+      {
+        "zh": "张氏私淑刘河间，",
+        "pinyin": "zhāng shì sī shū liú hé jiān",
+        "en": "Zhang was a private student of Liu Hejian,"
+      },
+      {
+        "zh": "善用攻法，",
+        "pinyin": "shàn yòng gōng fǎ",
+        "en": "and was skilled at using 'attack methods' (purgative/expelling therapies)."
+      },
+      {
+        "zh": "认为“治病应着重驱邪，",
+        "pinyin": "rèn wéi zhì bìng yīng zhuó zhòng qū xié",
+        "en": "He believed that 'treating disease should focus on expelling pathogenic factors,'"
+      },
+      {
+        "zh": "邪去则正安，",
+        "pinyin": "xié qù zé zhèng ān",
+        "en": "and 'once pathogens are removed, the healthy qi is restored.'"
+      },
+      {
+        "zh": "不可畏攻而养“病”，",
+        "pinyin": "bù kě wèi gōng ér yǎng bìng",
+        "en": "One should not fear using attacking methods and thereby 'nourish the disease.'"
+      },
+      {
+        "zh": "发展和丰富了应用“汗、",
+        "pinyin": "fā zhǎn hé fēng fù le yìng yòng hàn",
+        "en": "He developed and enriched the application of the three methods of 'sweating,'"
+      },
+      {
+        "zh": "吐、",
+        "pinyin": "tǔ",
+        "en": "'vomiting,'"
+      },
+      {
+        "zh": "下”三法，",
+        "pinyin": "xià sān fǎ",
+        "en": "and 'purging' (downward drainage),"
+      },
+      {
+        "zh": "世称“攻下派”（攻邪派）。",
+        "pinyin": "shì chēng gōng xià pài gōng xié pài",
+        "en": "becoming known in the world as the 'Purgative School' (or Attack-Pathogen School)."
+      }
+    ]
+  },
+  {
+    "slide": 28,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "朱震亨（公元1281-1358年），字彦修。",
+        "pinyin": "zhū zhèn hēng gōng yuán nián zì yàn xiū",
+        "en": "Zhu Zhenheng (1281–1358 AD), courtesy name Yanxiu."
+      },
+      {
+        "zh": "浙江义乌人，世居丹溪之边，因以为号。",
+        "pinyin": "zhè jiāng yì wū rén shì jū dān xī zhī biān yīn yǐ wéi hào",
+        "en": "He was from Yiwu, Zhejiang, and lived near Danxi, which he took as his alias."
+      },
+      {
+        "zh": "他充分研究了《内经》以来，",
+        "pinyin": "tā chōng fèn yán jiū le nèi jīng yǐ lái",
+        "en": "He thoroughly studied the insights of various schools since the 'Inner Canon'"
+      },
+      {
+        "zh": "各家学说关于“相火”的见解，",
+        "pinyin": "gè jiā xué shuō guān yú xiāng huǒ de jiàn jiě",
+        "en": "regarding 'Ministerial Fire' (Xianghuo),"
+      },
+      {
+        "zh": "创造性地阐明了“相火”有常有变的规律，",
+        "pinyin": "chuàng zào xìng dì chǎn míng le xiāng huǒ yǒu cháng yǒu biàn de guī lǜ",
+        "en": "and creatively elucidated the laws of how 'Ministerial Fire' manifests both normally and pathologically."
+      },
+      {
+        "zh": "提出了著名的“阳常有余，",
+        "pinyin": "tí chū le zhù míng de yáng cháng yǒu yú",
+        "en": "He proposed the famous viewpoint that 'Yang is often in excess,'"
+      },
+      {
+        "zh": "阴常不足”的观点，",
+        "pinyin": "yīn cháng bù zú de guān diǎn",
+        "en": "and 'Yin is often deficient,'"
+      },
+      {
+        "zh": "临症治疗上提倡滋阴降火之法。",
+        "pinyin": "lín zhèng zhì liáo shàng tí chàng zī yīn jiàng huǒ zhī fǎ",
+        "en": "advocating the method of nourishing Yin and descending fire in clinical practice."
+      },
+      {
+        "zh": "世称“滋阴派”。",
+        "pinyin": "shì chēng zī yīn pài",
+        "en": "He became known in the world as the 'Yin-Nourishing School.'"
+      }
+    ]
+  },
+  {
+    "slide": 29,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "3.明清时期",
+        "pinyin": "míng qīng shí qī",
+        "en": "3. The Ming and Qing Dynasties"
+      },
+      {
+        "zh": "明清时期，",
+        "pinyin": "míng qīng shí qī",
+        "en": "The Ming and Qing dynasties,"
+      },
+      {
+        "zh": "是中医学理论的综合汇通和深化发展阶段，",
+        "pinyin": "shì zhōng yī xué lǐ lùn de zōng hé huì tōng hé shēn huà fā zhǎn jiē duàn",
+        "en": "were a stage of synthesis, integration, and deepened development for TCM theory."
+      },
+      {
+        "zh": "既有许多新的发明和创见，",
+        "pinyin": "jì yǒu xǔ duō xīn de fā míng hé chuàng jiàn",
+        "en": "There were not only many new inventions and original insights,"
+      },
+      {
+        "zh": "又有对医学理论和经验的综合整理，",
+        "pinyin": "yòu yǒu duì yī xué lǐ lùn hé jīng yàn de zōng hé zhěng lǐ",
+        "en": "but also comprehensive organization of medical theories and experiences,"
+      },
+      {
+        "zh": "编撰了大量的医学全书、",
+        "pinyin": "biān zhuàn le dà liàng de yī xué quán shū",
+        "en": "with the compilation of a large number of medical encyclopedias,"
+      },
+      {
+        "zh": "丛书和类书。",
+        "pinyin": "cóng shū hé lèi shū",
+        "en": "collected works, and categorical compendiums."
+      },
+      {
+        "zh": "明代命门学说张介宾（字景岳），",
+        "pinyin": "míng dài mìng mén xué shuō zhāng jiè bīn zì jǐng yuè",
+        "en": "Zhang Jiebin (courtesy name Jingyue) of the Ming Dynasty, who focused on the Gate of Vitality (Mingmen) theory,"
+      },
+      {
+        "zh": "提出“阳非有余”“真阴不足”的见解。",
+        "pinyin": "tí chū yáng fēi yǒu yú zhēn yīn bù zú de jiàn jiě",
+        "en": "proposed the insight that 'Yang is not necessarily in excess' and 'True Yin is often deficient.'"
+      },
+      {
+        "zh": "强调温补肾阳和滋养肾阴在养生康复与防治疾病中的重要性。",
+        "pinyin": "qiáng diào wēn bǔ shèn yáng hé zī yǎng shèn yīn zài yǎng shēng kāng fù yǔ fáng zhì jí bìng zhòng dì zhòng yào xìng",
+        "en": "He emphasized the importance of warming and tonifying Kidney Yang and nourishing Kidney Yin in health preservation, rehabilitation, and disease prevention and treatment."
+      },
+      {
+        "zh": "赵献可（字养葵），注重命门之火在养生防病中的重要意义。",
+        "pinyin": "zhào xiàn kě zì yǎng kuí zhù zhòng mìng mén zhī huǒ zài yǎng shēng fáng bìng zhòng dì zhòng yào yì yì",
+        "en": "Zhao Xianke (courtesy name Yangkui) attached importance to the significance of the fire of the Gate of Vitality in health preservation and disease prevention."
+      }
+    ]
+  },
+  {
+    "slide": 30,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "明清时期温病学说吴有性著《温疫论》，",
+        "pinyin": "míng qīng shí qī wēn bìng xué shuō wú yǒu xìng zhù wēn yì lùn",
+        "en": "During the Ming and Qing dynasties, Wu Youxing authored the 'Treatise on Epidemics' (Wenyi Lun),"
+      },
+      {
+        "zh": "创“戾气”说，",
+        "pinyin": "chuàng lì qì shuō",
+        "en": "creating the 'Li Qi' (pathogenic pestilence factor) theory,"
+      },
+      {
+        "zh": "对传染病病因有了较深刻的认识。",
+        "pinyin": "duì chuán rǎn bìng bìng yīn yǒu le jiào shēn kè de rèn shi",
+        "en": "and developed a profound understanding of the causes of infectious diseases."
+      },
+      {
+        "zh": "叶桂著《温热论》 ，",
+        "pinyin": "yè guì zhù wēn rè lùn",
+        "en": "Ye Gui authored 'Treatise on Warm-Heat Diseases' (Wenre Lun),"
+      },
+      {
+        "zh": "创卫气营血辨证，",
+        "pinyin": "chuàng wèi qì yíng xuè biàn zhèng",
+        "en": "creating the 'Wei, Qi, Ying, and Xue' (Defensive, Qi, Nutritive, and Blood) pattern differentiation,"
+      },
+      {
+        "zh": "对温病学的发展起了承前启后的作用。",
+        "pinyin": "duì wēn bìng xué de fā zhǎn qǐ le chéng qián qǐ hòu de zuò yòng",
+        "en": "which played a role in connecting the past and the future for the development of Wenbing (Warm-Disease) studies."
+      },
+      {
+        "zh": "薛雪著《湿热条辨》，创新温病学说的湿热病因理论。",
+        "pinyin": "xuē xuě zhù shī rè tiáo biàn chuàng xīn wēn bìng xué shuō de shī rè bìng yīn lǐ lùn",
+        "en": "Xue Xue authored 'Detailed Analysis of Damp-Heat' (Shire Tiaobian), innovating the theory of damp-heat etiology in Warm-Disease studies."
+      },
+      {
+        "zh": "吴瑭著《温病条辨》，",
+        "pinyin": "wú táng zhù wēn bìng tiáo biàn",
+        "en": "Wu Tang authored 'Systematic Differentiation of Warm Diseases' (Wenbing Tiaobian),"
+      },
+      {
+        "zh": "创温热病的三焦辨证理论，",
+        "pinyin": "chuàng wēn rè bìng de sān jiāo biàn zhèng lǐ lùn",
+        "en": "creating the 'Three Jiao' (Triple Burner) differentiation theory for warm-heat diseases,"
+      },
+      {
+        "zh": "使温病学说进一步得到完善。",
+        "pinyin": "shǐ wēn bìng xué shuō jìn yī bù dé dào wán shàn",
+        "en": "further perfecting the Warm-Disease school."
+      },
+      {
+        "zh": "王梦英著《温热经纬》《霍乱论》-“新感”“伏邪”",
+        "pinyin": "wáng mèng yīng zhù wēn rè jīng wěi huò luàn lùn xīn gǎn fú xié",
+        "en": "Wang Mengying authored 'Latitude and Longitude of Warm-Heat Diseases' (Wenre Jingwei) and 'Treatise on Cholera' (Huoluan Lun), covering 'newly contracted' and 'latent' pathogens."
+      }
+    ]
+  },
+  {
+    "slide": 31,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "李时珍《本草纲目》成书于公元1578年，",
+        "pinyin": "lǐ shí zhēn běn cǎo gāng mù chéng shū yú gōng yuán nián",
+        "en": "Li Shizhen's 'Bencao Gangmu' (Compendium of Materia Medica) was completed in 1578 AD,"
+      },
+      {
+        "zh": "记载中药1892种，",
+        "pinyin": "jì zǎi zhōng yào zhǒng",
+        "en": "recording 1892 types of medicinals,"
+      },
+      {
+        "zh": " 分为16部60类，",
+        "pinyin": "fēn wéi bù lèi",
+        "en": "divided into 16 divisions and 60 categories,"
+      },
+      {
+        "zh": "为驰名中外的中药学巨著。",
+        "pinyin": "wèi chí míng zhōng wài de zhōng yào xué jù zhù",
+        "en": "a world-renowned masterpiece of Chinese Materia Medica."
+      },
+      {
+        "zh": "全面总结了明以前的药性理论，保存了大量医药文献。",
+        "pinyin": "quán miàn zǒng jié le míng yǐ qián de yào xìng lǐ lùn bǎo cún le dà liàng yī yào wén xiàn",
+        "en": "It comprehensively summarized the theories of medicinal properties before the Ming dynasty and preserved a large amount of medical literature."
+      },
+      {
+        "zh": "中国人在世界上第一次提出来植物分类学思想。",
+        "pinyin": "zhōng guó rén zài shì jiè shàng dì yī cì tí chū lái zhí wù fēn lèi xué sī xiǎng",
+        "en": "It was the first time in the world that a Chinese person proposed the idea of botanical classification."
+      }
+    ]
+  },
+  {
+    "slide": 32,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "明·徐春甫《古今医统大全》书成于嘉靖三十五年(1556)，",
+        "pinyin": "míng xú chūn fǔ gǔ jīn yī tǒng dà quán shū chéng yú jiā jìng sān shí wǔ nián",
+        "en": "Ming dynasty: Xu Chunfu's 'Gujin Yitong Daquan' (Complete Compendium of Ancient and Modern Medicine) was completed in the 35th year of Jiajing (1556),"
+      },
+      {
+        "zh": "辑录230余部医籍，",
+        "pinyin": "jí lù yú bù yī jí",
+        "en": "compiling over 230 medical books,"
+      },
+      {
+        "zh": "为中医学全书。",
+        "pinyin": "wèi zhōng yī xué quán shū",
+        "en": "serving as a complete encyclopedia of TCM."
+      },
+      {
+        "zh": "明·王肯堂《证治准绳》 著名中医学临床医学丛书。",
+        "pinyin": "míng wáng kěn táng zhèng zhì zhǔn shéng zhù míng zhōng yī xué lín chuáng yī xué cóng shū",
+        "en": "Ming dynasty: Wang Kentang's 'Zhengzhi Zhunsheng' (Standards for Diagnosis and Treatment), a famous TCM clinical medical series."
+      },
+      {
+        "zh": "刊于1602年。",
+        "pinyin": "kān yú nián",
+        "en": "Published in 1602."
+      },
+      {
+        "zh": "清·陈梦雷等《古今图书集成医部全录》，著名中医学类书。",
+        "pinyin": "qīng chén mèng léi děng gǔ jīn tú shū jí chéng yī bù quán lù zhù míng zhōng yī xué lèi shū",
+        "en": "Qing dynasty: Chen Menglei et al., 'Gujin Tushu Jicheng Yibu Quanlu' (Complete Medical Records from the Encyclopedia of Ancient and Modern Books), a famous TCM reference work."
+      },
+      {
+        "zh": "1723年。",
+        "pinyin": "nián",
+        "en": "1723."
+      },
+      {
+        "zh": "清·吴谦等《医宗金鉴》，为太医院中医学教科书。",
+        "pinyin": "qīng wú qiān děng yī zōng jīn jiàn wèi tài yī yuàn zhōng yī xué jiào kē shū",
+        "en": "Qing dynasty: Wu Qian et al., 'Yizong Jinjian' (Golden Mirror of the Medical Tradition), used as the official medical textbook for the Imperial Medical Academy."
+      },
+      {
+        "zh": "1742年。",
+        "pinyin": "nián",
+        "en": "1742."
+      }
+    ]
+  },
+  {
+    "slide": 33,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "王清任（字勋臣，",
+        "pinyin": "wáng qīng rèn zì xūn chén",
+        "en": "Wang Qingren (courtesy name Xunchen,"
+      },
+      {
+        "zh": "河北玉田县人）长期医疗实践中，",
+        "pinyin": "hé běi yù tián xiàn rén cháng qī yī liáo shí jiàn zhōng",
+        "en": "native of Yutian County, Hebei) in long-term medical practice,"
+      },
+      {
+        "zh": "认识到要掌握好医学，",
+        "pinyin": "rèn shi dào yào zhǎng wò hǎo yī xué",
+        "en": "realized that to master medicine well,"
+      },
+      {
+        "zh": "首先要对脏腑组织器官有正确的了解，",
+        "pinyin": "shǒu xiān yào duì zàng fǔ zǔ zhī qì guān yǒu zhèng què de liǎo jiě",
+        "en": "one must first have a correct understanding of visceral and organ structures,"
+      },
+      {
+        "zh": "于是开始解剖学研究。",
+        "pinyin": "yú shì kāi shǐ jiě pōu xué yán jiū",
+        "en": "and thus began anatomical research."
+      },
+      {
+        "zh": "1830年著成《医林改错》，",
+        "pinyin": "nián zhù chéng yī lín gǎi cuò",
+        "en": "In 1830, he finished 'Yilin Gaicuo' (Correction of Errors in the Forest of Medicine),"
+      },
+      {
+        "zh": "改正古医籍人体解剖中脏腑位置、",
+        "pinyin": "gǎi zhèng gǔ yī jí rén tǐ jiě pōu zhōng zàng fǔ wèi zhi",
+        "en": "correcting certain errors in ancient medical books regarding the position,"
+      },
+      {
+        "zh": "大小和重量的某些错误。",
+        "pinyin": "dà xiǎo hé zhòng liàng de mǒu xiē cuò wù",
+        "en": "size, and weight of internal organs."
+      },
+      {
+        "zh": "肯定了“灵机记性不在心（而）在脑”。",
+        "pinyin": "kěn dìng le líng jī jì xing bù zài xīn ér zài nǎo",
+        "en": "He affirmed that 'intelligence and memory reside not in the heart, but in the brain'."
+      },
+      {
+        "zh": "发展了中医的瘀血理论：认为气与血皆为人体生命的源泉，",
+        "pinyin": "fā zhǎn le zhōng yī de yū xuè lǐ lùn rèn wéi qì yǔ xuè jiē wéi rén tǐ shēng mìng de yuán quán",
+        "en": "He developed the TCM theory of Blood Stasis: believing that both Qi and blood are the sources of human life,"
+      },
+      {
+        "zh": "认为瘀血是正虚推动无力造成。",
+        "pinyin": "rèn wéi yū xuè shì zhèng xū tuī dòng wú lì zào chéng",
+        "en": "and that blood stasis is caused by the inability of weak Zheng (vital energy) to drive circulation."
+      }
+    ]
+  },
+  {
+    "slide": 34,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "4.近代与现代",
+        "pinyin": "jìn dài yǔ xiàn dài",
+        "en": "4. Modern and Contemporary Times"
+      },
+      {
+        "zh": "近代时期（1840年以后），",
+        "pinyin": "jìn dài shí qī nián yǐ hòu",
+        "en": "Modern period (after 1840),"
+      },
+      {
+        "zh": "随着社会制度的变更，",
+        "pinyin": "suí zhe shè huì zhì dù de biàn gēng",
+        "en": "with the change of the social system,"
+      },
+      {
+        "zh": "西方科技和文化的传入，",
+        "pinyin": "xī fāng kē jì hé wén huà de chuán rù",
+        "en": "and the introduction of Western science, technology, and culture,"
+      },
+      {
+        "zh": "中西文化出现了大碰撞与交融，",
+        "pinyin": "zhōng xī wén huà chū xiàn le dà pèng zhuàng yǔ jiāo róng",
+        "en": "there was a major collision and fusion of Chinese and Western cultures,"
+      },
+      {
+        "zh": "中医学理论的发展呈现出新旧并存的趋势：一是继续走收集和整理前人的学术成果之路，",
+        "pinyin": "zhōng yī xué lǐ lùn de fā zhǎn chéng xiàn chū xīn jiù bìng cún de qū shì yī shì jì xù zǒu shōu jí hé zhěng lǐ qián rén de xué shù chéng guǒ zhī lù",
+        "en": "and the development of TCM theory showed a trend where the old and new coexisted: one was the continued path of collecting and organizing previous academic achievements,"
+      },
+      {
+        "zh": "如30年代曹炳章主编的《中国医学大成》，",
+        "pinyin": "rú nián dài cáo bǐng zhāng zhǔ biān de zhōng guó yī xué dà chéng",
+        "en": "such as the 1930s 'Zhongguo Yixue Dacheng' (Great Encyclopedia of Chinese Medicine) edited by Cao Bingzhang,"
+      },
+      {
+        "zh": "是一部集古今中医学大成的巨著；",
+        "pinyin": "shì yī bù jí gǔ jīn zhōng yī xué dà chéng de jù zhù",
+        "en": "a masterpiece gathering ancient and modern TCM knowledge;"
+      },
+      {
+        "zh": "二是出现了中西汇通和中医学理论科学化的思潮，",
+        "pinyin": "èr shì chū xiàn le zhōng xī huì tōng hé zhōng yī xué lǐ lùn kē xué huà de sī cháo",
+        "en": "the second was the emergence of a movement to synthesize Chinese and Western medicine and make TCM theory scientific,"
+      },
+      {
+        "zh": "以唐宗海、",
+        "pinyin": "yǐ táng zōng hǎi",
+        "en": "with the School of Sin-Western Synthesis represented by Tang Zonghai,"
+      },
+      {
+        "zh": "朱沛文、",
+        "pinyin": "zhū pèi wén",
+        "en": "Zhu Peiwen,"
+      },
+      {
+        "zh": "恽铁樵、",
+        "pinyin": "yùn tiě qiáo",
+        "en": "Yun Tieqiao,"
+      },
+      {
+        "zh": "张锡纯为代表的中西汇通学派，",
+        "pinyin": "zhāng xī chún wèi dài biǎo de zhōng xī huì tōng xué pài",
+        "en": "and Zhang Xichun,"
+      },
+      {
+        "zh": "认为中西医互有优劣，",
+        "pinyin": "rèn wéi zhōng xī yī hù yǒu yōu liè",
+        "en": "who believed that TCM and Western medicine each have their advantages and disadvantages,"
+      },
+      {
+        "zh": "可以殊途同归，",
+        "pinyin": "kě yǐ shū tú tóng guī",
+        "en": "and can reach the same goal by different routes,"
+      },
+      {
+        "zh": "主张汲取西医之长以发展中医，",
+        "pinyin": "zhǔ zhāng jí qǔ xī yī zhī zhǎng yǐ fā zhǎn zhōng yī",
+        "en": "advocating for absorbing the strengths of Western medicine to develop TCM,"
+      },
+      {
+        "zh": "如张锡纯所著的《医学衷中参西录》。",
+        "pinyin": "rú zhāng xī chún suǒ zhù de yī xué zhōng zhōng cān xī lù",
+        "en": "such as Zhang Xichun's 'Yixue Zhongzhong Canxi Lu' (Records of Medicine that Bridges TCM and Western Medicine)."
+      }
+    ]
+  },
+  {
+    "slide": 35,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "现代时期（新中国建国后），",
+        "pinyin": "xiàn dài shí qī xīn zhōng guó jiàn guó hòu",
+        "en": "Contemporary period (after the founding of the PRC),"
+      },
+      {
+        "zh": "国家大力提倡中西医结合，",
+        "pinyin": "guó jiā dà lì tí chàng zhōng xī yī jié hé",
+        "en": "the state vigorously promoted the integration of Chinese and Western medicine,"
+      },
+      {
+        "zh": "继而倡导以现代多学科方法研究中医。",
+        "pinyin": "jì ér chàng dǎo yǐ xiàn dài duō xué kē fāng fǎ yán jiū zhōng yī",
+        "en": "and subsequently advocated studying TCM using modern multidisciplinary methods."
+      },
+      {
+        "zh": "因而此时期中医学理论的发展主要呈现出三方面的趋势：一是中医学理论经过梳理研究而更加系统、",
+        "pinyin": "yīn ér cǐ shí qī zhōng yī xué lǐ lùn de fā zhǎn zhǔ yào chéng xiàn chū sān fāng miàn de qū shì yī shì zhōng yī xué lǐ lùn jīng guò shū lǐ yán jiū ér gèng jiā xì tǒng",
+        "en": "Therefore, the development of TCM theory in this period mainly shows three trends: First, TCM theory has become more systematic and standardized through organization and research,"
+      },
+      {
+        "zh": "规范，",
+        "pinyin": "guī fàn",
+        "en": "standardized,"
+      },
+      {
+        "zh": "如20世纪60年代编写的全国统编教材《内经讲义》，",
+        "pinyin": "rú shì jì nián dài biān xiě de quán guó tǒng biān jiào cái nèi jīng jiǎng yì",
+        "en": "such as the nationally compiled textbook 'Neijing Jiangyi' (Lectures on the Inner Canon) written in the 1960s,"
+      },
+      {
+        "zh": "发展为70年代的《中医学基础》，",
+        "pinyin": "fā zhǎn wèi nián dài de zhōng yī xué jī chǔ",
+        "en": "which developed into 'Zhongyixue Jichu' (Fundamentals of TCM) in the 1970s,"
+      },
+      {
+        "zh": "再分化为80年代《中医基础理论》，",
+        "pinyin": "zài fēn huà wèi nián dài zhōng yī jī chǔ lǐ lùn",
+        "en": "and then further divided into 'Zhongyi Jichu Lilun' (Basic Theory of TCM) in the 1980s,"
+      },
+      {
+        "zh": "即其标志；",
+        "pinyin": "jí qí biāo zhì",
+        "en": "which serves as its hallmark;"
+      },
+      {
+        "zh": "二是用哲学、",
+        "pinyin": "èr shì yòng zhé xué",
+        "en": "second, using philosophy,"
+      },
+      {
+        "zh": "控制论、",
+        "pinyin": "kòng zhì lùn",
+        "en": "cybernetics,"
+      },
+      {
+        "zh": "信息论、",
+        "pinyin": "xìn xī lùn",
+        "en": "information theory,"
+      },
+      {
+        "zh": "系统论、",
+        "pinyin": "xì tǒng lùn",
+        "en": "systems theory,"
+      },
+      {
+        "zh": "现代实证科学等多学科方法研究中医学，",
+        "pinyin": "xiàn dài shí zhèng kē xué děng duō xué kē fāng fǎ yán jiū zhōng yī xué",
+        "en": "and modern empirical science and other multidisciplinary methods to research TCM,"
+      },
+      {
+        "zh": "大量的专著和科研成果相继出现；",
+        "pinyin": "dà liàng de zhuān zhù hé kē yán chéng guǒ xiāng jì chū xiàn",
+        "en": "with numerous monographs and research results appearing one after another;"
+      },
+      {
+        "zh": "三是对中医学理论体系构建的思维方法进行研究，",
+        "pinyin": "sān shì duì zhōng yī xué lǐ lùn tǐ xì gòu jiàn de sī wéi fāng fǎ jìn xíng yán jiū",
+        "en": "third, conducting research on the thinking methods used to construct the TCM theoretical system,"
+      },
+      {
+        "zh": "探讨中医学理论概念的发生之源与继续发展、",
+        "pinyin": "tàn tǎo zhōng yī xué lǐ lùn gài niàn de fā shēng zhī yuán yǔ jì xù fā zhǎn",
+        "en": "exploring the origins of TCM theoretical concepts and their path toward continued development,"
+      },
+      {
+        "zh": "创新之路。",
+        "pinyin": "chuàng xīn zhī lù",
+        "en": "and innovation."
+      }
+    ]
+  },
+  {
+    "slide": 36,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "中医基础理论的发展与现代化，必须走继承与创新并行的发展之路。",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn de fā zhǎn yǔ xiàn dài huà bì xū zǒu jì chéng yǔ chuàng xīn bìng xíng de fā zhǎn zhī lù",
+        "en": "The development and modernization of basic theory of TCM must follow a path of both inheritance and innovation."
+      },
+      {
+        "zh": "继承是创新的基础，继承的目的是创新。",
+        "pinyin": "jì chéng shì chuàng xīn de jī chǔ jì chéng de mù dì shì chuàng xīn",
+        "en": "Inheritance is the foundation of innovation, and the purpose of inheritance is innovation."
+      },
+      {
+        "zh": "只有重视继承，",
+        "pinyin": "zhǐ yǒu zhòng shì jì chéng",
+        "en": "Only by valuing inheritance,"
+      },
+      {
+        "zh": "才能将中医学的传统理论传承下来，",
+        "pinyin": "cái néng jiāng zhōng yī xué de chuán tǒng lǐ lùn chuán chéng xià lai",
+        "en": "can the traditional theories of TCM be passed down,"
+      },
+      {
+        "zh": "为发展和创新奠定基础；",
+        "pinyin": "wèi fā zhǎn hé chuàng xīn diàn dìng jī chǔ",
+        "en": "laying the foundation for development and innovation;"
+      },
+      {
+        "zh": "创新是中医学继续发展的需要，",
+        "pinyin": "chuàng xīn shì zhōng yī xué jì xù fā zhǎn de xū yào",
+        "en": "innovation is the need for the continued development of TCM,"
+      },
+      {
+        "zh": "是中医学新理论、",
+        "pinyin": "shì zhōng yī xué xīn lǐ lùn",
+        "en": "it is the source of new theories,"
+      },
+      {
+        "zh": "新观点的产生之源，",
+        "pinyin": "xīn guān diǎn de chǎn shēng zhī yuán",
+        "en": "and new viewpoints,"
+      },
+      {
+        "zh": "也是中医学的生命之源。",
+        "pinyin": "yě shì zhōng yī xué de shēng mìng zhī yuán",
+        "en": "and is also the source of life for TCM."
+      }
+    ]
+  },
+  {
+    "slide": 37,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "以“继承与创新并重，",
+        "pinyin": "yǐ jì chéng yǔ chuàng xīn bìng zhòng",
+        "en": "Guided by the basic principles of 'placing equal emphasis on inheritance and innovation,"
+      },
+      {
+        "zh": "中医中药协调发展，",
+        "pinyin": "zhōng yī zhōng yào xié tiáo fā zhǎn",
+        "en": "coordinated development of traditional Chinese medicine and herbal medicine,"
+      },
+      {
+        "zh": "现代化与国际化相互促进，",
+        "pinyin": "xiàn dài huà yǔ guó jì huà xiāng hù cù jìn",
+        "en": "mutual promotion of modernization and internationalization,"
+      },
+      {
+        "zh": "多学科结合”为基本原则，",
+        "pinyin": "duō xué kē jié hé wèi jī běn yuán zé",
+        "en": "and interdisciplinary integration',"
+      },
+      {
+        "zh": "推动了中医药传承与创新的发展。",
+        "pinyin": "tuī dòng le zhōng yī yào chuán chéng yǔ chuàng xīn de fā zhǎn",
+        "en": "the development of the inheritance and innovation of traditional Chinese medicine has been promoted."
+      }
+    ]
+  },
+  {
+    "slide": 38,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "二、",
+        "pinyin": "èr",
+        "en": "II."
+      },
+      {
+        "zh": "中医学理论体系的主要特点中医学理论体系的主要特点：整体观念、",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì de zhǔ yào tè diǎn zhōng yī xué lǐ lùn tǐ xì de zhǔ yào tè diǎn zhěng tǐ guān niàn",
+        "en": "The main characteristics of the TCM theoretical system: the holistic concept,"
+      },
+      {
+        "zh": "辨证论治。",
+        "pinyin": "biàn zhèng lùn zhì",
+        "en": "and syndrome differentiation (treating according to a pattern)."
+      },
+      {
+        "zh": "（一）整体观念是中医学认识人体自身以及人与环境之间联系性和统一性的学术思想。",
+        "pinyin": "yī zhěng tǐ guān niàn shì zhōng yī xué rèn shi rén tǐ zì shēn yǐ jí rén yǔ huán jìng zhī jiān lián xì xìng hé tǒng yī xìng de xué shù sī xiǎng",
+        "en": "(1) The holistic concept is the academic viewpoint that TCM uses to understand both the human body itself and the interconnectedness and unity between humans and their environment."
+      },
+      {
+        "zh": "整体观念是中医学理论体系的指导思想，",
+        "pinyin": "zhěng tǐ guān niàn shì zhōng yī xué lǐ lùn tǐ xì de zhǐ dǎo sī xiǎng",
+        "en": "The holistic concept is the guiding ideology of the TCM theoretical system,"
+      },
+      {
+        "zh": "发源于中国古代哲学万物同源异构和普遍联系的观念，",
+        "pinyin": "fā yuán yú zhōng guó gǔ dài zhé xué wàn wù tóng yuán yì gòu hé pǔ biàn lián xì de guān niàn",
+        "en": "originating from ancient Chinese philosophical notions of the common origin of all things and their universal interconnectedness,"
+      },
+      {
+        "zh": "体现在人们在观察、",
+        "pinyin": "tǐ xiàn zài rén men zài guān chá",
+        "en": "and it is reflected in how people, when observing,"
+      },
+      {
+        "zh": "分析和认识生命、",
+        "pinyin": "fēn xī hé rèn shi shēng mìng",
+        "en": "analyzing, and understanding life,"
+      },
+      {
+        "zh": "健康和疾病等问题时，",
+        "pinyin": "jiàn kāng hé jí bìng děng wèn tí shí",
+        "en": "health, and disease-related issues,"
+      },
+      {
+        "zh": "注重人体自身的完整性及人与自然、",
+        "pinyin": "zhù zhòng rén tǐ zì shēn de wán zhěng xìng jí rén yǔ zì rán",
+        "en": "focus on the integrity of the human body itself and the unity and connectedness between humans and their natural environment,"
+      },
+      {
+        "zh": "社会环境之间的统一性与联系性。",
+        "pinyin": "shè huì huán jìng zhī jiān de tǒng yī xìng yǔ lián xì xìng",
+        "en": "and social environment."
+      }
+    ]
+  },
+  {
+    "slide": 39,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "整体观念认为，人体是一个由多层次结构构成的有机整体。",
+        "pinyin": "zhěng tǐ guān niàn rèn wéi rén tǐ shì yí gè yóu duō céng cì jié gòu gòu chéng de yǒu jī zhěng tǐ",
+        "en": "The holistic concept maintains that the human body is an organic whole composed of a multi-layered structure."
+      },
+      {
+        "zh": "构成人体的各个部分之间，",
+        "pinyin": "gòu chéng rén tǐ de gè gè bù fen zhī jiān",
+        "en": "Between the various parts that constitute the human body,"
+      },
+      {
+        "zh": "各个脏腑形体官窍之间，",
+        "pinyin": "gè gè zàng fǔ xíng tǐ guān qiào zhī jiān",
+        "en": "and between the various Zang-Fu organs (viscera), body tissues, and sensory orifices,"
+      },
+      {
+        "zh": "结构上不可分割，",
+        "pinyin": "jié gòu shàng bù kě fēn gē",
+        "en": "the structure is inseparable,"
+      },
+      {
+        "zh": "功能上相互协调、",
+        "pinyin": "gōng néng shàng xiàng hù xié tiáo",
+        "en": "functions are mutually coordinated,"
+      },
+      {
+        "zh": "相互为用，",
+        "pinyin": "xiāng hù wèi yòng",
+        "en": "mutually supportive,"
+      },
+      {
+        "zh": "病理上相互影响。",
+        "pinyin": "bìng lǐ shàng xiàng hù yǐng xiǎng",
+        "en": "and pathologies are mutually influential."
+      },
+      {
+        "zh": "人生活在自然和社会环境中，",
+        "pinyin": "rén shēng huó zài zì rán hé shè huì huán jìng zhōng",
+        "en": "Humans live within natural and social environments,"
+      },
+      {
+        "zh": "人体的生理功能和病理变化，",
+        "pinyin": "rén tǐ de shēng lǐ gōng néng hé bìng lǐ biàn huà",
+        "en": "and the physiological functions and pathological changes of the human body,"
+      },
+      {
+        "zh": "必然受到自然环境、",
+        "pinyin": "bì rán shòu dào zì rán huán jìng",
+        "en": "are inevitably influenced by the natural environment,"
+      },
+      {
+        "zh": "社会条件的影响。",
+        "pinyin": "shè huì tiáo jiàn de yǐng xiǎng",
+        "en": "and social conditions."
+      },
+      {
+        "zh": "人类在适应和改造自然与社会环境的斗争中维持着机体的生命活动。",
+        "pinyin": "rén lèi zài shì yìng hé gǎi zào zì rán yǔ shè huì huán jìng de dòu zhēng zhōng wéi chí zhe jī tǐ de shēng mìng huó dòng",
+        "en": "Humanity maintains life activities through the struggle to adapt to and transform the natural and social environments."
+      }
+    ]
+  },
+  {
+    "slide": 40,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "自社人然会五脏一体观环 形神一体观环精气神一体观境境",
+        "pinyin": "zì shè rén rán huì wǔ zàng yī tǐ guān huán xíng shén yī tǐ guān huán jīng qì shén yī tǐ guān jìng jìng",
+        "en": "Integrative View of the Five Zang-Organs, Integrative View of Body and Spirit, Integrative View of Essence, Qi, and Spirit (within the context of the social and natural environment)."
+      }
+    ]
+  },
+  {
+    "slide": 41,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "1.人体是一个有机整体",
+        "pinyin": "rén tǐ shì yí gè yǒu jī zhěng tǐ",
+        "en": "1. The human body is an organic whole"
+      },
+      {
+        "zh": "（1）生理功能的整体性五脏一体观：构成人体的各个组成部分在结构与功能上是完整统一的；",
+        "pinyin": "shēng lǐ gōng néng de zhěng tǐ xìng wǔ zàng yī tǐ guān gòu chéng rén tǐ de gè gè zǔ chéng bù fèn zài jié gòu yǔ gōng néng shàng shì wán zhěng tǒng yī de",
+        "en": "(1) The integrity of physiological functions: The Five Zang-Organs Integration view: The various components constituting the human body are integrated in both structure and function;"
+      },
+      {
+        "zh": "形神一体观：人的形体与精神是相互依附、",
+        "pinyin": "xíng shén yī tǐ guān rén de xíng tǐ yǔ jīng shén shì xiāng hù yī fù",
+        "en": "The Body-Spirit Integration view: The human physical body (form) and spirit (consciousness/psyche) are interdependent,"
+      },
+      {
+        "zh": "不可分割的；",
+        "pinyin": "bù kě fēn gē de",
+        "en": "and inseparable;"
+      },
+      {
+        "zh": "精气神一体观：精、",
+        "pinyin": "jīng qì shén yī tǐ guān jīng",
+        "en": "The Essence-Qi-Spirit Integration view: Essence,"
+      },
+      {
+        "zh": "气、",
+        "pinyin": "qì",
+        "en": "Qi,"
+      },
+      {
+        "zh": "血、",
+        "pinyin": "xuè",
+        "en": "Blood,"
+      },
+      {
+        "zh": "津液是构成和维持人体生命活动的基本物质，",
+        "pinyin": "jīn yè shì gòu chéng hé wéi chí rén tǐ shēng mìng huó dòng de jī běn wù zhì",
+        "en": "and Body Fluids are the fundamental substances that constitute and maintain human life activities,"
+      },
+      {
+        "zh": "神是人体生命活动的整体表现。",
+        "pinyin": "shén shì rén tǐ shēng mìng huó dòng de zhěng tǐ biǎo xiàn",
+        "en": "and Spirit is the overall manifestation of human life activities."
+      }
+    ]
+  },
+  {
+    "slide": 42,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "●五脏一体观人体由五脏（心、",
+        "pinyin": "wǔ zàng yī tǐ guān rén tǐ yóu wǔ zàng xīn",
+        "en": "● The Five Zang-Organs Integration view: The human body is composed of the Five Zang (Heart,"
+      },
+      {
+        "zh": "肝、",
+        "pinyin": "gān",
+        "en": "Liver,"
+      },
+      {
+        "zh": "脾、",
+        "pinyin": "pí",
+        "en": "Spleen,"
+      },
+      {
+        "zh": "肺、",
+        "pinyin": "fèi",
+        "en": "Lung,"
+      },
+      {
+        "zh": "肾）、",
+        "pinyin": "shèn",
+        "en": "Kidney),"
+      },
+      {
+        "zh": "六腑（胆、",
+        "pinyin": "liù fǔ dǎn",
+        "en": "the Six Fu-Organs (Gallbladder,"
+      },
+      {
+        "zh": "胃、",
+        "pinyin": "wèi",
+        "en": "Stomach,"
+      },
+      {
+        "zh": "小肠、",
+        "pinyin": "xiǎo cháng",
+        "en": "Small Intestine,"
+      },
+      {
+        "zh": "大肠、",
+        "pinyin": "dà cháng",
+        "en": "Large Intestine,"
+      },
+      {
+        "zh": "膀胱、",
+        "pinyin": "páng guāng",
+        "en": "Urinary Bladder,"
+      },
+      {
+        "zh": "三焦）、",
+        "pinyin": "sān jiāo",
+        "en": "San Jiao/Triple Burner),"
+      },
+      {
+        "zh": "形体（筋、",
+        "pinyin": "xíng tǐ jīn",
+        "en": "physical tissues (tendons,"
+      },
+      {
+        "zh": "脉、",
+        "pinyin": "mài",
+        "en": "vessels,"
+      },
+      {
+        "zh": "肉、",
+        "pinyin": "ròu",
+        "en": "flesh,"
+      },
+      {
+        "zh": "皮、",
+        "pinyin": "pí",
+        "en": "skin,"
+      },
+      {
+        "zh": "骨）、",
+        "pinyin": "gǔ",
+        "en": "bones),"
+      },
+      {
+        "zh": "官窍（目、",
+        "pinyin": "guān qiào mù",
+        "en": "and sensory orifices (eyes,"
+      },
+      {
+        "zh": "舌、",
+        "pinyin": "shé",
+        "en": "tongue,"
+      },
+      {
+        "zh": "口、",
+        "pinyin": "kǒu",
+        "en": "mouth,"
+      },
+      {
+        "zh": "鼻、",
+        "pinyin": "bí",
+        "en": "nose,"
+      },
+      {
+        "zh": "耳、",
+        "pinyin": "ěr",
+        "en": "ears,"
+      },
+      {
+        "zh": "前阴、",
+        "pinyin": "qián yīn",
+        "en": "external genitalia,"
+      },
+      {
+        "zh": "后阴） 等构成。",
+        "pinyin": "hòu yīn děng gòu chéng",
+        "en": "anus)."
+      },
+      {
+        "zh": "人体以五脏为中心，",
+        "pinyin": "rén tǐ yǐ wǔ zàng wèi zhōng xīn",
+        "en": "The human body is centered on the Five Zang-Organs,"
+      },
+      {
+        "zh": "配合六腑、",
+        "pinyin": "pèi hé liù fǔ",
+        "en": "coordinated with the Six Fu-Organs,"
+      },
+      {
+        "zh": "形体、",
+        "pinyin": "xíng tǐ",
+        "en": "tissues,"
+      },
+      {
+        "zh": "官窍，",
+        "pinyin": "guān qiào",
+        "en": "and orifices,"
+      },
+      {
+        "zh": "通过经络系统的联络作用，",
+        "pinyin": "tōng guò jīng luò xì tǒng de lián luò zuò yòng",
+        "en": "and through the connective action of the Meridian system,"
+      },
+      {
+        "zh": "构成了心、",
+        "pinyin": "gòu chéng le xīn",
+        "en": "it constitutes five physiological systems based on the Heart,"
+      },
+      {
+        "zh": "肝、",
+        "pinyin": "gān",
+        "en": "Liver,"
+      },
+      {
+        "zh": "脾、",
+        "pinyin": "pí",
+        "en": "Spleen,"
+      },
+      {
+        "zh": "肺、",
+        "pinyin": "fèi",
+        "en": "Lung,"
+      },
+      {
+        "zh": "肾五个生理系统。",
+        "pinyin": "shèn wǔ gè shēng lǐ xì tǒng",
+        "en": "and Kidney."
+      },
+      {
+        "zh": "心、",
+        "pinyin": "xīn",
+        "en": "The five physiological systems of the Heart,"
+      },
+      {
+        "zh": "肝、",
+        "pinyin": "gān",
+        "en": "Liver,"
+      },
+      {
+        "zh": "脾、",
+        "pinyin": "pí",
+        "en": "Spleen,"
+      },
+      {
+        "zh": "肺、",
+        "pinyin": "fèi",
+        "en": "Lung,"
+      },
+      {
+        "zh": "肾五个生理系统之间具有结构的联系性和功能的统一性，",
+        "pinyin": "shèn wǔ gè shēng lǐ xì tǒng zhī jiān jù yǒu jié gòu de lián xì xìng hé gōng néng de tǒng yī xìng",
+        "en": "and Kidney have structural connections and functional unity,"
+      },
+      {
+        "zh": "相互促进，",
+        "pinyin": "xiāng hù cù jìn",
+        "en": "mutually promoting,"
+      },
+      {
+        "zh": "相互制约，",
+        "pinyin": "xiāng hù zhì yuē",
+        "en": "mutually restraining,"
+      },
+      {
+        "zh": "共同维持生命活动的正常进行。",
+        "pinyin": "gòng tóng wéi chí shēng mìng huó dòng de zhèng cháng jìn xíng",
+        "en": "and jointly maintaining the normal operation of life activities."
+      },
+      {
+        "zh": "这种以五脏为中心的结构与功能相统一的观点，",
+        "pinyin": "zhè zhǒng yǐ wǔ zàng wèi zhōng xīn de jié gòu yǔ gōng néng xiāng tǒng yī de guān diǎn",
+        "en": "This perspective, which views structure and function as a unity centered on the Five Zang-Organs,"
+      },
+      {
+        "zh": " 称为“五脏一体观”。",
+        "pinyin": "chēng wéi wǔ zàng yī tǐ guān",
+        "en": "is called the \"Five Zang-Organs Integration view.\""
+      }
+    ]
+  },
+  {
+    "slide": 43,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "人体五脏生理系统简表",
+        "pinyin": "rén tǐ wǔ zàng shēng lǐ xì tǒng jiǎn biǎo",
+        "en": "Table of the Five Zang Physiological Systems"
+      }
+    ]
+  },
+  {
+    "slide": 44,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "●形神一体观形体，",
+        "pinyin": "xíng shén yī tǐ guān xíng tǐ",
+        "en": "● The Body-Spirit Integration view: 'Form' (body/physicality),"
+      },
+      {
+        "zh": "是指构成人体的脏腑、",
+        "pinyin": "shì zhǐ gòu chéng rén tǐ de zàng fǔ",
+        "en": "refers to the Zang-Fu organs,"
+      },
+      {
+        "zh": "经络、",
+        "pinyin": "jīng luò",
+        "en": "Jing-Luo (Meridians and Collaterals),"
+      },
+      {
+        "zh": "五体和官窍及运行或贮藏于其中的精、",
+        "pinyin": "wǔ tǐ hé guān qiào jí yùn xíng huò zhù cáng yú qí zhōng de jīng",
+        "en": "five bodily structures, and orifices that constitute the human body, as well as the Essence,"
+      },
+      {
+        "zh": "气、",
+        "pinyin": "qì",
+        "en": "Qi,"
+      },
+      {
+        "zh": "血、",
+        "pinyin": "xuè",
+        "en": "Blood,"
+      },
+      {
+        "zh": "津液等。",
+        "pinyin": "jīn yè děng",
+        "en": "and Body Fluids that flow or are stored within them."
+      },
+      {
+        "zh": "神，",
+        "pinyin": "shén",
+        "en": "'Spirit' (Shen),"
+      },
+      {
+        "zh": "有广义与狭义之分：广义的神，",
+        "pinyin": "yǒu guǎng yì yǔ xiá yì zhī fēn guǎng yì de shén",
+        "en": "has both broad and narrow meanings: In a broad sense, Spirit,"
+      },
+      {
+        "zh": "是指人体生命活动的主宰和总体现；",
+        "pinyin": "shì zhǐ rén tǐ shēng mìng huó dòng de zhǔ zǎi hé zǒng tǐ xiàn",
+        "en": "refers to the master and overall manifestation of human life activities;"
+      },
+      {
+        "zh": "狭义的神，",
+        "pinyin": "xiá yì de shén",
+        "en": "in a narrow sense, Spirit,"
+      },
+      {
+        "zh": "是指人的精神意识思维活动，",
+        "pinyin": "shì zhǐ rén de jīng shén yì shí sī wéi huó dòng",
+        "en": "refers to human mental, conscious, and thinking activities,"
+      },
+      {
+        "zh": "包括情绪、",
+        "pinyin": "bāo kuò qíng xù",
+        "en": "including emotions,"
+      },
+      {
+        "zh": "思想、",
+        "pinyin": "sī xiǎng",
+        "en": "thoughts,"
+      },
+      {
+        "zh": "性格等一系列心理活动。",
+        "pinyin": "xìng gé děng yī xì liè xīn lǐ huó dòng",
+        "en": "personality, and a series of other psychological activities."
+      },
+      {
+        "zh": "形神一体观，即是形体与精神的结合与统一。",
+        "pinyin": "xíng shén yī tǐ guān jí shì xíng tǐ yǔ jīng shén de jié hé yǔ tǒng yī",
+        "en": "The Body-Spirit Integration view is the combination and unity of the physical body and the spirit."
+      },
+      {
+        "zh": "正常的生命活动，形与神是相互依附，不可分离的。",
+        "pinyin": "zhèng cháng de shēng mìng huó dòng xíng yǔ shén shì xiāng hù yī fù bù kě fēn lí de",
+        "en": "In normal life activities, the form and spirit are interdependent and inseparable."
+      },
+      {
+        "zh": "形是神的藏舍之处，神是形的生命体现。",
+        "pinyin": "xíng shì shén de cáng shě zhī chù shén shì xíng de shēng mìng tǐ xiàn",
+        "en": "The form is the vessel for the spirit, and the spirit is the vitality of the form."
+      },
+      {
+        "zh": "神不能离开形体而单独存在，有形才能有神，形健则神旺。",
+        "pinyin": "shén bù néng lí kāi xíng tǐ ér dān dú cún zài yǒu xíng cái néng yǒu shén xíng jiàn zé shén wàng",
+        "en": "The spirit cannot exist independently of the body; there must be form to have spirit, and when the form is strong, the spirit is vibrant."
+      },
+      {
+        "zh": "而神一旦产生，就对形体起着主宰作用。",
+        "pinyin": "ér shén yī dàn chǎn shēng jiù duì xíng tǐ qǐ zhe zhǔ zǎi zuò yòng",
+        "en": "Once the spirit is produced, it exerts a controlling influence over the body."
+      },
+      {
+        "zh": "形神统一是生命存在的保证。",
+        "pinyin": "xíng shén tǒng yī shì shēng mìng cún zài de bǎo zhèng",
+        "en": "The unity of form and spirit is the guarantee of life existence."
+      }
+    ]
+  },
+  {
+    "slide": 45,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "●精气神一体观精可化气，",
+        "pinyin": "jīng qì shén yī tǐ guān jīng kě huà qì",
+        "en": "● The Essence-Qi-Spirit Integration view: Essence can transform into Qi,"
+      },
+      {
+        "zh": "气可化精，",
+        "pinyin": "qì kě huà jīng",
+        "en": "Qi can transform into Essence,"
+      },
+      {
+        "zh": "精气生神，",
+        "pinyin": "jīng qì shēng shén",
+        "en": "Essence and Qi generate Spirit,"
+      },
+      {
+        "zh": "精气养神，",
+        "pinyin": "jīng qì yǎng shén",
+        "en": "Essence and Qi nourish Spirit,"
+      },
+      {
+        "zh": "而神则统驭精与气，",
+        "pinyin": "ér shén zé tǒng yù jīng yǔ qì",
+        "en": "and Spirit governs Essence and Qi,"
+      },
+      {
+        "zh": "形成有机整体。",
+        "pinyin": "xíng chéng yǒu jī zhěng tǐ",
+        "en": "forming an organic whole."
+      },
+      {
+        "zh": "精、",
+        "pinyin": "jīng",
+        "en": "Essence,"
+      },
+      {
+        "zh": "气、",
+        "pinyin": "qì",
+        "en": "Qi,"
+      },
+      {
+        "zh": "血、",
+        "pinyin": "xuè",
+        "en": "Blood,"
+      },
+      {
+        "zh": "津液是构成人体并维持人体生命活动的基本物质，",
+        "pinyin": "jīn yè shì gòu chéng rén tǐ bìng wéi chí rén tǐ shēng mìng huó dòng de jī běn wù zhì",
+        "en": "and Body Fluids are the fundamental substances that constitute and maintain human life activities,"
+      },
+      {
+        "zh": "神是人体生命活动的整体表现。",
+        "pinyin": "shén shì rén tǐ shēng mìng huó dòng de zhěng tǐ biǎo xiàn",
+        "en": "and Spirit is the overall manifestation of human life activities."
+      }
+    ]
+  },
+  {
+    "slide": 46,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（2）病机变化的整体性中医学在分析疾病的发生、",
+        "pinyin": "bìng jī biàn huà de zhěng tǐ xìng zhōng yī xué zài fēn xī jí bìng de fā shēng",
+        "en": "(2) The integrity of pathological changes: TCM, in analyzing the occurrence,"
+      },
+      {
+        "zh": "发展、",
+        "pinyin": "fā zhǎn",
+        "en": "development,"
+      },
+      {
+        "zh": "变化规律时，",
+        "pinyin": "biàn huà guī lǜ shí",
+        "en": "and laws of change in disease,"
+      },
+      {
+        "zh": "善于从整体出发，",
+        "pinyin": "shàn yú cóng zhěng tǐ chū fā",
+        "en": "is adept at starting from the whole,"
+      },
+      {
+        "zh": "去分析局部病机变化的整体性根源。",
+        "pinyin": "qù fēn xī jú bù bìng jī biàn huà de zhěng tǐ xìng gēn yuán",
+        "en": "to analyze the holistic root of local pathological changes."
+      },
+      {
+        "zh": "人是一个内外紧密联系的整体，",
+        "pinyin": "rén shì yí gè nèi wài jǐn mì lián xì de zhěng tǐ",
+        "en": "The human is a whole with close connections between internal and external,"
+      },
+      {
+        "zh": "内脏有病，",
+        "pinyin": "nèi zàng yǒu bìng",
+        "en": "so if internal organs are ill,"
+      },
+      {
+        "zh": "必然表现于外，",
+        "pinyin": "bì rán biǎo xiàn yú wài",
+        "en": "it will inevitably manifest externally,"
+      },
+      {
+        "zh": "具体可反映于相应的形体官窍。",
+        "pinyin": "jù tǐ kě fǎn yìng yú xiāng yìng de xíng tǐ guān qiào",
+        "en": "specifically reflected in the corresponding physical structures and orifices."
+      },
+      {
+        "zh": "在分析形体官窍的病变时，",
+        "pinyin": "zài fēn xī xíng tǐ guān qiào de bìng biàn shí",
+        "en": "When analyzing pathology of physical structures and orifices,"
+      },
+      {
+        "zh": "认为局部病变大都是整体生理功能失调在局部的反映。",
+        "pinyin": "rèn wéi jú bù bìng biàn dà dū shì zhěng tǐ shēng lǐ gōng néng shī diào zài jú bù de fǎn yìng",
+        "en": "it is believed that local lesions are mostly reflections of an overall physiological dysfunction."
+      },
+      {
+        "zh": "脏腑之间，生理上协调统一、密切配合，病机上相互影响。",
+        "pinyin": "zàng fǔ zhī jiān shēng lǐ shàng xié tiáo tǒng yī mì qiè pèi hé bìng jī shàng xiàng hù yǐng xiǎng",
+        "en": "Between the Zang-Fu organs, they are physiologically coordinated and closely integrated, and pathologically they mutually influence each other."
+      },
+      {
+        "zh": "人是形神统一的整体，因而形与神在病理上也是相互影响。",
+        "pinyin": "rén shì xíng shén tǒng yī de zhěng tǐ yīn ér xíng yǔ shén zài bìng lǐ shàng yě shì xiāng hù yǐng xiǎng",
+        "en": "The human is a whole of unified form and spirit, so form and spirit also mutually influence each other pathologically."
+      }
+    ]
+  },
+  {
+    "slide": 47,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "肝阴血不足导致两目干涩，",
+        "pinyin": "gān yīn xuè bù zú dǎo zhì liǎng mù gān sè",
+        "en": "Liver Yin and Blood deficiency leading to dry eyes,"
+      },
+      {
+        "zh": "探讨眼睛病变的病机，",
+        "pinyin": "tàn tǎo yǎn jing bìng biàn de bìng jī",
+        "en": "when discussing the pathogenesis of eye diseases,"
+      },
+      {
+        "zh": "不能单纯从眼睛局部去分析，",
+        "pinyin": "bù néng dān chún cóng yǎn jing jú bù qù fēn xī",
+        "en": "one cannot analyze solely from the local eye level,"
+      },
+      {
+        "zh": "而是要从人体的整体性上去认识。",
+        "pinyin": "ér shì yào cóng rén tǐ de zhěng tǐ xìng shàng qù rèn shi",
+        "en": "but must understand it from the perspective of the body's wholeness."
+      }
+    ]
+  },
+  {
+    "slide": 48,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（3）诊断防治的整体性人体的局部与整体是辩证统一的。",
+        "pinyin": "zhěn duàn fáng zhì de zhěng tǐ xìng rén tǐ de jú bù yǔ zhěng tǐ shì biàn zhèng tǒng yī de",
+        "en": "(3) The integrity of diagnosis and treatment: The local and the whole of the human body are dialectically unified."
+      },
+      {
+        "zh": "通过观察分析形体、",
+        "pinyin": "tōng guò guān chá fēn xī xíng tǐ",
+        "en": "By observing and analyzing external pathological manifestations such as the body,"
+      },
+      {
+        "zh": "官窍、",
+        "pinyin": "guān qiào",
+        "en": "sensory orifices,"
+      },
+      {
+        "zh": "色脉等外在的病理表现，",
+        "pinyin": "sè mài děng wài zài de bìng lǐ biǎo xiàn",
+        "en": "complexion, and pulse,"
+      },
+      {
+        "zh": "推测内在脏腑的病理变化——由外察内（视其外应，",
+        "pinyin": "tuī cè nèi zài zàng fǔ de bìng lǐ biàn huà yóu wài chá nèi shì qí wài yīng",
+        "en": "one can infer internal pathological changes of the viscera—observing the exterior to know the interior (observe the exterior manifestations to understand the internal viscera)."
+      },
+      {
+        "zh": "以知其内脏）。",
+        "pinyin": "yǐ zhī qí nèi zàng",
+        "en": "inspecting the tongue and diagnosing facial complexion are both concrete manifestations of the TCM holistic diagnostic concept."
+      },
+      {
+        "zh": "验舌与面部色诊都是中医学整体诊病思想的具体体现。",
+        "pinyin": "yàn shé yǔ miàn bù sè zhěn dōu shì zhōng yī xué zhěng tǐ zhěn bìng sī xiǎng de jù tǐ tǐ xiàn",
+        "en": "When preventing and treating diseases, TCM,"
+      },
+      {
+        "zh": "中医在防治疾病时，",
+        "pinyin": "zhōng yī zài fáng zhì jí bìng shí",
+        "en": "emphasizes regulating all parts of the body from a holistic level,"
+      },
+      {
+        "zh": "强调在整体层次上对全身各局部的调节，",
+        "pinyin": "qiáng diào zài zhěng tǐ céng cì shàng duì quán shēn gè jú bù de tiáo jié",
+        "en": "to restore them to a normal state."
+      },
+      {
+        "zh": "使之恢复常态。",
+        "pinyin": "shǐ zhī huī fù cháng tài",
+        "en": "Local lesions are often reactions of systemic pathology in a local area,"
+      },
+      {
+        "zh": "局部病变常是整体病变在局部的反应，",
+        "pinyin": "jú bù bìng biàn cháng shì zhěng tǐ bìng biàn zài jú bù de fǎn yìng",
+        "en": "therefore treatment should begin from the whole,"
+      },
+      {
+        "zh": "故治疗应从整体出发，",
+        "pinyin": "gù zhì liáo yìng cóng zhěng tǐ chū fā",
+        "en": "and based on seeking the intrinsic connection between local and systemic disease,"
+      },
+      {
+        "zh": "在探求局部病变与整体病变的内在联系的基础上，",
+        "pinyin": "zài tàn qiú jú bù bìng biàn yǔ zhěng tǐ bìng biàn de nèi zài lián xì de jī chǔ shàng",
+        "en": "establish appropriate principles and methods for treatment."
+      },
+      {
+        "zh": "确立适当的治疗原则和方法。",
+        "pinyin": "què lì shì dàng de zhì liáo yuán zé hé fāng fǎ",
+        "en": "..."
+      }
+    ]
+  },
+  {
+    "slide": 49,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "诊断上的整体观立足局部 着眼整体望诊的内容主要是望人面色苍黄，",
+        "pinyin": "zhěn duàn shàng de zhěng tǐ guān lì zú jú bù zhuó yǎn zhěng tǐ wàng zhěn de nèi róng zhǔ yào shì wàng rén miàn sè cāng huáng",
+        "en": "Holistic view in diagnosis: Based on the local, focused on the whole. The content of 'observation' mainly refers to the patient's 'Spirit,'"
+      },
+      {
+        "zh": "多是气血不足的表现的“神、",
+        "pinyin": "duō shì qì xuè bù zú de biǎo xiàn de shén",
+        "en": "complexion (color),"
+      },
+      {
+        "zh": "色、",
+        "pinyin": "sè",
+        "en": "physical form,"
+      },
+      {
+        "zh": "形、",
+        "pinyin": "xíng",
+        "en": "and demeanor."
+      },
+      {
+        "zh": "态”",
+        "pinyin": "tài",
+        "en": "Yellowish complexion is often a manifestation of Qi and Blood deficiency."
+      }
+    ]
+  },
+  {
+    "slide": 50,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "舌体红 内火盛水滑苔 湿邪",
+        "pinyin": "shé tǐ hóng nèi huǒ shèng shuǐ huá tái shī xié",
+        "en": "Red tongue body: Excess of internal fire. Watery/slippery tongue coating: Damp pathogen."
+      }
+    ]
+  },
+  {
+    "slide": 51,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "防治上的整体观下病治上 上病下治",
+        "pinyin": "fáng zhì shàng de zhěng tǐ guān xià bìng zhì shàng shàng bìng xià zhì",
+        "en": "Holistic view in prevention and treatment: Treat upper disease from below, treat lower disease from above."
+      }
+    ]
+  },
+  {
+    "slide": 52,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（4）养生康复的整体性中医养生主张形神共养以维护健康、",
+        "pinyin": "yǎng shēng kāng fù de zhěng tǐ xìng zhōng yī yǎng shēng zhǔ zhāng xíng shén gòng yǎng yǐ wéi hù jiàn kāng",
+        "en": "(4) The integrity of health preservation and rehabilitation: TCM health preservation advocates nourishing both form and spirit to maintain health,"
+      },
+      {
+        "zh": "形神共调以治疗康复疾病。",
+        "pinyin": "xíng shén gòng diào yǐ zhì liáo kāng fù jí bìng",
+        "en": "and regulating both form and spirit to treat and rehabilitate illness."
+      },
+      {
+        "zh": "在养生方面，",
+        "pinyin": "zài yǎng shēng fāng miàn",
+        "en": "In terms of health preservation,"
+      },
+      {
+        "zh": "既要顺应自然、",
+        "pinyin": "jì yào shùn yìng zì rán",
+        "en": "one must both adapt to nature,"
+      },
+      {
+        "zh": "锻炼身体、",
+        "pinyin": "duàn liàn shēn tǐ",
+        "en": "exercise the body,"
+      },
+      {
+        "zh": "合理饮食、",
+        "pinyin": "hé lǐ yǐn shí",
+        "en": "eat a reasonable diet,"
+      },
+      {
+        "zh": "劳逸适度、",
+        "pinyin": "láo yì shì dù",
+        "en": "maintain a balance of work and rest,"
+      },
+      {
+        "zh": "外避病邪以养其形，",
+        "pinyin": "wài bì bìng xié yǐ yǎng qí xíng",
+        "en": "and avoid external pathogens to nourish the 'form,'"
+      },
+      {
+        "zh": "使形健神旺；",
+        "pinyin": "shǐ xíng jiàn shén wàng",
+        "en": "making the body strong and the spirit vibrant;"
+      },
+      {
+        "zh": "又要恬淡虚无、",
+        "pinyin": "yòu yào tián dàn xū wú",
+        "en": "as well as maintaining a calm, clear mind,"
+      },
+      {
+        "zh": "怡畅情志以养神，",
+        "pinyin": "yí chàng qíng zhì yǐ yǎng shén",
+        "en": "and expressing emotions appropriately to nourish the spirit,"
+      },
+      {
+        "zh": "使神清而形健。",
+        "pinyin": "shǐ shén qīng ér xíng jiàn",
+        "en": "so that the spirit is clear and the body is healthy."
+      },
+      {
+        "zh": "在治疗康复方面，",
+        "pinyin": "zài zhì liáo kāng fù fāng miàn",
+        "en": "In terms of treatment and rehabilitation,"
+      },
+      {
+        "zh": "若因躯体病变引起精神病变时，",
+        "pinyin": "ruò yīn qū tǐ bìng biàn yǐn qǐ jīng shén bìng biàn shí",
+        "en": "if a physical illness causes mental disturbance,"
+      },
+      {
+        "zh": "当以治疗躯体疾病（治形）为先；",
+        "pinyin": "dāng yǐ zhì liáo qū tǐ jí bìng zhì xíng wèi xiān",
+        "en": "the priority should be treating the physical disease ('treating the form');"
+      },
+      {
+        "zh": "若为精神情志伤害引致躯体疾病，",
+        "pinyin": "ruò wèi jīng shén qíng zhì shāng hài yǐn zhì qū tǐ jí bìng",
+        "en": "if emotional/mental harm leads to physical illness,"
+      },
+      {
+        "zh": "则当先调理精神情志的失调（治神）。",
+        "pinyin": "zé dāng xiān tiáo lǐ jīng shén qíng zhì de shī diào zhì shén",
+        "en": "then one should first regulate the emotional imbalance ('treating the spirit')."
+      }
+    ]
+  },
+  {
+    "slide": 53,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2.人与自然环境的统一性",
+        "pinyin": "rén yǔ zì rán huán jìng de tǒng yī xìng",
+        "en": "2. Unity between humans and the natural environment"
+      },
+      {
+        "zh": "人类生活在自然界中，",
+        "pinyin": "rén lèi shēng huó zài zì rán jiè zhōng",
+        "en": "Humans live in the natural world,"
+      },
+      {
+        "zh": "自然环境的各种变化又可直接或间接地影响人体的生命活动。",
+        "pinyin": "zì rán huán jìng de gè zhǒng biàn huà yòu kě zhí jiē huò jiàn jiē dì yǐng xiǎng rén tǐ de shēng mìng huó dòng",
+        "en": "and the various changes in the natural environment can directly or indirectly influence human life activities."
+      },
+      {
+        "zh": "这种人与自然环境息息相关的认识，即是“天人一体”的整体观。",
+        "pinyin": "zhè zhǒng rén yǔ zì rán huán jìng xī xī xiāng guān de rèn shi jí shì tiān rén yī tǐ de zhěng tǐ guān",
+        "en": "This realization that humans are inextricably linked to the natural environment is the \"Heaven and Human Unity\" holistic view."
+      },
+      {
+        "zh": "（1）自然环境对人体生理的影响1）季节气候与人体生理：",
+        "pinyin": "zì rán huán jìng duì rén tǐ shēng lǐ de yǐng xiǎng jì jié qì hòu yǔ rén tǐ shēng lǐ",
+        "en": "(1) Influence of the natural environment on human physiology 1) Seasonal climate and human physiology:"
+      }
+    ]
+  },
+  {
+    "slide": 55,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2）昼夜时辰与人体生理：白天人体的阳气多趋于体表，",
+        "pinyin": "zhòu yè shí chen yǔ rén tǐ shēng lǐ bái tiān rén tǐ de yáng qì duō qū yú tǐ biǎo",
+        "en": "2) Day and night cycles and human physiology: During the day, the body's Yang Qi tends to move to the body surface,"
+      },
+      {
+        "zh": "脏腑的机能活动比较活跃；",
+        "pinyin": "zàng fǔ de jī néng huó dòng bǐ jiào huó yuè",
+        "en": "making the functional activities of the viscera relatively active;"
+      },
+      {
+        "zh": " 而夜间人体的阳气多趋于里，",
+        "pinyin": "ér yè jiān rén tǐ de yáng qì duō qū yú lǐ",
+        "en": "whereas at night, the body's Yang Qi tends to move inward,"
+      },
+      {
+        "zh": "人就需要休息和睡眠。",
+        "pinyin": "rén jiù xū yào xiū xi hé shuì mián",
+        "en": "and humans need rest and sleep."
+      }
+    ]
+  },
+  {
+    "slide": 56,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "3）地域环境与人体生理：地域环境主要指地势高低、",
+        "pinyin": "dì yù huán jìng yǔ rén tǐ shēng lǐ dì yù huán jìng zhǔ yào zhǐ dì shì gāo dī",
+        "en": "3) Regional environment and human physiology: Regional environment refers mainly to elevation,"
+      },
+      {
+        "zh": "地域气候、",
+        "pinyin": "dì yù qì hòu",
+        "en": "regional climate,"
+      },
+      {
+        "zh": "水土、",
+        "pinyin": "shuǐ tǔ",
+        "en": "water and soil quality,"
+      },
+      {
+        "zh": "物产及人文地理、",
+        "pinyin": "wù chǎn jí rén wén dì lǐ",
+        "en": "local products, as well as cultural geography,"
+      },
+      {
+        "zh": "风俗习惯等。",
+        "pinyin": "fēng sú xí guàn děng",
+        "en": "and customs and habits."
+      },
+      {
+        "zh": "地域气候的差异，",
+        "pinyin": "dì yù qì hòu de chā yì",
+        "en": "Differences in regional climate,"
+      },
+      {
+        "zh": "地理环境和物产不同，",
+        "pinyin": "dì lǐ huán jìng hé wù chǎn bù tóng",
+        "en": "geographic environment, and products,"
+      },
+      {
+        "zh": "人们的生活方式、",
+        "pinyin": "rén men de shēng huó fāng shì",
+        "en": "lead to differences in people's lifestyles,"
+      },
+      {
+        "zh": "饮食习惯等有所差异，",
+        "pinyin": "yǐn shí xí guàn děng yǒu suǒ chā yì",
+        "en": "dietary habits, etc.,"
+      },
+      {
+        "zh": "在一定程度上影响着人体的生理功能与体质的形成。",
+        "pinyin": "zài yī dìng chéng dù shàng yǐng xiǎng zhe rén tǐ de shēng lǐ gōng néng yǔ tǐ zhì de xíng chéng",
+        "en": "which to a certain extent influence the formation of human physiological functions and constitution."
+      }
+    ]
+  },
+  {
+    "slide": 58,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（2）自然环境对人体疾病的影响1)季节气候与人体疾病：四时气候的变化，",
+        "pinyin": "zì rán huán jìng duì rén tǐ jí bìng de yǐng xiǎng jì jié qì hòu yǔ rén tǐ jí bìng sì shí qì hòu de biàn huà",
+        "en": "(2) Influence of the natural environment on human disease 1) Seasonal climate and human disease: Changes in the four seasons,"
+      },
+      {
+        "zh": "每一季节都有其不同特点。",
+        "pinyin": "měi yī jì jié dōu yǒu qí bù tóng tè diǎn",
+        "en": "each have their own different characteristics."
+      },
+      {
+        "zh": "除一般性疾病外，常可发生一些季节性多发病或时令性流行病。",
+        "pinyin": "chú yī bān xìng jí bìng wài cháng kě fā shēng yī xiē jì jié xìng duō fā bìng huò shí lìng xìng liú xíng bìng",
+        "en": "Besides general diseases, seasonal common diseases or epidemic illnesses often occur."
+      },
+      {
+        "zh": "在疾病发展过程中，",
+        "pinyin": "zài jí bìng fā zhǎn guò chéng zhōng",
+        "en": "During the development of a disease,"
+      },
+      {
+        "zh": "或某些慢性病恢复期中，",
+        "pinyin": "huò mǒu xiē màn xìng bìng huī fù qī zhōng",
+        "en": "or in the recovery period of chronic illnesses,"
+      },
+      {
+        "zh": "也往往由于气候剧变或季节交替而使病情加重、",
+        "pinyin": "yě wǎng wǎng yóu yú qì hòu jù biàn huò jì jié jiāo tì ér shǐ bìng qíng jiā zhòng",
+        "en": "conditions often worsen,"
+      },
+      {
+        "zh": "恶化或旧病复作。",
+        "pinyin": "è huà huò jiù bìng fù zuò",
+        "en": "deteriorate, or old ailments relapse due to drastic changes in climate or seasonal transitions."
+      }
+    ]
+  },
+  {
+    "slide": 59,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2)昼夜时辰与人体疾病：昼夜晨昏的变化，对疾病也有一定影响。",
+        "pinyin": "zhòu yè shí chen yǔ rén tǐ jí bìng zhòu yè chén hūn de biàn huà duì jí bìng yě yǒu yī dìng yǐng xiǎng",
+        "en": "2) Day and night cycles and human disease: Changes between day and night also have a certain influence on disease."
+      },
+      {
+        "zh": "清晨至中午，",
+        "pinyin": "qīng chén zhì zhōng wǔ",
+        "en": "From early morning to noon,"
+      },
+      {
+        "zh": "人身之气随自然界之气的阳生阴长而渐旺，",
+        "pinyin": "rén shēn zhī qì suí zì rán jiè zhī qì de yáng shēng yīn zhǎng ér jiàn wàng",
+        "en": "the human body's Qi follows the natural rise of Yang and growth of Yin, gradually becoming stronger,"
+      },
+      {
+        "zh": "故病情转轻；",
+        "pinyin": "gù bìng qíng zhuǎn qīng",
+        "en": "so symptoms tend to lighten;"
+      },
+      {
+        "zh": "午后至夜晚，",
+        "pinyin": "wǔ hòu zhì yè wǎn",
+        "en": "from afternoon to night,"
+      },
+      {
+        "zh": "人身之气又随自然界之气的阳杀阴藏而渐衰，",
+        "pinyin": "rén shēn zhī qì yòu suí zì rán jiè zhī qì de yáng shā yīn cáng ér jiàn shuāi",
+        "en": "human Qi follows the natural waning of Yang and hiding of Yin, gradually weakening,"
+      },
+      {
+        "zh": "故病情加重。",
+        "pinyin": "gù bìng qíng jiā zhòng",
+        "en": "so symptoms tend to worsen."
+      },
+      {
+        "zh": "3)地域环境与人体疾病：某些地方性疾病的发生常与地域环境密切相关。",
+        "pinyin": "dì yù huán jìng yǔ rén tǐ jí bìng mǒu xiē dì fāng xìng jí bìng de fā shēng cháng yǔ dì yù huán jìng mì qiè xiāng guān",
+        "en": "3) Regional environment and human disease: The occurrence of certain endemic diseases is closely related to the regional environment."
+      },
+      {
+        "zh": "如隋·巢元方《诸病源候论·瘿候》指出瘿病的发生与“饮沙水”有关，",
+        "pinyin": "rú suí cháo yuán fāng zhū bìng yuán hòu lùn yǐng hòu zhǐ chū yǐng bìng de fā shēng yǔ yǐn shā shuǐ yǒu guān",
+        "en": "For example, Chao Yuanfang of the Sui Dynasty in 'Treatise on the Sources and Symptoms of Diseases: Goiter' pointed out that goiter is related to 'drinking sandy water,'"
+      },
+      {
+        "zh": "已认识到此病与地域水质的密切关系。",
+        "pinyin": "yǐ rèn shi dào cǐ bìng yǔ dì yù shuǐ zhì de mì qiè guān xi",
+        "en": "showing recognition of the close relationship between this disease and regional water quality."
+      }
+    ]
+  },
+  {
+    "slide": 60,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（3）自然环境与疾病防治的关系1）季节气候与疾病防治：在气候变化剧烈或急骤时,",
+        "pinyin": "zì rán huán jìng yǔ jí bìng fáng zhì de guān xi jì jié qì hòu yǔ jí bìng fáng zhì zài qì hòu biàn huà jù liè huò jí zhòu shí",
+        "en": "(3) Relationship between natural environment and disease prevention/treatment 1) Seasonal climate and prevention/treatment: When climate changes severely or abruptly,"
+      },
+      {
+        "zh": "要“虚邪贼风，",
+        "pinyin": "yào xū xié zéi fēng",
+        "en": "one should \"avoid evil and harmful winds,"
+      },
+      {
+        "zh": "避之有时”,",
+        "pinyin": "bì zhī yǒu shí",
+        "en": "at the right time,\""
+      },
+      {
+        "zh": "防止病邪侵犯人体而发病。",
+        "pinyin": "fáng zhǐ bìng xié qīn fàn rén tǐ ér fā bìng",
+        "en": "to prevent pathogens from invading the body and causing illness."
+      },
+      {
+        "zh": "春夏慎用温热,秋冬慎用寒凉,即所谓“因时制宜”。",
+        "pinyin": "chūn xià shèn yòng wēn rè qiū dōng shèn yòng hán liáng jí suǒ wèi yīn shí zhì yí",
+        "en": "Be cautious with warm and hot medications in spring and summer, and cold and cool medications in autumn and winter; this is what is called \"adapting to the season.\""
+      },
+      {
+        "zh": "遵四时之变而预培人体之阴阳，可收到事半功倍之效。",
+        "pinyin": "zūn sì shí zhī biàn ér yù péi rén tǐ zhī yīn yáng kě shōu dào shì bàn gōng bèi zhī xiào",
+        "en": "Following the changes of the four seasons to cultivate the body's Yin and Yang can yield twice the result with half the effort."
+      },
+      {
+        "zh": "此即所谓“冬病夏治”,“夏病冬治”。",
+        "pinyin": "cǐ jí suǒ wèi dōng bìng xià zhì xià bìng dōng zhì",
+        "en": "This is known as \"treating winter diseases in summer\" and \"treating summer diseases in winter.\""
+      }
+    ]
+  },
+  {
+    "slide": 61,
+    "mode": "fallback",
+    "clauses": [
+      {
+        "zh": "2）昼夜时辰与疾病防治：根据人体气血随自然界阴阳二气的盛衰而有相应的变化，",
+        "pinyin": "zhòu yè shí chen yǔ jí bìng fáng zhì gēn jù rén tǐ qì xuè suí zì rán jiè yīn yáng èr qì de shèng shuāi ér yǒu xiāng yìng de biàn huà"
+      },
+      {
+        "zh": "并应时有规律地循行于经脉之中的学术思路，",
+        "pinyin": "bìng yìng shí yǒu guī lǜ dì xún xíng yú jīng mài zhī zhōng de xué shù sī lù"
+      },
+      {
+        "zh": "古人创立了“子午流注针法”，",
+        "pinyin": "gǔ rén chuàng lì le zi wǔ liú zhù zhēn fǎ"
+      },
+      {
+        "zh": "按日按时取穴针灸，",
+        "pinyin": "àn rì àn shí qǔ xué zhēn jiǔ"
+      },
+      {
+        "zh": "可更有效地调理气血、",
+        "pinyin": "kě gèng yǒu xiào dì diào lǐ qì xuè"
+      },
+      {
+        "zh": "协调阴阳以防治疾病。",
+        "pinyin": "xié tiáo yīn yáng yǐ fáng zhì jí bìng"
+      },
+      {
+        "zh": "3）地域环境与疾病防治：在养生防病中，",
+        "pinyin": "dì yù huán jìng yǔ jí bìng fáng zhì zài yǎng shēng fáng bìng zhōng"
+      },
+      {
+        "zh": "要根据地理环境的不同，",
+        "pinyin": "yào gēn jù dì lǐ huán jìng de bù tóng"
+      },
+      {
+        "zh": "采用适宜的防病治病原则和方法 ，",
+        "pinyin": "cǎi yòng shì yí de fáng bìng zhì bìng yuán zé hé fāng fǎ"
+      },
+      {
+        "zh": "即所谓“因地制宜”。",
+        "pinyin": "jí suǒ wèi yīn dì zhì yí"
+      },
+      {
+        "zh": "中国的地理特点，",
+        "pinyin": "zhōng guó de dì lǐ tè diǎn"
+      },
+      {
+        "zh": "是西北地势高而东南地势低，",
+        "pinyin": "shì xī běi dì shì gāo ér dōng nán dì shì dī"
+      },
+      {
+        "zh": "西北偏于寒凉干燥而东南偏于温热湿润，",
+        "pinyin": "xī běi piān yú hán liáng gān zào ér dōng nán piān yú wēn rè shī rùn"
+      },
+      {
+        "zh": "故西北少用寒凉之药而东南慎用辛热之品。",
+        "pinyin": "gù xī běi shǎo yòng hán liáng zhī yào ér dōng nán shèn yòng xīn rè zhī pǐn"
+      }
+    ],
+    "en_whole": "2) Diurnal Timing and Disease Prevention/Treatment: Based on the academic concept that human Qi and Blood fluctuate in accordance with the waxing and waning of Yin and Yang in the natural world, and circulate through the meridians (energy channels) at specific times, the ancients developed the 'Midnight-Noon Ebb-Flow Acupuncture' method (a system of timing acupuncture points according to the daily cycle). Selecting acupuncture points based on the day and time allows for more effective regulation of Qi and Blood, and the harmonization of Yin and Yang to prevent and treat disease. 3) Geographic Environment and Disease Prevention/Treatment: In health cultivation and disease prevention, it is necessary to adopt appropriate principles and methods based on different geographical environments, a concept known as 'adapting to local conditions' (Yin Di Zhi Yi). The geographical characteristics of China are such that the northwest terrain is high and the southeast is low; the northwest tends to be cold, dry, and cool, while the southeast tends to be warm, hot, and humid. Therefore, one should use fewer cold-natured medicinals in the northwest and be cautious about using pungent, hot-natured substances in the southeast."
+  },
+  {
+    "slide": 62,
+    "mode": "fallback",
+    "clauses": [
+      {
+        "zh": "3.人与社会环境的统一性",
+        "pinyin": "rén yǔ shè huì huán jìng de tǒng yī xìng"
+      },
+      {
+        "zh": "人不单是生物个体，而且是社会中的一员，具备社会属性。",
+        "pinyin": "rén bù dān shì shēng wù gè tǐ ér qiě shì shè huì zhòng dì yī yuán jù bèi shè huì shǔ xìng"
+      },
+      {
+        "zh": "政治、",
+        "pinyin": "zhèng zhì"
+      },
+      {
+        "zh": "经济、",
+        "pinyin": "jīng jì"
+      },
+      {
+        "zh": "文化、",
+        "pinyin": "wén huà"
+      },
+      {
+        "zh": "宗教、",
+        "pinyin": "zōng jiào"
+      },
+      {
+        "zh": "法律、",
+        "pinyin": "fǎ lǜ"
+      },
+      {
+        "zh": "婚姻、",
+        "pinyin": "hūn yīn"
+      },
+      {
+        "zh": "人际关系等社会因素，",
+        "pinyin": "rén jì guān xì děng shè huì yīn sù"
+      },
+      {
+        "zh": "必然通过与人的信息交换影响着人体的各种生理、",
+        "pinyin": "bì rán tōng guò yǔ rén de xìn xī jiāo huàn yǐng xiǎng zhe rén tǐ de gè zhǒng shēng lǐ"
+      },
+      {
+        "zh": "心理活动和病理变化，",
+        "pinyin": "xīn lǐ huó dòng hé bìng lǐ biàn huà"
+      },
+      {
+        "zh": "而人也在认识世界和改造世界的交流中，",
+        "pinyin": "ér rén yě zài rèn shi shì jiè hé gǎi zào shì jiè de jiāo liú zhōng"
+      },
+      {
+        "zh": "维持着生命活动的稳定、",
+        "pinyin": "wéi chí zhe shēng mìng huó dòng de wěn dìng"
+      },
+      {
+        "zh": "有序、",
+        "pinyin": "yǒu xù"
+      },
+      {
+        "zh": "平衡、",
+        "pinyin": "píng héng"
+      },
+      {
+        "zh": "协调。",
+        "pinyin": "xié tiáo"
+      }
+    ],
+    "en_whole": "3. The Unity of Humans and the Social Environment. Humans are not merely biological individuals; they are also members of society and possess social attributes. Social factors—such as politics, economy, culture, religion, law, marriage, and interpersonal relationships—inevitably influence the body's various physiological and psychological activities, as well as pathological changes (disease processes), through the exchange of information. Simultaneously, through the process of understanding and transforming the world, humans maintain the stability, order, balance, and harmony of their life activities."
+  },
+  {
+    "slide": 63,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "不利的社会环境，",
+        "pinyin": "bù lì de shè huì huán jìng",
+        "en": "Unfavorable social environments,"
+      },
+      {
+        "zh": "如家庭纠纷，",
+        "pinyin": "rú jiā tíng jiū fēn",
+        "en": "such as family disputes,"
+      },
+      {
+        "zh": "邻里不和，",
+        "pinyin": "lín lǐ bù hé",
+        "en": "neighborly discord,"
+      },
+      {
+        "zh": "亲人亡故，",
+        "pinyin": "qīn rén wáng gù",
+        "en": "death of loved ones,"
+      },
+      {
+        "zh": "同事之间或上下级之间的关系紧张等，",
+        "pinyin": "tóng shì zhī jiān huò shàng xià jí zhī jiān de guān xi jǐn zhāng děng",
+        "en": "or strained relationships between colleagues or superiors and subordinates,"
+      },
+      {
+        "zh": "可破坏人体原有的生理和心理的协调和稳定，",
+        "pinyin": "kě pò huài rén tǐ yuán yǒu de shēng lǐ hé xīn lǐ de xié tiáo hé wěn dìng",
+        "en": "can disrupt the body's original physiological and psychological coordination and stability,"
+      },
+      {
+        "zh": "不仅易引发某些身心疾病，",
+        "pinyin": "bù jǐn yì yǐn fā mǒu xiē shēn xīn jí bìng",
+        "en": "not only triggering certain psychosomatic diseases,"
+      },
+      {
+        "zh": "而且常使某些原发疾病如冠心病、",
+        "pinyin": "ér qiě cháng shǐ mǒu xiē yuán fā jí bìng rú guān xīn bìng",
+        "en": "but also worsening or aggravating original conditions such as coronary heart disease,"
+      },
+      {
+        "zh": "高血压、",
+        "pinyin": "gāo xuè yā",
+        "en": "hypertension,"
+      },
+      {
+        "zh": "糖尿病、",
+        "pinyin": "táng niào bìng",
+        "en": "diabetes,"
+      },
+      {
+        "zh": "肿瘤的病情加重或恶化，",
+        "pinyin": "zhǒng liú de bìng qíng jiā zhòng huò è huà",
+        "en": "and tumors,"
+      },
+      {
+        "zh": "甚至死亡。",
+        "pinyin": "shèn zhì sǐ wáng",
+        "en": "and can even lead to death."
+      }
+    ]
+  },
+  {
+    "slide": 64,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（1）社会环境对人体生理的影响社会环境和社会背景不同，",
+        "pinyin": "shè huì huán jìng duì rén tǐ shēng lǐ de yǐng xiǎng shè huì huán jìng hé shè huì bèi jǐng bù tóng",
+        "en": "(1) The influence of the social environment on human physiology: Different social environments and backgrounds,"
+      },
+      {
+        "zh": "造就了个人的心理特征与体质的差异。",
+        "pinyin": "zào jiù le gè rén de xīn lǐ tè zhēng yǔ tǐ zhì de chā yì",
+        "en": "shape an individual's psychological traits and constitutional differences."
+      },
+      {
+        "zh": "一般说来，",
+        "pinyin": "yī bān shuō lái",
+        "en": "Generally speaking,"
+      },
+      {
+        "zh": "良好的社会环境，",
+        "pinyin": "liáng hǎo de shè huì huán jìng",
+        "en": "a favorable social environment,"
+      },
+      {
+        "zh": "和谐的人际关系，",
+        "pinyin": "hé xié de rén jì guān xì",
+        "en": "and harmonious interpersonal relationships,"
+      },
+      {
+        "zh": "可使人精神振奋，",
+        "pinyin": "kě shǐ rén jīng shén zhèn fèn",
+        "en": "can inspire a person's spirit,"
+      },
+      {
+        "zh": "勇于进取，",
+        "pinyin": "yǒng yú jìn qǔ",
+        "en": "encourage them to forge ahead,"
+      },
+      {
+        "zh": "有利于身心健康；",
+        "pinyin": "yǒu lì yú shēn xīn jiàn kāng",
+        "en": "and are beneficial to physical and mental health;"
+      },
+      {
+        "zh": "而动荡的社会环境、",
+        "pinyin": "ér dòng dàng de shè huì huán jìng",
+        "en": "whereas a turbulent social environment,"
+      },
+      {
+        "zh": "纠结的人际关系，",
+        "pinyin": "jiū jié de rén jì guān xì",
+        "en": "and strained interpersonal relationships,"
+      },
+      {
+        "zh": "可使人精神压抑，",
+        "pinyin": "kě shǐ rén jīng shén yā yì",
+        "en": "can lead to mental depression,"
+      },
+      {
+        "zh": "或紧张、",
+        "pinyin": "huò jǐn zhāng",
+        "en": "or tension,"
+      },
+      {
+        "zh": "焦虑，",
+        "pinyin": "jiāo lǜ",
+        "en": "and anxiety,"
+      },
+      {
+        "zh": "从而影响心身功能，",
+        "pinyin": "cóng ér yǐng xiǎng xīn shēn gōng néng",
+        "en": "thereby affecting mind-body function,"
+      },
+      {
+        "zh": "危害心身健康。",
+        "pinyin": "wēi hài xīn shēn jiàn kāng",
+        "en": "and harming mind-body health."
+      },
+      {
+        "zh": "政治、经济地位的高低，对人的心身功能也有重要影响。",
+        "pinyin": "zhèng zhì jīng jì dì wèi de gāo dī duì rén de xīn shēn gōng néng yě yǒu zhòng yào yǐng xiǎng",
+        "en": "One's political and economic status also has a significant impact on mind-body function."
+      }
+    ]
+  },
+  {
+    "slide": 65,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（2）社会环境对人体病变的影响剧烈、",
+        "pinyin": "shè huì huán jìng duì rén tǐ bìng biàn de yǐng xiǎng jù liè",
+        "en": "(2) The influence of the social environment on human pathology: A drastic,"
+      },
+      {
+        "zh": "骤然变化的社会环境，",
+        "pinyin": "zhòu rán biàn huà de shè huì huán jìng",
+        "en": "and suddenly changing social environment,"
+      },
+      {
+        "zh": "对人体生理功能造成较大的影响，",
+        "pinyin": "duì rén tǐ shēng lǐ gōng néng zào chéng jiào dà de yǐng xiǎng",
+        "en": "causes significant impacts on human physiological functions,"
+      },
+      {
+        "zh": "从而损害人的心身健康。",
+        "pinyin": "cóng ér sǔn hài rén de xīn shēn jiàn kāng",
+        "en": "thereby damaging mind-body health."
+      },
+      {
+        "zh": "社会动荡、",
+        "pinyin": "shè huì dòng dàng",
+        "en": "Social unrest,"
+      },
+      {
+        "zh": "政治腐败、",
+        "pinyin": "zhèng zhì fǔ bài",
+        "en": "political corruption,"
+      },
+      {
+        "zh": "饥荒战乱、",
+        "pinyin": "jī huāng zhàn luàn",
+        "en": "famine and war,"
+      },
+      {
+        "zh": "经济萧条，",
+        "pinyin": "jīng jì xiāo tiáo",
+        "en": "economic depression,"
+      },
+      {
+        "zh": "以及不良的习俗风气，",
+        "pinyin": "yǐ jí bù liáng de xí sú fēng qì",
+        "en": "as well as unhealthy social customs and trends,"
+      },
+      {
+        "zh": "皆为疾病之源，",
+        "pinyin": "jiē wèi jí bìng zhī yuán",
+        "en": "are all sources of disease,"
+      },
+      {
+        "zh": "尤其是心身疾病之因。",
+        "pinyin": "yóu qí shì xīn shēn jí bìng zhī yīn",
+        "en": "and especially causes of psychosomatic illness."
+      },
+      {
+        "zh": "随着现代社会的人口增长、",
+        "pinyin": "suí zhe xiàn dài shè huì de rén kǒu zēng zhǎng",
+        "en": "With the modern growth of population,"
+      },
+      {
+        "zh": "资源减少、",
+        "pinyin": "zī yuán jiǎn shǎo",
+        "en": "diminishing resources,"
+      },
+      {
+        "zh": "竞争激烈，",
+        "pinyin": "jìng zhēng jī liè",
+        "en": "and intense competition,"
+      },
+      {
+        "zh": "导致精神紧张、",
+        "pinyin": "dǎo zhì jīng shén jǐn zhāng",
+        "en": "leading to mental tension,"
+      },
+      {
+        "zh": "情绪压抑、",
+        "pinyin": "qíng xù yā yì",
+        "en": "emotional suppression,"
+      },
+      {
+        "zh": "安全感低下或缺失，",
+        "pinyin": "ān quán gǎn dī xià huò quē shī",
+        "en": "and a lowered or absent sense of security,"
+      },
+      {
+        "zh": "精神情志因素在疾病的发生和发展变化中所起的作用越来越显著。",
+        "pinyin": "jīng shén qíng zhì yīn sù zài jí bìng de fā shēng hé fā zhǎn biàn huà zhōng suǒ qǐ de zuò yòng yuè lái yuè xiǎn zhù",
+        "en": "the role of mental and emotional factors in the occurrence and development of disease is becoming increasingly significant."
+      }
+    ]
+  },
+  {
+    "slide": 66,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（3）社会环境与疾病防治的关系由于社会环境的改变主要通过影响人体的精神情志而对人体的生命活动和病理变化产生影响，",
+        "pinyin": "shè huì huán jìng yǔ jí bìng fáng zhì de guān xi yóu yú shè huì huán jìng de gǎi biàn zhǔ yào tōng guò yǐng xiǎng rén tǐ de jīng shén qíng zhì ér duì rén tǐ de shēng mìng huó dòng hé bìng lǐ biàn huà chǎn shēng yǐng xiǎng",
+        "en": "(3) The relationship between social environment and disease prevention and treatment: Since changes in the social environment affect human life activities and pathological changes primarily by influencing a person's mental and emotional states,"
+      },
+      {
+        "zh": "因而预防和治疗疾病时，",
+        "pinyin": "yīn ér yù fáng hé zhì liáo jí bìng shí",
+        "en": "therefore, when preventing and treating diseases,"
+      },
+      {
+        "zh": "必须充分考虑社会因素对人体身心机能的影响，",
+        "pinyin": "bì xū chōng fèn kǎo lǜ shè huì yīn sù duì rén tǐ shēn xīn jī néng de yǐng xiǎng",
+        "en": "one must fully consider the impact of social factors on mind-body functioning,"
+      },
+      {
+        "zh": "尽量避免不利的社会因素对人的精神刺激，",
+        "pinyin": "jǐn liàng bì miǎn bù lì de shè huì yīn sù duì rén de jīng shén cì jī",
+        "en": "strive to avoid adverse social factors that cause mental stress,"
+      },
+      {
+        "zh": "创造有利的社会环境，",
+        "pinyin": "chuàng zào yǒu lì de shè huì huán jìng",
+        "en": "create a favorable social environment,"
+      },
+      {
+        "zh": "获得有力的社会支持，",
+        "pinyin": "huò dé yǒu lì de shè huì zhī chí",
+        "en": "obtain strong social support,"
+      },
+      {
+        "zh": "并通过精神调摄提高对社会环境的适应能力，",
+        "pinyin": "bìng tōng guò jīng shén tiáo shè tí gāo duì shè huì huán jìng de shì yìng néng lì",
+        "en": "and improve the ability to adapt to the social environment through mental cultivation,"
+      },
+      {
+        "zh": "以维持身心健康，",
+        "pinyin": "yǐ wéi chí shēn xīn jiàn kāng",
+        "en": "in order to maintain mind-body health,"
+      },
+      {
+        "zh": "预防疾病的发生，",
+        "pinyin": "yù fáng jí bìng de fā shēng",
+        "en": "prevent the onset of disease,"
+      },
+      {
+        "zh": "并促进疾病向好的方面转化。",
+        "pinyin": "bìng cù jìn jí bìng xiàng hǎo de fāng miàn zhuǎn huà",
+        "en": "and promote the favorable transformation of existing diseases."
+      }
+    ]
+  },
+  {
+    "slide": 67,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "综上所述，",
+        "pinyin": "zōng shàng suǒ shù",
+        "en": "In summary,"
+      },
+      {
+        "zh": "中医学理论体系以人为本，",
+        "pinyin": "zhōng yī xué lǐ lùn tǐ xì yǐ rén wéi běn",
+        "en": "the theoretical system of TCM is people-centered,"
+      },
+      {
+        "zh": "以自然环境与社会环境为背景，",
+        "pinyin": "yǐ zì rán huán jìng yǔ shè huì huán jìng wèi bèi jǐng",
+        "en": "using the natural and social environment as its background,"
+      },
+      {
+        "zh": "揭示生命、",
+        "pinyin": "jiē shì shēng mìng",
+        "en": "to reveal major medical issues such as life,"
+      },
+      {
+        "zh": "健康、",
+        "pinyin": "jiàn kāng",
+        "en": "health,"
+      },
+      {
+        "zh": "疾病等重大医学问题，",
+        "pinyin": "jí bìng děng zhòng dà yī xué wèn tí",
+        "en": "and disease,"
+      },
+      {
+        "zh": "阐述了人与自然、",
+        "pinyin": "chǎn shù le rén yǔ zì rán",
+        "en": "and it explicates the holistic connections between humans and nature,"
+      },
+      {
+        "zh": "人与社会、",
+        "pinyin": "rén yǔ shè huì",
+        "en": "humans and society,"
+      },
+      {
+        "zh": "精神与形体以及形体内部的整体性联系。",
+        "pinyin": "jīng shén yǔ xíng tǐ yǐ jí xíng tǐ nèi bù de zhěng tǐ xìng lián xì",
+        "en": "the mind and the body, and within the body itself."
+      },
+      {
+        "zh": "在维护健康和防治疾病的过程中，",
+        "pinyin": "zài wéi hù jiàn kāng hé fáng zhì jí bìng de guò chéng zhōng",
+        "en": "In the process of maintaining health and preventing and treating disease,"
+      },
+      {
+        "zh": "要求医者“上知天文，",
+        "pinyin": "yāo qiú yī zhě shàng zhī tiān wén",
+        "en": "it requires the practitioner to \"know astronomy above,"
+      },
+      {
+        "zh": "下知地理，",
+        "pinyin": "xià zhī dì lǐ",
+        "en": "know geography below,"
+      },
+      {
+        "zh": "中知人事”，",
+        "pinyin": "zhōng zhī rén shì",
+        "en": "and know human affairs in between,\""
+      },
+      {
+        "zh": "从中充分体现出整体观念的指导意义。",
+        "pinyin": "cóng zhōng chōng fèn tǐ xiàn chū zhěng tǐ guān niàn de zhǐ dǎo yì yì",
+        "en": "which fully embodies the guiding significance of the holistic concept."
+      }
+    ]
+  },
+  {
+    "slide": 68,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（二）辨证论治辨证论治，",
+        "pinyin": "èr biàn zhèng lùn zhì biàn zhèng lùn zhì",
+        "en": "(II) Pattern Differentiation and Treatment: Pattern differentiation and treatment (Bian Zheng Lun Zhi),"
+      },
+      {
+        "zh": "是中医学认识疾病和治疗疾病的基本原则，",
+        "pinyin": "shì zhōng yī xué rèn shi jí bìng hé zhì liáo jí bìng de jī běn yuán zé",
+        "en": "is the fundamental principle of TCM for understanding and treating disease,"
+      },
+      {
+        "zh": "并贯穿于预防与康复等医疗保健实践的过程。",
+        "pinyin": "bìng guàn chuān yú yù fáng yǔ kāng fù děng yī liáo bǎo jiàn shí jiàn de guò chéng",
+        "en": "and runs through the entire process of healthcare practices, including prevention and rehabilitation."
+      },
+      {
+        "zh": "中医学在认识疾病和处理疾病的过程中，",
+        "pinyin": "zhōng yī xué zài rèn shi jí bìng hé chǔ lǐ jí bìng de guò chéng zhōng",
+        "en": "In the process of understanding and handling disease,"
+      },
+      {
+        "zh": "既强调辨证论治，",
+        "pinyin": "jì qiáng diào biàn zhèng lùn zhì",
+        "en": "TCM emphasizes both pattern differentiation and treatment,"
+      },
+      {
+        "zh": "又讲究辨证与辨病相结合。",
+        "pinyin": "yòu jiǎng jiu biàn zhèng yǔ biàn bìng xiāng jié hé",
+        "en": "as well as the combination of pattern differentiation and disease identification."
+      }
+    ]
+  },
+  {
+    "slide": 69,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "1.症、证、病的基本概念",
+        "pinyin": "zhèng zhèng bìng de jī běn gài niàn",
+        "en": "1. Basic concepts of symptom (zheng), pattern (zheng), and disease (bing)"
+      },
+      {
+        "zh": "（1）症：即症状(symptom)和体征(physical sign)的总称，",
+        "pinyin": "zhèng jí zhèng zhuàng hé tǐ zhēng de zǒng chēng",
+        "en": "(1) Symptom (Zheng): The collective term for symptoms and physical signs,"
+      },
+      {
+        "zh": "是疾病过程中表现出的个别、",
+        "pinyin": "shì jí bìng guò chéng zhōng biǎo xiàn chū de gè bié",
+        "en": "representing individual,"
+      },
+      {
+        "zh": "孤立的现象，",
+        "pinyin": "gū lì de xiàn xiàng",
+        "en": "isolated phenomena appearing during the course of a disease,"
+      },
+      {
+        "zh": "可以是病人异常的主观感觉或行为表现，",
+        "pinyin": "kě yǐ shì bìng rén yì cháng de zhǔ guān gǎn jué huò xíng wéi biǎo xiàn",
+        "en": "which can be the patient's abnormal subjective sensations or behavioral manifestations,"
+      },
+      {
+        "zh": "如恶寒发热、",
+        "pinyin": "rú è hán fā rè",
+        "en": "such as aversion to cold and fever,"
+      },
+      {
+        "zh": "恶心呕吐、",
+        "pinyin": "ě xīn ǒu tù",
+        "en": "nausea and vomiting,"
+      },
+      {
+        "zh": "烦躁易怒等（称症状），",
+        "pinyin": "fán zào yì nù děng chēng zhèng zhuàng",
+        "en": "irritability and anger (called symptoms),"
+      },
+      {
+        "zh": "也可以是医生检查病人时发现的异常征象，",
+        "pinyin": "yě kě yǐ shì yī shēng jiǎn chá bìng rén shí fā xiàn de yì cháng zhēng xiàng",
+        "en": "or they can be abnormal signs discovered when a doctor examines the patient,"
+      },
+      {
+        "zh": "如舌苔、",
+        "pinyin": "rú shé tāi",
+        "en": "such as tongue coating,"
+      },
+      {
+        "zh": "脉象等（称体征）。",
+        "pinyin": "mài xiàng děng chēng tǐ zhēng",
+        "en": "or pulse condition (called physical signs)."
+      }
+    ]
+  },
+  {
+    "slide": 70,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "症是判断疾病、",
+        "pinyin": "zhèng shì pàn duàn jí bìng",
+        "en": "Symptoms are the main basis for judging disease,"
+      },
+      {
+        "zh": "辨识证候的主要依据，",
+        "pinyin": "biàn shí zhèng hòu de zhǔ yào yī jù",
+        "en": "and identifying patterns,"
+      },
+      {
+        "zh": "但因其仅是疾病的表面现象甚至是假象，",
+        "pinyin": "dàn yīn qí jǐn shì jí bìng de biǎo miàn xiàn xiàng shèn zhì shì jiǎ xiàng",
+        "en": "but because they are merely superficial phenomena of a disease or even false signs,"
+      },
+      {
+        "zh": "未必能完全反映疾病和候的本质。",
+        "pinyin": "wèi bì néng wán quán fǎn yìng jí bìng hé hòu de běn zhì",
+        "en": "they may not fully reflect the essence of the disease and the pattern."
+      },
+      {
+        "zh": "同一个症状，",
+        "pinyin": "tóng yī gè zhèng zhuàng",
+        "en": "The same symptom,"
+      },
+      {
+        "zh": "可由不同的致病因素引起，",
+        "pinyin": "kě yóu bù tóng de zhì bìng yīn sù yǐn qǐ",
+        "en": "can be caused by different pathogenic factors,"
+      },
+      {
+        "zh": "其病理机制不尽相同，",
+        "pinyin": "qí bìng lǐ jī zhì bù jìn xiāng tóng",
+        "en": "with pathological mechanisms that are not identical,"
+      },
+      {
+        "zh": "也可见于不同的疾病和证，",
+        "pinyin": "yě kě jiàn yú bù tóng de jí bìng hé zhèng",
+        "en": "and it may be seen in different diseases and patterns."
+      },
+      {
+        "zh": "孤立的症状或体征不能反映疾病或证的本质，",
+        "pinyin": "gū lì de zhèng zhuàng huò tǐ zhēng bù néng fǎn yìng jí bìng huò zhèng de běn zhì",
+        "en": "Isolated symptoms or physical signs cannot reflect the essence of the disease or pattern,"
+      },
+      {
+        "zh": "因而不能作为治疗的依据。",
+        "pinyin": "yīn ér bù néng zuò wéi zhì liáo de yī jù",
+        "en": "and therefore cannot serve as the sole basis for treatment."
+      }
+    ]
+  },
+  {
+    "slide": 71,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "症",
+        "pinyin": "zhèng",
+        "en": "Symptom (Zheng)."
+      },
+      {
+        "zh": "症状——主观异常感觉——怕冷，头痛，耳鸣",
+        "pinyin": "zhèng zhuàng zhǔ guān yì cháng gǎn jué pà lěng tóu tòng ěr míng",
+        "en": "Symptoms—subjective abnormal sensations—such as aversion to cold, headache, and tinnitus."
+      },
+      {
+        "zh": "体征——客观异常征象——咳嗽、流涕、水肿",
+        "pinyin": "tǐ zhēng kè guān yì cháng zhēng xiàng ké sou liú tì shuǐ zhǒng",
+        "en": "Signs—objective abnormal physical findings—such as coughing, runny nose, and edema."
+      },
+      {
+        "zh": "舌苔、脉象",
+        "pinyin": "shé tāi mài xiàng",
+        "en": "Tongue coating and pulse condition."
+      },
+      {
+        "zh": "咳 咳 咳",
+        "pinyin": "ké ké ké",
+        "en": "Cough, cough, cough."
+      },
+      {
+        "zh": "个别的、孤立的症状或体征不能反映疾病的本质",
+        "pinyin": "gè bié de gū lì de zhèng zhuàng huò tǐ zhēng bù néng fǎn yìng jí bìng de běn zhì",
+        "en": "Individual or isolated symptoms or signs cannot reflect the essence of a disease."
+      }
+    ]
+  },
+  {
+    "slide": 72,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（2）证的基本概念证：是对疾病过程中一定阶段的病因、",
+        "pinyin": "zhèng de jī běn gài niàn zhèng shì duì jí bìng guò chéng zhōng yī dìng jiē duàn de bìng yīn",
+        "en": "(2) Basic concept of pattern (Zheng): A pattern is a summary of the essential pathogenesis—including the cause,"
+      },
+      {
+        "zh": "病位、",
+        "pinyin": "bìng wèi",
+        "en": "location,"
+      },
+      {
+        "zh": "病性、",
+        "pinyin": "bìng xìng",
+        "en": "nature,"
+      },
+      {
+        "zh": "病势等病机本质的概括。",
+        "pinyin": "bìng shì děng bìng jī běn zhì de gài kuò",
+        "en": "and trend—during a certain stage in the course of a disease."
+      },
+      {
+        "zh": "证所反映的是疾病的本质。",
+        "pinyin": "zhèng suǒ fǎn yìng de shì jí bìng de běn zhì",
+        "en": "A pattern reflects the essence of the disease."
+      },
+      {
+        "zh": "证候：即证的外候，",
+        "pinyin": "zhèng hòu jí zhèng de wài hòu",
+        "en": "Pattern manifestation (Zheng Hou): the external manifestation of a pattern,"
+      },
+      {
+        "zh": "是指疾病过程中一定阶段的病因、",
+        "pinyin": "shì zhǐ jí bìng guò chéng zhōng yī dìng jiē duàn de bìng yīn",
+        "en": "referring to the state of reaction where the cause,"
+      },
+      {
+        "zh": "病位、",
+        "pinyin": "bìng wèi",
+        "en": "location,"
+      },
+      {
+        "zh": "病性、",
+        "pinyin": "bìng xìng",
+        "en": "nature,"
+      },
+      {
+        "zh": "病势等病机本质有机联系的反应状态。",
+        "pinyin": "bìng shì děng bìng jī běn zhì yǒu jī lián xì de fǎn yìng zhuàng tài",
+        "en": "and trend of the disease are organically linked."
+      },
+      {
+        "zh": "一般由一组相对固定的、",
+        "pinyin": "yī bān yóu yī zǔ xiāng duì gù dìng de",
+        "en": "It is generally composed of a group of relatively fixed,"
+      },
+      {
+        "zh": "有内在联系的、",
+        "pinyin": "yǒu nèi zài lián xì de",
+        "en": "internally connected symptoms and physical signs,"
+      },
+      {
+        "zh": "能揭示疾病某一阶段或某一类型病变本质的症状和体征构成。",
+        "pinyin": "néng jiē shì jí bìng mǒu yī jiē duàn huò mǒu yī lèi xíng bìng biàn běn zhì de zhèng zhuàng hé tǐ zhēng gòu chéng",
+        "en": "that can reveal the nature of the lesion at a certain stage or type of disease."
+      },
+      {
+        "zh": "如食少纳呆，",
+        "pinyin": "rú shí shǎo nà dāi",
+        "en": "For example, poor appetite,"
+      },
+      {
+        "zh": "腹胀便溏，",
+        "pinyin": "fù zhàng biàn táng",
+        "en": "abdominal distension and loose stools,"
+      },
+      {
+        "zh": "倦怠乏力，",
+        "pinyin": "juàn dài fá lì",
+        "en": "fatigue,"
+      },
+      {
+        "zh": "面黄，",
+        "pinyin": "miàn huáng",
+        "en": "pale complexion,"
+      },
+      {
+        "zh": "舌淡红苔白，",
+        "pinyin": "shé dàn hóng tái bái",
+        "en": "pale tongue with white coating,"
+      },
+      {
+        "zh": "脉沉缓，",
+        "pinyin": "mài chén huǎn",
+        "en": "and deep, slow pulse,"
+      },
+      {
+        "zh": "属于脾胃虚弱证的证候表现。",
+        "pinyin": "shǔ yú pí wèi xū ruò zhèng de zhèng hòu biǎo xiàn",
+        "en": "are manifestations of a Spleen-Stomach Deficiency pattern."
+      }
+    ]
+  },
+  {
+    "slide": 73,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "脾胃虚弱证",
+        "pinyin": "pí wèi xū ruò zhèng",
+        "en": "Spleen and Stomach deficiency pattern (syndrome)."
+      },
+      {
+        "zh": "病位在脾胃",
+        "pinyin": "bìng wèi zài pí wèi",
+        "en": "Location of the disease: Spleen and Stomach."
+      },
+      {
+        "zh": "病性为虚",
+        "pinyin": "bìng xìng wèi xū",
+        "en": "Nature of the disease: Deficiency."
+      },
+      {
+        "zh": "证候 食少纳呆，腹胀便溏，",
+        "pinyin": "zhèng hòu shí shǎo nà dāi fù zhàng biàn táng",
+        "en": "Pattern manifestations: Poor appetite, abdominal bloating, and loose stools."
+      },
+      {
+        "zh": "倦怠乏力，舌淡红苔白，",
+        "pinyin": "juàn dài fá lì shé dàn hóng tái bái",
+        "en": "Fatigue and weakness; tongue is pale red with a white coating."
+      },
+      {
+        "zh": "脉沉缓等。",
+        "pinyin": "mài chén huǎn děng",
+        "en": "deep and slow pulse, etc."
+      }
+    ]
+  },
+  {
+    "slide": 74,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "证具有个体差异性、时相性、空间性和动态性特征。",
+        "pinyin": "zhèng jù yǒu gè tǐ chā yì xìng shí xiāng xìng kōng jiān xìng hé dòng tài xìng tè zhēng",
+        "en": "Patterns have characteristics of individual variation, phase-specificity, spatiality, and dynamism."
+      },
+      {
+        "zh": "其一，证的个体差异性。",
+        "pinyin": "qí yī zhèng de gè tǐ chā yì xìng",
+        "en": "First, individual variation of patterns."
+      },
+      {
+        "zh": "由于人的体质差异，故感受同一病邪，可能表现为不同的证。",
+        "pinyin": "yóu yú rén de tǐ zhì chā yì gù gǎn shòu tóng yī bìng xié kě néng biǎo xiàn wèi bù tóng de zhèng",
+        "en": "Due to differences in individual constitutions, the same pathogen may manifest as different patterns."
+      },
+      {
+        "zh": "即便同一病证，由于个体反应性差异，也可以表现出不同的症状。",
+        "pinyin": "jí biàn tóng yī bìng zhèng yóu yú gè tǐ fǎn yìng xìng chā yì yě kě yǐ biǎo xiàn chū bù tóng de zhèng zhuàng",
+        "en": "Even with the same pattern, different symptoms may appear due to differences in individual reactivity."
+      },
+      {
+        "zh": "其二，证的时相性。",
+        "pinyin": "qí èr zhèng de shí xiāng xìng",
+        "en": "Second, phase-specificity of patterns."
+      },
+      {
+        "zh": "同一疾病，",
+        "pinyin": "tóng yī jí bìng",
+        "en": "The same disease,"
+      },
+      {
+        "zh": "由于所处于阶段不同，",
+        "pinyin": "yóu yú suǒ chǔ yú jiē duàn bù tóng",
+        "en": "due to different stages,"
+      },
+      {
+        "zh": "临床表现各异，",
+        "pinyin": "lín chuáng biǎo xiàn gè yì",
+        "en": "has different clinical manifestations,"
+      },
+      {
+        "zh": "因而证也不同，",
+        "pinyin": "yīn ér zhèng yě bù tóng",
+        "en": "and therefore the patterns differ."
+      },
+      {
+        "zh": "如积聚，",
+        "pinyin": "rú jī jù",
+        "en": "For instance, with abdominal masses (ji ju),"
+      },
+      {
+        "zh": "在初期、",
+        "pinyin": "zài chū qī",
+        "en": "in the early,"
+      },
+      {
+        "zh": "中期和晚期的不同阶段，",
+        "pinyin": "zhōng qī hé wǎn qī de bù tóng jiē duàn",
+        "en": "middle, and late stages,"
+      },
+      {
+        "zh": "证会发生变化。",
+        "pinyin": "zhèng huì fā shēng biàn huà",
+        "en": "the pattern will change."
+      },
+      {
+        "zh": "其三，证的空间性。",
+        "pinyin": "qí sān zhèng de kōng jiān xìng",
+        "en": "Third, spatiality of patterns."
+      },
+      {
+        "zh": "如感冒，",
+        "pinyin": "rú gǎn mào",
+        "en": "For example, the common cold,"
+      },
+      {
+        "zh": "与不同地域的气候有关，",
+        "pinyin": "yǔ bù tóng dì yù de qì hòu yǒu guān",
+        "en": "relates to the climate of different regions,"
+      },
+      {
+        "zh": "形成风寒感冒证、",
+        "pinyin": "xíng chéng fēng hán gǎn mào zhèng",
+        "en": "forming Wind-Cold Cold pattern,"
+      },
+      {
+        "zh": "风热感冒证、",
+        "pinyin": "fēng rè gǎn mào zhèng",
+        "en": "Wind-Heat Cold pattern,"
+      },
+      {
+        "zh": "暑湿感冒证等。",
+        "pinyin": "shǔ shī gǎn mào zhèng děng",
+        "en": "Summer-Damp Cold pattern, etc."
+      }
+    ]
+  },
+  {
+    "slide": 75,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "其四，证的动态性。",
+        "pinyin": "qí sì zhèng de dòng tài xìng",
+        "en": "Fourth, dynamism of patterns."
+      },
+      {
+        "zh": "疾病受内外环境多种因素影响，",
+        "pinyin": "jí bìng shòu nèi wài huán jìng duō zhǒng yīn sù yǐng xiǎng",
+        "en": "Disease is affected by various internal and external environmental factors,"
+      },
+      {
+        "zh": "可不断发生变化，",
+        "pinyin": "kě bu duàn fā shēng biàn huà",
+        "en": "and can change continuously,"
+      },
+      {
+        "zh": "故证在疾病过程中始终处于动态变化之中。",
+        "pinyin": "gù zhèng zài jí bìng guò chéng zhōng shǐ zhōng chǔ yú dòng tài biàn huà zhī zhōng",
+        "en": "so the pattern is always in a state of dynamic change during the disease process."
+      },
+      {
+        "zh": "因此，",
+        "pinyin": "yīn cǐ",
+        "en": "Therefore,"
+      },
+      {
+        "zh": "在临床辨证中，",
+        "pinyin": "zài lín chuáng biàn zhèng zhōng",
+        "en": "in clinical pattern differentiation,"
+      },
+      {
+        "zh": "应充分考虑到证的个体差异性、",
+        "pinyin": "yīng chōng fèn kǎo lǜ dào zhèng de gè tǐ chā yì xìng",
+        "en": "one must fully consider the individual variation,"
+      },
+      {
+        "zh": "时相性、",
+        "pinyin": "shí xiāng xìng",
+        "en": "phase-specificity,"
+      },
+      {
+        "zh": "空间性和动态性特征，",
+        "pinyin": "kōng jiān xìng hé dòng tài xìng tè zhēng",
+        "en": "spatiality, and dynamic characteristics of the pattern,"
+      },
+      {
+        "zh": "才能进行正确判断。",
+        "pinyin": "cái néng jìn xíng zhèng què pàn duàn",
+        "en": "to make a correct judgment."
+      }
+    ]
+  },
+  {
+    "slide": 76,
+    "mode": "fallback",
+    "clauses": [
+      {
+        "zh": "（3）病的基本概念：病，",
+        "pinyin": "bìng de jī běn gài niàn bìng"
+      },
+      {
+        "zh": "即疾病的简称，",
+        "pinyin": "jí jí bìng de jiǎn chēng"
+      },
+      {
+        "zh": "指有特定的致病因素、",
+        "pinyin": "zhǐ yǒu tè dìng de zhì bìng yīn sù"
+      },
+      {
+        "zh": "发病规律和病机演变的一个完整的异常生命过程，",
+        "pinyin": "fā bìng guī lǜ hé bìng jī yǎn biàn de yí gè wán zhěng de yì cháng shēng mìng guò chéng"
+      },
+      {
+        "zh": "常常有较固定的临床症状和体征、",
+        "pinyin": "cháng cháng yǒu jiào gù dìng de lín chuáng zhèng zhuàng hé tǐ zhēng"
+      },
+      {
+        "zh": "诊断要点、",
+        "pinyin": "zhěn duàn yào diǎn"
+      },
+      {
+        "zh": "与相似疾病的鉴别点等。",
+        "pinyin": "yǔ xiāng sì jí bìng de jiàn bié diǎn děng"
+      },
+      {
+        "zh": "致病邪气作用于人体，",
+        "pinyin": "zhì bìng xié qì zuò yòng yú rén tǐ"
+      },
+      {
+        "zh": "人体正气与之抗争，",
+        "pinyin": "rén tǐ zhèng qì yǔ zhī kàng zhēng"
+      },
+      {
+        "zh": "引起的机体阴阳失调、",
+        "pinyin": "yǐn qǐ de jī tǐ yīn yáng shī diào"
+      },
+      {
+        "zh": "脏腑形体损伤、",
+        "pinyin": "zàng fǔ xíng tǐ sǔn shāng"
+      },
+      {
+        "zh": "生理功能失常或心理活动障碍，",
+        "pinyin": "shēng lǐ gōng néng shī cháng huò xīn lǐ huó dòng zhàng ài"
+      },
+      {
+        "zh": "从而体现一个完整的异常生命过程。",
+        "pinyin": "cóng ér tǐ xiàn yí gè wán zhěng de yì cháng shēng mìng guò chéng"
+      },
+      {
+        "zh": "在这一过程中，",
+        "pinyin": "zài zhè yī guò chéng zhōng"
+      },
+      {
+        "zh": "始终存在着损伤、",
+        "pinyin": "shǐ zhōng cún zài zhe sǔn shāng"
+      },
+      {
+        "zh": "障碍与修复、",
+        "pinyin": "zhàng ài yǔ xiū fù"
+      },
+      {
+        "zh": "调节的矛盾斗争过程，",
+        "pinyin": "tiáo jié de máo dùn dòu zhēng guò chéng"
+      },
+      {
+        "zh": "即邪正斗争。",
+        "pinyin": "jí xié zhèng dòu zhēng"
+      },
+      {
+        "zh": "疾病反应的是贯穿一种疾病全过程的总体属性、特征和规律。",
+        "pinyin": "jí bìng fǎn yìng de shì guàn chuān yī zhǒng jí bìng quán guò chéng de zǒng tǐ shǔ xìng tè zhēng hé guī lǜ"
+      },
+      {
+        "zh": "如感冒、胸痹等，皆是疾病的概念。",
+        "pinyin": "rú gǎn mào xiōng bì děng jiē shì jí bìng de gài niàn"
+      }
+    ],
+    "en_whole": "(3) Basic concept of 'Disease' (bing): 'Disease' is the abbreviated term for a morbid condition. It refers to a complete and abnormal life process characterized by specific pathogenic factors, patterns of onset, and a progression of pathogenesis (the mechanism of disease development). It typically involves relatively fixed clinical symptoms and signs, key points for diagnosis, and differentiations from similar conditions. When pathogenic influences (xie qi) act upon the human body, the body’s upright qi (zheng qi - the body's defensive/vital energy) struggles against them, leading to an imbalance of Yin and Yang, damage to the Zang-Fu organs and body structures, or dysfunction of physiological and psychological activities, thus manifesting as a complete abnormal life process. Throughout this process, there is a constant contradictory struggle between damage/obstruction and repair/regulation, known as the struggle between pathogenic factors and upright qi (xie-zheng douzheng). A disease reflects the overall attributes, characteristics, and regularities that persist throughout its entire course. Examples such as the common cold and chest impediment (xiong bi) are all concepts of a disease."
+  },
+  {
+    "slide": 77,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "病、证、症三者既有区别又有联系。",
+        "pinyin": "bìng zhèng zhèng sān zhě jì yǒu qū bié yòu yǒu lián xì",
+        "en": "Disease, pattern, and symptom are distinct yet interrelated."
+      },
+      {
+        "zh": "病与证虽然都是对疾病本质的认识，",
+        "pinyin": "bìng yǔ zhèng suī rán dōu shì duì jí bìng běn zhì de rèn shi",
+        "en": "Although both disease and pattern are recognitions of the essence of a sickness,"
+      },
+      {
+        "zh": "但病的重点是贯穿疾病全过程的基本矛盾，",
+        "pinyin": "dàn bìng de chóng diǎn shì guàn chuān jí bìng quán guò chéng de jī běn máo dùn",
+        "en": "the focus of disease is the fundamental contradiction that runs through the entire process,"
+      },
+      {
+        "zh": "证的重点是当前阶段的主要矛盾。",
+        "pinyin": "zhèng de chóng diǎn shì dāng qián jiē duàn de zhǔ yào máo dùn",
+        "en": "while the focus of a pattern is the primary contradiction at the current stage."
+      },
+      {
+        "zh": "症状和体征是病和证的基本要素，疾病和证候都由症状和体征构成。",
+        "pinyin": "zhèng zhuàng hé tǐ zhēng shì bìng hé zhèng de jī běn yào sù jí bìng hé zhèng hòu dōu yóu zhèng zhuàng hé tǐ zhēng gòu chéng",
+        "en": "Symptoms and physical signs are the basic elements of diseases and patterns; both are composed of symptoms and physical signs."
+      },
+      {
+        "zh": "具有内在联系的症状和体征组合在一起即构成证候，",
+        "pinyin": "jù yǒu nèi zài lián xì de zhèng zhuàng hé tǐ zhēng zǔ hé zài yī qǐ jí gòu chéng zhèng hòu",
+        "en": "Internally linked symptoms and physical signs grouped together constitute a pattern manifestation,"
+      },
+      {
+        "zh": "反映疾病某一阶段或某一类型的病变本质；",
+        "pinyin": "fǎn yìng jí bìng mǒu yī jiē duàn huò mǒu yī lèi xíng de bìng biàn běn zhì",
+        "en": "reflecting the essential nature of the lesion at a certain stage or of a certain type;"
+      },
+      {
+        "zh": "各阶段或类型的证贯串并叠合起来，",
+        "pinyin": "gè jiē duàn huò lèi xíng de zhèng guàn chuàn bìng dié hé qǐ lai",
+        "en": "the patterns of each stage or type are strung together and superimposed,"
+      },
+      {
+        "zh": "便是疾病的全过程。",
+        "pinyin": "biàn shì jí bìng de quán guò chéng",
+        "en": "constituting the entire course of the disease."
+      }
+    ]
+  },
+  {
+    "slide": 78,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "一种疾病由不同的证组成，而同一证又可见于不同的疾病过程中。",
+        "pinyin": "yī zhǒng jí bìng yóu bù tóng de zhèng zǔ chéng ér tóng yī zhèng yòu kě jiàn yú bù tóng de jí bìng guò chéng zhōng",
+        "en": "A single disease may consist of different patterns, and the same pattern may be seen during the course of different diseases."
+      },
+      {
+        "zh": "病",
+        "pinyin": "bìng",
+        "en": "Disease (Bing)."
+      },
+      {
+        "zh": "甲流",
+        "pinyin": "jiǎ liú",
+        "en": "Influenza A (H1N1)."
+      },
+      {
+        "zh": "全过程的特点与规律",
+        "pinyin": "quán guò chéng de tè diǎn yǔ guī lǜ",
+        "en": "Characteristics and patterns of the entire disease process."
+      },
+      {
+        "zh": "证",
+        "pinyin": "zhèng",
+        "en": "Pattern (Zheng)."
+      },
+      {
+        "zh": "风热犯表证",
+        "pinyin": "fēng rè fàn biǎo zhèng",
+        "en": "Wind-Heat invading the defensive exterior (superficial) pattern."
+      },
+      {
+        "zh": "热毒炽肺证",
+        "pinyin": "rè dú chì fèi zhèng",
+        "en": "Heat-Toxin blazing in the lungs pattern."
+      },
+      {
+        "zh": "肺热瘀毒证",
+        "pinyin": "fèi rè yū dú zhèng",
+        "en": "Lung-Heat with blood stasis and toxicity pattern."
+      },
+      {
+        "zh": "肺气阴虚证",
+        "pinyin": "fèi qì yīn xū zhèng",
+        "en": "Lung Qi and Yin deficiency pattern."
+      },
+      {
+        "zh": "内闭外脱证",
+        "pinyin": "nèi bì wài tuō zhèng",
+        "en": "Internal blockage and external collapse pattern."
+      },
+      {
+        "zh": "症",
+        "pinyin": "zhèng",
+        "en": "Symptom (Zheng)."
+      },
+      {
+        "zh": "寒热疼痛汗饮食睡眠便舌脉检测",
+        "pinyin": "hán rè téng tòng hàn yǐn shí shuì mián biàn shé mài jiǎn cè",
+        "en": "Assessment of cold/heat, pain, perspiration, diet, sleep, bowel movements, tongue, and pulse."
+      }
+    ]
+  },
+  {
+    "slide": 79,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "2. 辨证论治的基本概念",
+        "pinyin": "biàn zhèng lùn zhì de jī běn gài niàn",
+        "en": "2. Basic concepts of pattern differentiation and treatment."
+      },
+      {
+        "zh": "辨证论治，",
+        "pinyin": "biàn zhèng lùn zhì",
+        "en": "Pattern differentiation and treatment (bian zheng lun zhi),"
+      },
+      {
+        "zh": "是中医学诊治疾病的基本理论与思维方法，",
+        "pinyin": "shì zhōng yī xué zhěn zhì jí bìng de jī běn lǐ lùn yǔ sī wéi fāng fǎ",
+        "en": "is the fundamental theory and logical methodology used in Traditional Chinese Medicine (TCM) to diagnose and treat diseases."
+      },
+      {
+        "zh": "即根据中医理论分析四诊获得的临床资料，",
+        "pinyin": "jí gēn jù zhōng yī lǐ lùn fēn xī sì zhěn huò dé de lín chuáng zī liào",
+        "en": "It involves analyzing clinical data obtained through the four diagnostic methods according to TCM theory,"
+      },
+      {
+        "zh": "明确病变的本质，",
+        "pinyin": "míng què bìng biàn de běn zhì",
+        "en": "clarifying the nature of the pathological changes,"
+      },
+      {
+        "zh": "拟定治则治法。",
+        "pinyin": "nǐ dìng zhì zé zhì fǎ",
+        "en": "and formulating therapeutic principles and treatment methods."
+      },
+      {
+        "zh": "症状和体征",
+        "pinyin": "zhèng zhuàng hé tǐ zhēng",
+        "en": "Symptoms and signs."
+      },
+      {
+        "zh": "其他有关材料",
+        "pinyin": "qí tā yǒu guān cái liào",
+        "en": "Other relevant data."
+      },
+      {
+        "zh": "辨析",
+        "pinyin": "biàn xī",
+        "en": "Analysis and differentiation."
+      },
+      {
+        "zh": "病因病位",
+        "pinyin": "bìng yīn bìng wèi",
+        "en": "Cause and location of the disease."
+      },
+      {
+        "zh": "病性病势",
+        "pinyin": "bìng xìng bìng shì",
+        "en": "Nature and trend (momentum) of the disease."
+      },
+      {
+        "zh": "证候",
+        "pinyin": "zhèng hòu",
+        "en": "Pattern manifestations (Zheng-hou)."
+      },
+      {
+        "zh": "因证立法",
+        "pinyin": "yīn zhèng lì fǎ",
+        "en": "Establishing the treatment strategy based on the pattern."
+      },
+      {
+        "zh": "治则",
+        "pinyin": "zhì zé",
+        "en": "Treatment principles."
+      },
+      {
+        "zh": "治法",
+        "pinyin": "zhì fǎ",
+        "en": "Treatment methods."
+      },
+      {
+        "zh": "随法选方",
+        "pinyin": "suí fǎ xuǎn fāng",
+        "en": "Selecting formulas according to the treatment method."
+      },
+      {
+        "zh": "方药",
+        "pinyin": "fāng yào",
+        "en": "Formulas and medicinal herbs."
+      }
+    ]
+  },
+  {
+    "slide": 80,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（1）辨证，",
+        "pinyin": "biàn zhèng",
+        "en": "(1) Pattern differentiation (Bian Zheng),"
+      },
+      {
+        "zh": "是以中医学理论对四诊（望、",
+        "pinyin": "shì yǐ zhōng yī xué lǐ lùn duì sì zhěn wàng",
+        "en": "is the thinking and practical process of synthesizing and analyzing information obtained via the four examinations (inspection,"
+      },
+      {
+        "zh": "闻、",
+        "pinyin": "wén",
+        "en": "listening/smelling,"
+      },
+      {
+        "zh": "问、",
+        "pinyin": "wèn",
+        "en": "inquiry,"
+      },
+      {
+        "zh": "切）所得的资料进行综合分析，",
+        "pinyin": "qiè suǒ dé de zī liào jìn xíng zōng hé fēn xī",
+        "en": "and pulse/palpation),"
+      },
+      {
+        "zh": "明确病变本质并确立为何种证的思维和实践过程。",
+        "pinyin": "míng què bìng biàn běn zhì bìng què lì wèi hé zhǒng zhèng de sī wéi hé shí jiàn guò chéng",
+        "en": "to clarify the essence of the lesion and determine the pattern."
+      },
+      {
+        "zh": "由于疾病发生的原因、",
+        "pinyin": "yóu yú jí bìng fā shēng de yuán yīn",
+        "en": "Since the causes of disease,"
+      },
+      {
+        "zh": "病变的部位、",
+        "pinyin": "bìng biàn de bù wèi",
+        "en": "the location of the lesion,"
+      },
+      {
+        "zh": "疾病的性质、",
+        "pinyin": "jí bìng de xìng zhì",
+        "en": "the nature of the disease,"
+      },
+      {
+        "zh": "疾病的发展变化趋势是辨证的要素，",
+        "pinyin": "jí bìng de fā zhǎn biàn huà qū shì shì biàn zhèng de yào sù",
+        "en": "and the trend of its development are the elements of differentiation,"
+      },
+      {
+        "zh": "故中医学在辨识证时，",
+        "pinyin": "gù zhōng yī xué zài biàn shí zhèng shí",
+        "en": "TCM requires that when identifying a pattern,"
+      },
+      {
+        "zh": "要求辨明疾病的病因、",
+        "pinyin": "yāo qiú biàn míng jí bìng de bìng yīn",
+        "en": "the cause of the disease,"
+      },
+      {
+        "zh": "病位、",
+        "pinyin": "bìng wèi",
+        "en": "location,"
+      },
+      {
+        "zh": "病性及其发展变化趋势，",
+        "pinyin": "bìng xìng jí qí fā zhǎn biàn huà qū shì",
+        "en": "nature, and trends of development be clarified,"
+      },
+      {
+        "zh": "即辨明疾病从发生到转归的总体病机。",
+        "pinyin": "jí biàn míng jí bìng cóng fā shēng dào zhuǎn guī de zǒng tǐ bìng jī",
+        "en": "which means clarifying the overall pathogenesis from onset to final outcome."
+      }
+    ]
+  },
+  {
+    "slide": 81,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "肝气犯胃证",
+        "pinyin": "gān qì fàn wèi zhèng",
+        "en": "Liver Qi invading the Stomach pattern."
+      },
+      {
+        "zh": "【柴胡疏肝散】",
+        "pinyin": "chái hú shū gān sàn",
+        "en": "[Chai Hu Shu Gan San / Bupleurum Powder to Spread the Liver]."
+      },
+      {
+        "zh": "证候：胃部胀痛，",
+        "pinyin": "zhèng hòu wèi bù zhàng tòng",
+        "en": "Pattern manifestations: Distending pain in the stomach region."
+      },
+      {
+        "zh": "痛连两胁，",
+        "pinyin": "tòng lián liǎng xié",
+        "en": "pain radiating to the hypochondrium (rib-side areas),"
+      },
+      {
+        "zh": "遇烦恼疼痛加剧，",
+        "pinyin": "yù fán nǎo téng tòng jiā jù",
+        "en": "pain aggravated by emotional distress,"
+      },
+      {
+        "zh": "喜长叹息，",
+        "pinyin": "xǐ cháng tàn xī",
+        "en": "frequent sighing,"
+      },
+      {
+        "zh": "舌质红，",
+        "pinyin": "shé zhì hóng",
+        "en": "red tongue body,"
+      },
+      {
+        "zh": "苔白，",
+        "pinyin": "tái bái",
+        "en": "white tongue coating,"
+      },
+      {
+        "zh": "脉弦。",
+        "pinyin": "mài xián",
+        "en": "wiry pulse."
+      },
+      {
+        "zh": "论治：疏肝理气，和胃止痛。",
+        "pinyin": "lùn zhì shū gān lǐ qì hé wèi zhǐ tòng",
+        "en": "Treatment: Soothe the Liver, regulate Qi, harmonize the Stomach, and alleviate pain."
+      },
+      {
+        "zh": "方药：柴胡疏肝散加心理疏导",
+        "pinyin": "fāng yào chái hú shū gān sàn jiā xīn lǐ shū dǎo",
+        "en": "Formula: Chaihu Shugan San (Bupleurum Powder to Spread the Liver) plus psychological counseling."
+      }
+    ]
+  },
+  {
+    "slide": 82,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "辨病因：即探求疾病发生的原因。",
+        "pinyin": "biàn bìng yīn jí tàn qiú jí bìng fā shēng de yuán yīn",
+        "en": "Differentiation of Cause: Seeking the origin of the disease."
+      },
+      {
+        "zh": "根据中医病因理论，",
+        "pinyin": "gēn jù zhōng yī bìng yīn lǐ lùn",
+        "en": "Based on TCM etiology theory,"
+      },
+      {
+        "zh": "分析疾病的症状和体征，",
+        "pinyin": "fēn xī jí bìng de zhèng zhuàng hé tǐ zhēng",
+        "en": "analyze symptoms and physical signs,"
+      },
+      {
+        "zh": "探求疾病发生的原因和机理。",
+        "pinyin": "tàn qiú jí bìng fā shēng de yuán yīn hé jī lǐ",
+        "en": "to explore the cause and mechanism of the disease."
+      },
+      {
+        "zh": "某些病因，如外伤、虫兽咬伤等，可直接观察或通过询问病史了解。",
+        "pinyin": "mǒu xiē bìng yīn rú wài shāng chóng shòu yǎo shāng děng kě zhí jiē guān chá huò tōng guò xún wèn bìng shǐ liǎo jiě",
+        "en": "Certain causes, such as trauma or animal bites, can be directly observed or learned through medical history inquiry."
+      },
+      {
+        "zh": "然而临床很多疾病，",
+        "pinyin": "rán ér lín chuáng hěn duō jí bìng",
+        "en": "However, for many clinical diseases,"
+      },
+      {
+        "zh": "不能直接找到病因，",
+        "pinyin": "bù néng zhí jiē zhǎo dào bìng yīn",
+        "en": "the cause cannot be directly found,"
+      },
+      {
+        "zh": "只能辨证求因，",
+        "pinyin": "zhǐ néng biàn zhèng qiú yīn",
+        "en": "so one must seek the cause through pattern differentiation (bian zheng qiu yin),"
+      },
+      {
+        "zh": "根据疾病临床表现，",
+        "pinyin": "gēn jù jí bìng lín chuáng biǎo xiàn",
+        "en": "and according to clinical manifestations,"
+      },
+      {
+        "zh": "推断病因病机特点以确定证。",
+        "pinyin": "tuī duàn bìng yīn bìng jī tè diǎn yǐ què dìng zhèng",
+        "en": "infer the characteristics of the cause and mechanism to determine the pattern."
+      }
+    ]
+  },
+  {
+    "slide": 83,
+    "mode": "fallback",
+    "clauses": [
+      {
+        "zh": "辨病位：即分析、判别以确定疾病之所在部位。",
+        "pinyin": "biàn bìng wèi jí fēn xī pàn bié yǐ què dìng jí bìng zhī suǒ zài bù wèi"
+      },
+      {
+        "zh": "不同的致病因素侵袭人体不同的部位，引起不同的病证。",
+        "pinyin": "bù tóng de zhì bìng yīn sù qīn xí rén tǐ bù tóng de bù wèi yǐn qǐ bù tóng de bìng zhèng"
+      },
+      {
+        "zh": "辨明病变部位，",
+        "pinyin": "biàn míng bìng biàn bù wèi"
+      },
+      {
+        "zh": "便可推知致病邪气的属性，",
+        "pinyin": "biàn kě tuī zhī zhì bìng xié qì de shǔ xìng"
+      },
+      {
+        "zh": "又可了解病情轻重及疾病传变趋向，",
+        "pinyin": "yòu kě liǎo jiě bìng qíng qīng zhòng jí jí bìng chuán biàn qū xiàng"
+      },
+      {
+        "zh": "对确定证非常重要。",
+        "pinyin": "duì què dìng zhèng fēi cháng zhòng yào"
+      },
+      {
+        "zh": "表里病位：外感病邪侵袭人体皮肤肌腠，",
+        "pinyin": "biǎo lǐ bìng wèi wài gǎn bìng xié qīn xí rén tǐ pí fū jī còu"
+      },
+      {
+        "zh": "称为“表证”；",
+        "pinyin": "chēng wéi biǎo zhèng"
+      },
+      {
+        "zh": "情志内伤、",
+        "pinyin": "qíng zhì nèi shāng"
+      },
+      {
+        "zh": "饮食不节、",
+        "pinyin": "yǐn shí bù jié"
+      },
+      {
+        "zh": "劳逸失度，",
+        "pinyin": "láo yì shī dù"
+      },
+      {
+        "zh": "直接损伤脏腑精气，",
+        "pinyin": "zhí jiē sǔn shāng zàng fǔ jīng qì"
+      },
+      {
+        "zh": "称为“里证”。",
+        "pinyin": "chēng wéi lǐ zhèng"
+      },
+      {
+        "zh": "脏腑病位：咳嗽咯痰病位多在肺，腹胀便溏病位多在脾胃等等。",
+        "pinyin": "zàng fǔ bìng wèi ké sou gē tán bìng wèi duō zài fèi fù zhàng biàn táng bìng wèi duō zài pí wèi děng děng"
+      }
+    ],
+    "en_whole": "Differentiating the disease location: This refers to the analysis and judgment used to determine where a disease is situated in the body. Different pathogenic factors (causes of disease) invade different parts of the body, leading to different disease patterns (syndromes). By identifying the location of the pathology, one can deduce the nature of the pathogenic factors (pathogens), understand the severity of the illness, and predict the potential progression or transformation of the disease; this is crucial for determining the correct pattern. Interior-exterior disease locations: Pathogens from external sources invading the skin and muscle layer (the superficial aspects of the body) are called 'exterior patterns'; internal injuries caused by emotional distress, improper diet, or overexertion or lack of activity, which directly damage the essence and qi of the Zang-Fu organs, are called 'interior patterns.' Zang-Fu organ disease locations: For example, coughing and phlegm are usually located in the Lungs, while abdominal bloating and loose stools are usually located in the Spleen and Stomach."
+  },
+  {
+    "slide": 84,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "辨病性：即确定疾病的虚实寒热之性。",
+        "pinyin": "biàn bìng xìng jí què dìng jí bìng de xū shí hán rè zhī xìng",
+        "en": "Differentiation of Nature: Determining the Deficiency/Excess and Cold/Heat of the disease."
+      },
+      {
+        "zh": "疾病是邪气作用于人体，",
+        "pinyin": "jí bìng shì xié qì zuò yòng yú rén tǐ",
+        "en": "Disease is the result of pathogenic qi acting on the body,"
+      },
+      {
+        "zh": "人体正气奋起抗邪而引起邪正斗争的结果，",
+        "pinyin": "rén tǐ zhèng qì fèn qǐ kàng xié ér yǐn qǐ xié zhèng dòu zhēng de jiē guǒ",
+        "en": "with the body's healthy qi fighting back, leading to a battle between the two."
+      },
+      {
+        "zh": "邪正盛衰决定病证的虚实，",
+        "pinyin": "xié zhèng shèng shuāi jué dìng bìng zhèng de xū shí",
+        "en": "The strength/weakness of pathogenic vs. healthy qi determines the Excess/Deficiency of the pattern,"
+      },
+      {
+        "zh": "即“邪气盛则实，",
+        "pinyin": "jí xié qì shèng zé shí",
+        "en": "meaning 'when pathogenic qi is strong, it is Excess,"
+      },
+      {
+        "zh": "精气夺则虚”。",
+        "pinyin": "jīng qì duó zé xū",
+        "en": "when healthy qi is depleted, it is Deficiency.'"
+      },
+      {
+        "zh": "病因性质和机体阴阳失调决定病证的寒热，",
+        "pinyin": "bìng yīn xìng zhì hé jī tǐ yīn yáng shī diào jué dìng bìng zhèng de hán rè",
+        "en": "The nature of the cause and the body's Yin-Yang disharmony determine the Cold/Heat of the pattern;"
+      },
+      {
+        "zh": "外感寒邪，",
+        "pinyin": "wài gǎn hán xié",
+        "en": "invasion by cold pathogen,"
+      },
+      {
+        "zh": "或阴盛阳虚，",
+        "pinyin": "huò yīn shèng yáng xū",
+        "en": "or Yin excess/Yang deficiency,"
+      },
+      {
+        "zh": "则见寒证；",
+        "pinyin": "zé jiàn hán zhèng",
+        "en": "results in Cold patterns;"
+      },
+      {
+        "zh": "外感热邪，",
+        "pinyin": "wài gǎn rè xié",
+        "en": "invasion by heat pathogen,"
+      },
+      {
+        "zh": "或阳盛阴虚，",
+        "pinyin": "huò yáng shèng yīn xū",
+        "en": "or Yang excess/Yin deficiency,"
+      },
+      {
+        "zh": "则见热证。",
+        "pinyin": "zé jiàn rè zhèng",
+        "en": "results in Heat patterns."
+      }
+    ]
+  },
+  {
+    "slide": 85,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "辨病势：即辨明疾病的发展变化趋势及转归。",
+        "pinyin": "biàn bìng shì jí biàn míng jí bìng de fā zhǎn biàn huà qū shì jí zhuǎn guī",
+        "en": "Differentiation of Trend: Identifying the developmental trend and outcome of the disease."
+      },
+      {
+        "zh": "疾病一般都有一定的发展变化规律。",
+        "pinyin": "jí bìng yī bān dōu yǒu yī dìng de fā zhǎn biàn huà guī lǜ",
+        "en": "Disease generally has a certain pattern of development and change."
+      },
+      {
+        "zh": "如温病学则用卫气营血和上中下三焦表示温热病和湿热病的传变规律；",
+        "pinyin": "rú wēn bìng xué zé yòng wèi qì yíng xuè hé shàng zhōng xià sān jiāo biǎo shì wēn rè bìng hé shī rè bìng de chuán biàn guī lǜ",
+        "en": "For example, Wenbing (Warm Disease) theory uses the Wei-Qi-Ying-Xue and Triple Burner (San Jiao) systems to describe transmission laws for warm-heat and damp-heat diseases;"
+      },
+      {
+        "zh": "对内伤杂病的传变，",
+        "pinyin": "duì nèi shāng zá bìng de chuán biàn",
+        "en": "for the transmission of internal injury miscellaneous diseases,"
+      },
+      {
+        "zh": "《内经》用五行的生克乘侮规律来表述，",
+        "pinyin": "nèi jīng yòng wǔ xíng de shēng kè chéng wǔ guī lǜ lái biǎo shù",
+        "en": "the 'Neijing' uses Five Element generation and restriction cycles to describe it,"
+      },
+      {
+        "zh": "现在趋向于以脏腑之间的相互关系和精气血津液之间的相互影响来表述。",
+        "pinyin": "xiàn zài qū xiàng yú yǐ zàng fǔ zhī jiān de xiāng hù guān xì hé jīng qì xuè jīn yè zhī jiān de xiāng hù yǐng xiǎng lái biǎo shù",
+        "en": "and now it tends to be expressed through the mutual relationships between Zang-Fu organs and the mutual influence of essence, qi, blood, and fluids."
+      },
+      {
+        "zh": "掌握疾病的传变规律，",
+        "pinyin": "zhǎng wò jí bìng de chuán biàn guī lǜ",
+        "en": "Grasping the transmission laws of disease,"
+      },
+      {
+        "zh": "可洞察疾病变化及转归的全局，",
+        "pinyin": "kě dòng chá jí bìng biàn huà jí zhuǎn guī de quán jú",
+        "en": "allows for insight into the overall situation of disease change and outcome,"
+      },
+      {
+        "zh": "预测在疾病进程中证的演变，",
+        "pinyin": "yù cè zài jí bìng jìn chéng zhōng zhèng de yǎn biàn",
+        "en": "predicting the evolution of patterns during the disease process,"
+      },
+      {
+        "zh": "从而提高辨证的准确性。",
+        "pinyin": "cóng ér tí gāo biàn zhèng de zhǔn què xìng",
+        "en": "thereby increasing the accuracy of pattern differentiation."
+      }
+    ]
+  },
+  {
+    "slide": 86,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（2）论治（又称施治）是根据辨证的结果确立相应的治疗原则、",
+        "pinyin": "lùn zhì yòu chēng shī zhì shì gēn jù biàn zhèng de jiē guǒ què lì xiāng yìng de zhì liáo yuán zé",
+        "en": "(2) Treatment (also known as the application of treatment) is the intellectual and practical process of establishing corresponding treatment principles,"
+      },
+      {
+        "zh": "方法及方药，",
+        "pinyin": "fāng fǎ jí fāng yào",
+        "en": "methods, and formulas (prescriptions/medicinal agents),"
+      },
+      {
+        "zh": "选择适当的治疗手段和措施来处理疾病的思维和实践过程。",
+        "pinyin": "xuǎn zé shì dàng de zhì liáo shǒu duàn hé cuò shī lái chǔ lǐ jí bìng de sī wéi hé shí jiàn guò chéng",
+        "en": "and selecting appropriate treatment measures to address a disease based on the results of pattern differentiation (identifying the TCM 'pattern' or syndrome)."
+      },
+      {
+        "zh": "论治过程一般分以下几个步骤：●因证立法：即依据证候而确立治则治法。",
+        "pinyin": "lùn zhì guò chéng yī bān fēn yǐ xià jǐ ge bù zhòu yīn zhèng lì fǎ jí yī jù zhèng hòu ér què lì zhì zé zhì fǎ",
+        "en": "The treatment process generally consists of the following steps: ● Establishing the treatment method based on the pattern: This means determining the treatment principle and method according to the pattern identified."
+      },
+      {
+        "zh": "如风寒表证，当用辛温解表法；风热表证，当用辛凉解表法。",
+        "pinyin": "rú fēng hán biǎo zhèng dāng yòng xīn wēn jiě biǎo fǎ fēng rè biǎo zhèng dāng yòng xīn liáng jiě biǎo fǎ",
+        "en": "For example, for a wind-cold exterior pattern, use a pungent-warm method to release the exterior; for a wind-heat exterior pattern, use a pungent-cool method to release the exterior."
+      },
+      {
+        "zh": "●随法选方：即依据治则治法选择相应的处方。",
+        "pinyin": "suí fǎ xuǎn fāng jí yī jù zhì zé zhì fǎ xuǎn zé xiāng yìng de chǔ fāng",
+        "en": "● Selecting the prescription based on the method: This means selecting a corresponding formula based on the determined treatment principles and methods."
+      },
+      {
+        "zh": "处方，",
+        "pinyin": "chǔ fāng",
+        "en": "The prescription,"
+      },
+      {
+        "zh": "是在选定治疗手段的基础上，",
+        "pinyin": "shì zài xuǎn dìng zhì liáo shǒu duàn de jī chǔ shàng",
+        "en": "based on the selected treatment approach,"
+      },
+      {
+        "zh": "依据治法的要求，",
+        "pinyin": "yī jù zhì fǎ de yāo qiú",
+        "en": "and in accordance with the requirements of the treatment method,"
+      },
+      {
+        "zh": "确定具体的治疗方案。",
+        "pinyin": "què dìng jù tǐ de zhì liáo fāng àn",
+        "en": "is the determination of a specific clinical treatment plan."
+      },
+      {
+        "zh": "●据方施治：即按照处方，对治疗方法予以实施。",
+        "pinyin": "jù fāng shī zhì jí àn zhào chǔ fāng duì zhì liáo fāng fǎ yǔ yǐ shí shī",
+        "en": "● Implementing treatment based on the prescription: This means carrying out the treatment methods as outlined in the prescription."
+      }
+    ]
+  },
+  {
+    "slide": 87,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（3）辨证与论治的关系辨证与论治是诊治疾病过程中相互联系不可分割的两个方面。",
+        "pinyin": "biàn zhèng yǔ lùn zhì de guān xi biàn zhèng yǔ lùn zhì shì zhěn zhì jí bìng guò chéng zhōng xiāng hù lián xì bù kě fēn gē de liǎng gè fāng miàn",
+        "en": "(3) The relationship between pattern differentiation and treatment: Pattern differentiation and treatment are two interconnected and inseparable aspects in the process of diagnosing and treating diseases."
+      },
+      {
+        "zh": "辨证是认识疾病，",
+        "pinyin": "biàn zhèng shì rèn shi jí bìng",
+        "en": "Pattern differentiation is the way to understand a disease,"
+      },
+      {
+        "zh": "确定证；",
+        "pinyin": "què dìng zhèng",
+        "en": "and identify the 'pattern' (syndrome);"
+      },
+      {
+        "zh": "论治是依据辨证的结果，",
+        "pinyin": "lùn zhì shì yī jù biàn zhèng de jiē guǒ",
+        "en": "treatment is based on the results of this differentiation,"
+      },
+      {
+        "zh": "确立治法和处方遣药。",
+        "pinyin": "què lì zhì fǎ hé chǔ fāng qiǎn yào",
+        "en": "to establish methods and prescribe medicinals."
+      },
+      {
+        "zh": "辨证是论治的前提和依据，",
+        "pinyin": "biàn zhèng shì lùn zhì de qián tí hé yī jù",
+        "en": "Pattern differentiation is the prerequisite and basis for treatment,"
+      },
+      {
+        "zh": "论治是治疗疾病的手段与方法，",
+        "pinyin": "lùn zhì shì zhì liáo jí bìng de shǒu duàn yǔ fāng fǎ",
+        "en": "while treatment is the means and method of healing the disease,"
+      },
+      {
+        "zh": "也是对辨证正确与否的检验。",
+        "pinyin": "yě shì duì biàn zhèng zhèng què yǔ fǒu de jiǎn yàn",
+        "en": "and also serves as a test of whether the pattern differentiation was correct."
+      },
+      {
+        "zh": "因此，",
+        "pinyin": "yīn cǐ",
+        "en": "Therefore,"
+      },
+      {
+        "zh": "辨证与论治是理论与实践相结合的体现，",
+        "pinyin": "biàn zhèng yǔ lùn zhì shì lǐ lùn yǔ shí jiàn xiāng jié hé de tǐ xiàn",
+        "en": "pattern differentiation and treatment are a manifestation of the integration of theory and practice,"
+      },
+      {
+        "zh": "是理、",
+        "pinyin": "shì lǐ",
+        "en": "and the clinical application of the theoretical system of 'Theory (Li),"
+      },
+      {
+        "zh": "法、",
+        "pinyin": "fǎ",
+        "en": "Method (Fa),"
+      },
+      {
+        "zh": "方、",
+        "pinyin": "fāng",
+        "en": "Formula (Fang),"
+      },
+      {
+        "zh": "药理论体系在临床上的具体应用，",
+        "pinyin": "yào lǐ lùn tǐ xì zài lín chuáng shàng de jù tǐ yìng yòng",
+        "en": "and Medicinals (Yao)',"
+      },
+      {
+        "zh": "也是中医临床诊治的基本原则。",
+        "pinyin": "yě shì zhōng yī lín chuáng zhěn zhì de jī běn yuán zé",
+        "en": "and they are the basic principles of TCM clinical diagnosis and treatment."
+      }
+    ]
+  },
+  {
+    "slide": 88,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "3.同病异治与异病同治",
+        "pinyin": "tóng bìng yì zhì yǔ yì bìng tóng zhì",
+        "en": "3. Different treatments for the same disease and same treatment for different diseases."
+      },
+      {
+        "zh": "同病异治，",
+        "pinyin": "tóng bìng yì zhì",
+        "en": "Different treatments for the same disease,"
+      },
+      {
+        "zh": "指同一种病，",
+        "pinyin": "zhǐ tóng yī zhǒng bìng",
+        "en": "refers to the fact that for the same disease,"
+      },
+      {
+        "zh": "由于发病的时间、",
+        "pinyin": "yóu yú fā bìng de shí jiān",
+        "en": "due to differences in the time of onset,"
+      },
+      {
+        "zh": "地域不同，",
+        "pinyin": "dì yù bù tóng",
+        "en": "geographic location,"
+      },
+      {
+        "zh": "或所处的疾病的阶段或类型不同，",
+        "pinyin": "huò suǒ chù de jí bìng de jiē duàn huò lèi xíng bù tóng",
+        "en": "or different stages or types of the disease,"
+      },
+      {
+        "zh": "或病人的体质有异，",
+        "pinyin": "huò bìng rén de tǐ zhì yǒu yì",
+        "en": "or variations in the patient's constitution,"
+      },
+      {
+        "zh": "故反映出的证不同，",
+        "pinyin": "gù fǎn yìng chū de zhèng bù tóng",
+        "en": "the resulting 'patterns' are different,"
+      },
+      {
+        "zh": "因而治疗也有不同。",
+        "pinyin": "yīn ér zhì liáo yě yǒu bù tóng",
+        "en": "and therefore the treatments must also differ."
+      },
+      {
+        "zh": "如麻疹病在不同的疾病阶段有不同的证，",
+        "pinyin": "rú má zhěn bìng zài bù tóng de jí bìng jiē duàn yǒu bù tóng de zhèng",
+        "en": "For example, measles presents with different patterns at different stages,"
+      },
+      {
+        "zh": "故治疗麻疹病有初起解表透疹，",
+        "pinyin": "gù zhì liáo má zhěn bìng yǒu chū qǐ jiè biǎo tòu zhěn",
+        "en": "so treatment for measles includes releasing the exterior to promote rash expression in the early stage,"
+      },
+      {
+        "zh": "中期清肺热，",
+        "pinyin": "zhōng qī qīng fèi rè",
+        "en": "clearing lung heat in the middle stage,"
+      },
+      {
+        "zh": "后期滋养肺阴胃阴等不同的治法。",
+        "pinyin": "hòu qī zī yǎng fèi yīn wèi yīn děng bù tóng de zhì fǎ",
+        "en": "and nourishing lung and stomach yin in the late stage."
+      },
+      {
+        "zh": "感冒病可因其病因病机和病人体质的不同而出现风寒、",
+        "pinyin": "gǎn mào bìng kě yīn qí bìng yīn bìng jī hé bìng rén tǐ zhì de bù tóng ér chū xiàn fēng hán",
+        "en": "The common cold can present with different patterns such as wind-cold,"
+      },
+      {
+        "zh": "风热、",
+        "pinyin": "fēng rè",
+        "en": "wind-heat,"
+      },
+      {
+        "zh": "风湿、",
+        "pinyin": "fēng shī",
+        "en": "wind-damp,"
+      },
+      {
+        "zh": "风燥、",
+        "pinyin": "fēng zào",
+        "en": "wind-dryness,"
+      },
+      {
+        "zh": "气虚等不同的证候，",
+        "pinyin": "qì xū děng bù tóng de zhèng hòu",
+        "en": "or qi deficiency, depending on the cause, pathogenesis, and patient constitution,"
+      },
+      {
+        "zh": "因而有辛温解表、",
+        "pinyin": "yīn ér yǒu xīn wēn jiě biǎo",
+        "en": "leading to corresponding treatments such as pungent-warm exterior release,"
+      },
+      {
+        "zh": "辛凉解表、",
+        "pinyin": "xīn liáng jiě biǎo",
+        "en": "pungent-cool exterior release,"
+      },
+      {
+        "zh": "辛润解表、",
+        "pinyin": "xīn rùn jiě biǎo",
+        "en": "pungent-moistening exterior release,"
+      },
+      {
+        "zh": "益气解表等相应的治法。",
+        "pinyin": "yì qì jiě biǎo děng xiāng yìng de zhì fǎ",
+        "en": "and qi-tonifying exterior release."
+      }
+    ]
+  },
+  {
+    "slide": 89,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "异病同治，",
+        "pinyin": "yì bìng tóng zhì",
+        "en": "Same treatment for different diseases,"
+      },
+      {
+        "zh": "指几种不同的疾病，",
+        "pinyin": "zhǐ jǐ zhǒng bù tóng de jí bìng",
+        "en": "refers to several different diseases that,"
+      },
+      {
+        "zh": "在其发展变化过程中出现了大致相同的病机，",
+        "pinyin": "zài qí fā zhǎn biàn huà guò chéng zhōng chū xiàn le dà zhì xiāng tóng de bìng jī",
+        "en": "in the process of their development and change, exhibit roughly the same pathogenesis,"
+      },
+      {
+        "zh": "表现为大致相同的证，",
+        "pinyin": "biǎo xiàn wèi dà zhì xiāng tóng de zhèng",
+        "en": "manifesting as roughly the same pattern,"
+      },
+      {
+        "zh": "故可用大致相同的治法和方药来治疗。",
+        "pinyin": "gù kě yòng dà zhì xiāng tóng de zhì fǎ hé fāng yào lái zhì liáo",
+        "en": "and can therefore be treated with roughly the same methods and formulas."
+      },
+      {
+        "zh": "如胃下垂、",
+        "pinyin": "rú wèi xià chuí",
+        "en": "For example, different conditions such as gastroptosis (stomach prolapse),"
+      },
+      {
+        "zh": "肾下垂、",
+        "pinyin": "shèn xià chuí",
+        "en": "nephroptosis (kidney prolapse),"
+      },
+      {
+        "zh": "子宫脱垂、",
+        "pinyin": "zǐ gōng tuō chuí",
+        "en": "uterine prolapse,"
+      },
+      {
+        "zh": "脱肛等不同的病变，",
+        "pinyin": "tuō gāng děng bù tóng de bìng biàn",
+        "en": "and rectal prolapse,"
+      },
+      {
+        "zh": "在其发展变化过程中，",
+        "pinyin": "zài qí fā zhǎn biàn huà guò chéng zhōng",
+        "en": "during their development,"
+      },
+      {
+        "zh": "可能出现大致相同的“中气下陷”的病理机制，",
+        "pinyin": "kě néng chū xiàn dà zhì xiāng tóng de zhōng qì xià xiàn de bìng lǐ jī zhì",
+        "en": "may all exhibit the same pathological mechanism of 'sinking of central-qi',"
+      },
+      {
+        "zh": "表现为大致相同的证候，",
+        "pinyin": "biǎo xiàn wèi dà zhì xiāng tóng de zhèng hòu",
+        "en": "manifesting as a similar pattern,"
+      },
+      {
+        "zh": "故皆可用补益中气的方法来治疗。",
+        "pinyin": "gù jiē kě yòng bǔ yì zhōng qì de fāng fǎ lái zhì liáo",
+        "en": "and thus all can be treated using methods to tonify the middle (spleen/stomach qi)."
+      },
+      {
+        "zh": "因此，",
+        "pinyin": "yīn cǐ",
+        "en": "Therefore,"
+      },
+      {
+        "zh": "中医学诊治疾病的着眼点是证，",
+        "pinyin": "zhōng yī xué zhěn zhì jí bìng de zhuó yǎn diǎn shì zhèng",
+        "en": "the focus of TCM clinical diagnosis and treatment is the 'pattern',"
+      },
+      {
+        "zh": "即所谓“证同治亦同，",
+        "pinyin": "jí suǒ wèi zhèng tóng zhì yì tóng",
+        "en": "as the saying goes: 'If the pattern is the same, the treatment is the same;',"
+      },
+      {
+        "zh": "证异治亦异”，",
+        "pinyin": "zhèng yì zhì yì yì",
+        "en": "'if the pattern is different, the treatment is different',"
+      },
+      {
+        "zh": "这是辨证论治的精神实质。",
+        "pinyin": "zhè shì biàn zhèng lùn zhì de jīng shén shí zhì",
+        "en": "which is the spiritual essence of pattern differentiation and treatment."
+      }
+    ]
+  },
+  {
+    "slide": 90,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "4.辨证与辨病相结合",
+        "pinyin": "biàn zhèng yǔ biàn bìng xiāng jié hé",
+        "en": "4. Combining pattern differentiation with disease differentiation."
+      },
+      {
+        "zh": "辨证与辨病，都是认识疾病的思维过程。",
+        "pinyin": "biàn zhèng yǔ biàn bìng dōu shì rèn shi jí bìng de sī wéi guò chéng",
+        "en": "Both pattern differentiation and disease differentiation are cognitive processes for understanding disease."
+      },
+      {
+        "zh": "辨病侧重对贯穿疾病全过程的基本矛盾的认识；",
+        "pinyin": "biàn bìng cè zhòng duì guàn chuān jí bìng quán guò chéng de jī běn máo dùn de rèn shi",
+        "en": "Disease differentiation focuses on understanding the basic contradiction that runs through the entire process of the disease;"
+      },
+      {
+        "zh": "辨证侧重对疾病当前阶段主要矛盾的把握。",
+        "pinyin": "biàn zhèng cè zhòng duì jí bìng dāng qián jiē duàn zhǔ yào máo dùn de bǎ wò",
+        "en": "pattern differentiation focuses on grasping the primary contradiction at the current stage of the disease."
+      },
+      {
+        "zh": "中医临床实践在强调“辨证论治”的同时，注重辨证与辨病相结合。",
+        "pinyin": "zhōng yī lín chuáng shí jiàn zài qiáng diào biàn zhèng lùn zhì de tóng shí zhù zhòng biàn zhèng yǔ biàn bìng xiāng jié hé",
+        "en": "TCM clinical practice emphasizes 'pattern differentiation and treatment' while also focusing on the combination of pattern and disease differentiation."
+      },
+      {
+        "zh": "运用辨病思维来确诊疾病，",
+        "pinyin": "yùn yòng biàn bìng sī wéi lái què zhěn jí bìng",
+        "en": "Using disease differentiation thinking to confirm a diagnosis,"
+      },
+      {
+        "zh": "对某一病的病因、",
+        "pinyin": "duì mǒu yī bìng de bìng yīn",
+        "en": "provides an overall understanding of the cause,"
+      },
+      {
+        "zh": "病变规律和转归预后有一个总体的认识；",
+        "pinyin": "bìng biàn guī lǜ hé zhuǎn guī yù hòu yǒu yí gè zǒng tǐ de rèn shi",
+        "en": "pathological progression, and prognosis of a specific disease;"
+      },
+      {
+        "zh": "再运用辨证思维，",
+        "pinyin": "zài yùn yòng biàn zhèng sī wéi",
+        "en": "then, by applying pattern differentiation thinking,"
+      },
+      {
+        "zh": "根据该病当时的临床表现和检查结果来辨析其目前处于病变的哪一阶段或是哪一类型，",
+        "pinyin": "gēn jù gāi bìng dāng shí de lín chuáng biǎo xiàn hé jiǎn chá jiē guǒ lái biàn xī qí mù qián chǔ yú bìng biàn de nǎ yī jiē duàn huò shì nǎ yī lèi xíng",
+        "en": "and based on the current clinical manifestations and examination results, one analyzes the current stage or type of the pathology,"
+      },
+      {
+        "zh": "从而确立其当时的“证”，",
+        "pinyin": "cóng ér què lì qí dāng shí de zhèng",
+        "en": "thereby establishing the 'pattern' at that moment,"
+      },
+      {
+        "zh": "然后根据“证”来确定治则治法和处方遣药。",
+        "pinyin": "rán hòu gēn jù zhèng lái què dìng zhì zé zhì fǎ hé chǔ fāng qiǎn yào",
+        "en": "and subsequently determining the treatment principle, method, and prescription."
+      }
+    ]
+  },
+  {
+    "slide": 91,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "对某些难以确诊的病症，可发挥辨证思维的优势，",
+        "pinyin": "duì mǒu xiē nán yǐ què zhěn de bìng zhèng kě fā huī biàn zhèng sī wéi de yōu shì",
+        "en": "For certain conditions that are difficult to diagnose, one can leverage the strengths of pattern differentiation thinking."
+      },
+      {
+        "zh": "依据病人的临床表现，辨析出证，随证施治。",
+        "pinyin": "yī jù bìng rén de lín chuáng biǎo xiàn biàn xī chū zhèng suí zhèng shī zhì",
+        "en": "Based on the patient's clinical presentation, identify the pattern (Zheng) and treat accordingly."
+      },
+      {
+        "zh": "根据具体情况，有时也使用“辨病施治”的方法，",
+        "pinyin": "gēn jù jù tǐ qíng kuàng yǒu shí yě shǐ yòng biàn bìng shī zhì de fāng fǎ",
+        "en": "Depending on the specific circumstances, the method of 'treating based on disease identification' (Bian Bing Shi Zhi) is sometimes also used,"
+      },
+      {
+        "zh": "如常山、青蒿治疟，黄连治痢等。",
+        "pinyin": "rú cháng shān qīng hāo zhì nüè huáng lián zhì lì děng",
+        "en": "such as using Changshan and Qinghao to treat malaria, or Coptis (Huang Lian) to treat dysentery."
+      },
+      {
+        "zh": "辨证与辨病相结合",
+        "pinyin": "biàn zhèng yǔ biàn bìng xiāng jié hé",
+        "en": "Combining pattern differentiation with disease identification."
+      },
+      {
+        "zh": "辨病——确诊病——全过程和全貌总体的认识",
+        "pinyin": "biàn bìng què zhěn bìng quán guò chéng hé quán mào zǒng tǐ de rèn shi",
+        "en": "Disease identification (Bian Bing)—confirming the specific disease—an understanding of the entire process and overall picture."
+      },
+      {
+        "zh": "辨证——确定证——阶段性或类型性本质的认识",
+        "pinyin": "biàn zhèng què dìng zhèng jiē duàn xìng huò lèi xíng xìng běn zhì de rèn shi",
+        "en": "Pattern differentiation (Bian Zheng)—determining the pattern—an understanding of the essence of the current stage or type."
+      },
+      {
+        "zh": "辨病与辨证相结合——先辨病，",
+        "pinyin": "biàn bìng yǔ biàn zhèng xiāng jié hé xiān biàn bìng",
+        "en": "Combining disease identification and pattern differentiation—identify the disease first,"
+      },
+      {
+        "zh": "再辨证（既把握总体，",
+        "pinyin": "zài biàn zhèng jì bǎ wò zǒng tǐ",
+        "en": "then differentiating the pattern (grasping both the overall condition and clarifying the stage or type of the pathology),"
+      },
+      {
+        "zh": "亦辨析清病变的阶段或类型）",
+        "pinyin": "yì biàn xī qīng bìng biàn de jiē duàn huò lèi xíng",
+        "en": "and also clarify the stage or type of the pathological changes."
+      },
+      {
+        "zh": "以辨病为先，以辨证为主",
+        "pinyin": "yǐ biàn bìng wèi xiān yǐ biàn zhèng wéi zhǔ",
+        "en": "Prioritize disease identification as the framework, and emphasize pattern differentiation as the guide for treatment."
+      }
+    ]
+  },
+  {
+    "slide": 92,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "三、",
+        "pinyin": "sān",
+        "en": "III."
+      },
+      {
+        "zh": "《中医基础理论》课程的主要内容中医基础理论，",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn kè chéng de zhǔ yào nèi róng zhōng yī jī chǔ lǐ lùn",
+        "en": "Main content of the course 'Fundamentals of Traditional Chinese Medicine'. Fundamentals of TCM,"
+      },
+      {
+        "zh": "是中医学的基本概念、",
+        "pinyin": "shì zhōng yī xué de jī běn gài niàn",
+        "en": "is a theoretical system of the basic concepts,"
+      },
+      {
+        "zh": "基本知识、",
+        "pinyin": "jī běn zhī shi",
+        "en": "basic knowledge,"
+      },
+      {
+        "zh": "基本原理和基本规律的理论体系。",
+        "pinyin": "jī běn yuán lǐ hé jī běn guī lǜ de lǐ lùn tǐ xì",
+        "en": "basic principles, and basic laws of TCM."
+      },
+      {
+        "zh": "《中医基础理论》课程属于中医学及其相关学科的专业基础课和入门课。",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn kè chéng shǔ yú zhōng yī xué jí qí xiāng guān xué kē de zhuān yè jī chǔ kè hé rù mén kè",
+        "en": "The 'Fundamentals of TCM' course is a foundational and introductory course for TCM and related disciplines."
+      },
+      {
+        "zh": "《中医基础理论》课程的内容包括三个模块：即中医学的哲学基础、",
+        "pinyin": "zhōng yī jī chǔ lǐ lùn kè chéng de nèi róng bāo kuò sān gè mó kuài jí zhōng yī xué de zhé xué jī chǔ",
+        "en": "The content of the course includes three modules: the philosophical foundations of TCM,"
+      },
+      {
+        "zh": "中医学对人体生理活动的认识、",
+        "pinyin": "zhōng yī xué duì rén tǐ shēng lǐ huó dòng de rèn shi",
+        "en": "TCM's understanding of human physiological activities,"
+      },
+      {
+        "zh": "中医学对疾病基本规律及其防治原则的认识等。",
+        "pinyin": "zhōng yī xué duì jí bìng jī běn guī lǜ jí qí fáng zhì yuán zé de rèn shi děng",
+        "en": "and TCM's understanding of the basic laws of disease and their prevention and treatment principles."
+      }
+    ]
+  },
+  {
+    "slide": 93,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（一）中医学的哲学基础主要阐述中国古代哲学的气一元论、",
+        "pinyin": "yī zhōng yī xué de zhé xué jī chǔ zhǔ yào chǎn shù zhōng guó gǔ dài zhé xué de qì yī yuán lùn",
+        "en": "(I) The philosophical foundations of TCM mainly expound on ancient Chinese philosophy: Qi Monism,"
+      },
+      {
+        "zh": "阴阳学说、",
+        "pinyin": "yīn yáng xué shuō",
+        "en": "Yin-Yang theory,"
+      },
+      {
+        "zh": "五行学说及其在中医学中的应用。",
+        "pinyin": "wǔ xíng xué shuō jí qí zài zhōng yī xué zhòng dì yìng yòng",
+        "en": "the Five Elements (Wu Xing) theory, and their application in TCM."
+      },
+      {
+        "zh": "气一元论，是探求宇宙本原和阐释宇宙变化的一种世界观和方法论。",
+        "pinyin": "qì yī yuán lùn shì tàn qiú yǔ zhòu běn yuán hé chǎn shì yǔ zhòu biàn huà de yī zhǒng shì jiè guān hé fāng fǎ lùn",
+        "en": "Qi Monism is a worldview and methodology for exploring the origin of the universe and explaining its changes."
+      },
+      {
+        "zh": "阴阳学说，是对立统一的辩证法思想。",
+        "pinyin": "yīn yáng xué shuō shì duì lì tǒng yī de biàn zhèng fǎ sī xiǎng",
+        "en": "Yin-Yang theory is a dialectical philosophy of opposites and unity."
+      },
+      {
+        "zh": "五行学说，是多元关系的系统论观点。",
+        "pinyin": "wǔ xíng xué shuō shì duō yuán guān xi de xì tǒng lùn guān diǎn",
+        "en": "The Five Elements theory is a systems-theory perspective on pluralistic relationships."
+      }
+    ]
+  },
+  {
+    "slide": 94,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（二）中医学对人体生理活动的认识主要阐释中医学有关人体生命活动的基本概念、",
+        "pinyin": "èr zhōng yī xué duì rén tǐ shēng lǐ huó dòng de rèn shi zhǔ yào chǎn shì zhōng yī xué yǒu guān rén tǐ shēng mìng huó dòng de jī běn gài niàn",
+        "en": "(II) TCM's understanding of human physiological activities mainly expounds on the basic concepts,"
+      },
+      {
+        "zh": "基本理论和基本知识，",
+        "pinyin": "jī běn lǐ lùn hé jī běn zhī shi",
+        "en": "basic theories, and basic knowledge of human life activities in TCM,"
+      },
+      {
+        "zh": "包括藏象、",
+        "pinyin": "bāo kuò zàng xiàng",
+        "en": "including Zang-Fu (Visceral Manifestation),"
+      },
+      {
+        "zh": "精气血津液神、",
+        "pinyin": "jīng qì xuè jīn yè shén",
+        "en": "Essence-Qi-Blood-Body Fluid-Shen (Spirit),"
+      },
+      {
+        "zh": "经络、",
+        "pinyin": "jīng luò",
+        "en": "Jing-Luo (Meridians and Collaterals),"
+      },
+      {
+        "zh": "体质等。",
+        "pinyin": "tǐ zhì děng",
+        "en": "and Constitution."
+      },
+      {
+        "zh": "藏象，研究人体脏腑结构、生理功能及其相互关系的理论。",
+        "pinyin": "zàng xiàng yán jiū rén tǐ zàng fǔ jié gòu shēng lǐ gōng néng jí qí xiāng hù guān xì de lǐ lùn",
+        "en": "Zang-Fu is the theory studying human organ structures, physiological functions, and their interrelationships."
+      },
+      {
+        "zh": "精气血津液神，是研究人体生命物质及生命活动的理论。",
+        "pinyin": "jīng qì xuè jīn yè shén shì yán jiū rén tǐ shēng mìng wù zhì jí shēng mìng huó dòng de lǐ lùn",
+        "en": "Essence-Qi-Blood-Body Fluid-Shen is the theory studying the vital substances and activities of the human body."
+      },
+      {
+        "zh": "经络，",
+        "pinyin": "jīng luò",
+        "en": "Jing-Luo,"
+      },
+      {
+        "zh": "是研究人体经络系统的循行分布、",
+        "pinyin": "shì yán jiū rén tǐ jīng luò xì tǒng de xún xíng fēn bù",
+        "en": "is the theory studying the course, distribution,"
+      },
+      {
+        "zh": "生理功能、",
+        "pinyin": "shēng lǐ gōng néng",
+        "en": "physiological functions,"
+      },
+      {
+        "zh": "病理变化及其与脏腑相互关系的理论。",
+        "pinyin": "bìng lǐ biàn huà jí qí yǔ zàng fǔ xiāng hù guān xì de lǐ lùn",
+        "en": "pathological changes of the meridian system, and their relationships with the Zang-Fu organs."
+      },
+      {
+        "zh": "体质，",
+        "pinyin": "tǐ zhì",
+        "en": "Constitution,"
+      },
+      {
+        "zh": "是研究人体体质的形成、",
+        "pinyin": "shì yán jiū rén tǐ tǐ zhì de xíng chéng",
+        "en": "is the theory studying the formation,"
+      },
+      {
+        "zh": "特征、",
+        "pinyin": "tè zhēng",
+        "en": "characteristics,"
+      },
+      {
+        "zh": "类型及其与疾病的发生、",
+        "pinyin": "lèi xíng jí qí yǔ jí bìng de fā shēng",
+        "en": "types of human constitution, and their relationships with the occurrence,"
+      },
+      {
+        "zh": "病因、",
+        "pinyin": "bìng yīn",
+        "en": "etiology,"
+      },
+      {
+        "zh": "病机、",
+        "pinyin": "bìng jī",
+        "en": "pathogenesis,"
+      },
+      {
+        "zh": "诊断、",
+        "pinyin": "zhěn duàn",
+        "en": "diagnosis,"
+      },
+      {
+        "zh": "预防和治疗关系的理论。",
+        "pinyin": "yù fáng hé zhì liáo guān xi de lǐ lùn",
+        "en": "prevention, and treatment of disease."
+      }
+    ]
+  },
+  {
+    "slide": 95,
+    "mode": "aligned",
+    "clauses": [
+      {
+        "zh": "（三）中医学对疾病基本规律及养生与防治原则的认识主要阐释中医学关于疾病的发生原因、",
+        "pinyin": "sān zhōng yī xué duì jí bìng jī běn guī lǜ jí yǎng shēng yǔ fáng zhì yuán zé de rèn shi zhǔ yào chǎn shì zhōng yī xué guān yú jí bìng de fā shēng yuán yīn",
+        "en": "(III) TCM's understanding of basic disease laws and health preservation and treatment principles mainly expounds on the TCM theories and methods regarding the causes of disease,"
+      },
+      {
+        "zh": "发病机理、",
+        "pinyin": "fā bìng jī lǐ",
+        "en": "pathogenesis,"
+      },
+      {
+        "zh": "病变机制、",
+        "pinyin": "bìng biàn jī zhì",
+        "en": "pathological mechanisms,"
+      },
+      {
+        "zh": "预防治疗的理论和方法，",
+        "pinyin": "yù fáng zhì liáo de lǐ lùn hé fāng fǎ",
+        "en": "prevention, and treatment,"
+      },
+      {
+        "zh": "包括病因、",
+        "pinyin": "bāo kuò bìng yīn",
+        "en": "including three parts: etiology,"
+      },
+      {
+        "zh": "病机和养生与防治原则等三部分。",
+        "pinyin": "bìng jī hé yǎng shēng yǔ fáng zhì yuán zé děng sān bù fen",
+        "en": "pathogenesis, and health preservation and treatment principles."
+      },
+      {
+        "zh": "病因，",
+        "pinyin": "bìng yīn",
+        "en": "Etiology,"
+      },
+      {
+        "zh": "是研究病因分类和各种病因的性质、",
+        "pinyin": "shì yán jiū bìng yīn fēn lèi hé gè zhǒng bìng yīn de xìng zhì",
+        "en": "is the theory studying the classification of causes and the nature of various causes,"
+      },
+      {
+        "zh": "致病途径、",
+        "pinyin": "zhì bìng tú jìng",
+        "en": "pathways of disease occurrence,"
+      },
+      {
+        "zh": "致病特征以及探求病因方法的理论。",
+        "pinyin": "zhì bìng tè zhēng yǐ jí tàn qiú bìng yīn fāng fǎ de lǐ lùn",
+        "en": "characteristics of pathogenicity, and methods for investigating causes."
+      },
+      {
+        "zh": "病机，是研究疾病发生、发展、变化机制的理论。",
+        "pinyin": "bìng jī shì yán jiū jí bìng fā shēng fā zhǎn biàn huà jī zhì de lǐ lùn",
+        "en": "Pathogenesis is the theory studying the mechanisms of disease occurrence, development, and change."
+      },
+      {
+        "zh": "养生与防治原则，是关于保养生命、疾病预防和治疗原则的理论。",
+        "pinyin": "yǎng shēng yǔ fáng zhì yuán zé shì guān yú bǎo yǎng shēng mìng jí bìng yù fáng hé zhì liáo yuán zé de lǐ lùn",
+        "en": "Health preservation and treatment principles is the theory regarding the maintenance of life and the principles of disease prevention and treatment."
+      }
+    ]
+  }
+]
