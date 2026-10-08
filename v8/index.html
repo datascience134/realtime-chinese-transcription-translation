@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TCM Lecture Reader v8</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel2: #1d2129; --border: #2a2f3a;
+    --fg: #e8eaf0; --muted: #8b93a7; --faint: #5b6272;
+    --accent: #7aa2ff; --accent2: #ffb86b; --ok: #6fd39a; --err: #ff7a7a; --warn: #ffd166;
+    --onslide: rgba(122,162,255,.18); --onslide-line: rgba(122,162,255,.75);
+    --zh-size: 24px; --py-size: 11px; --en-size: 14px;
+    --side-w: 340px;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f7fb; --panel: #ffffff; --panel2: #eef1f7; --border: #d9dee8;
+    --fg: #1a1d26; --muted: #5d6578; --faint: #9aa2b4;
+    --accent: #2f5fd6; --accent2: #c66a00; --ok: #1f8f58; --err: #c62828; --warn: #b58300;
+    --onslide: rgba(47,95,214,.12); --onslide-line: rgba(47,95,214,.7);
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  button, select, input, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: #0b1020; border-color: transparent; font-weight: 600; }
+  button.danger { background: var(--err); color: #fff; border-color: transparent; }
+  button.ghost { background: transparent; }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  input[type=text], input[type=password], input[type=number], select, textarea {
+    background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; width: 100%;
+  }
+  textarea { resize: vertical; min-height: 60px; }
+  .muted { color: var(--muted); } .faint { color: var(--faint); } .small { font-size: 12px; }
+
+  /* ---------- top bar ---------- */
+  header {
+    display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+    background: var(--panel); border-bottom: 1px solid var(--border); flex-wrap: wrap;
+  }
+  header .spacer { flex: 1; }
+  #status { font-size: 13px; color: var(--muted); min-width: 120px; }
+  #status.ok { color: var(--ok); } #status.err { color: var(--err); } #status.warn { color: var(--warn); }
+  .rec-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--faint); margin-right: 6px; vertical-align: middle; }
+  .rec-dot.on { background: var(--err); animation: blink 1.2s infinite; }
+  @keyframes blink { 50% { opacity: .3; } }
+  #clock { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+  .chip { font-size: 12px; padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .toggle { font-size: 12px; }
+  .toggle.on { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- layout ---------- */
+  #layout { flex: 1; display: flex; min-height: 0; }
+  #main { flex: 1; min-width: 0; overflow-y: auto; padding: 12px 16px 40vh 16px; scroll-behavior: smooth; }
+  #side {
+    width: var(--side-w); flex: none; border-left: 1px solid var(--border); background: var(--panel);
+    display: flex; flex-direction: column; min-height: 0;
+  }
+  #side.hidden { display: none; }
+  .tabs { display: flex; border-bottom: 1px solid var(--border); }
+  .tabs button { flex: 1; border: 0; border-radius: 0; background: transparent; padding: 8px; color: var(--muted); border-bottom: 2px solid transparent; }
+  .tabs button.active { color: var(--fg); border-bottom-color: var(--accent); }
+  .tabpane { display: none; overflow-y: auto; flex: 1; padding: 10px; }
+  .tabpane.active { display: block; }
+
+  /* ---------- transcript rows ---------- */
+  .ruler { display: flex; align-items: center; gap: 10px; color: var(--faint); font-size: 12px; margin: 18px 0 6px; }
+  .ruler::before, .ruler::after { content: ""; flex: 1; border-top: 1px dashed var(--border); }
+  .marker {
+    display: flex; align-items: center; gap: 8px; margin: 16px 0 6px; padding: 6px 10px;
+    background: var(--panel2); border-left: 3px solid var(--accent2); border-radius: 6px; font-size: 13px; color: var(--muted);
+  }
+  .marker b { color: var(--fg); }
+  .marker.manual { border-left-color: var(--warn); }
+  .sent { display: grid; grid-template-columns: 56px 1fr 30px; gap: 0 8px; padding: 6px 4px; border-radius: 8px; position: relative; }
+  .sent.para { margin-top: 14px; }
+  .sent:hover { background: var(--panel2); }
+  .sent.cursor { outline: 2px solid var(--accent2); outline-offset: -2px; background: rgba(255,184,107,.08); }
+  .sent .t { color: var(--faint); font-size: 11px; padding-top: 10px; font-variant-numeric: tabular-nums; text-align: right; }
+  .sent .body { min-width: 0; }
+  .sent .zh { font-size: var(--zh-size); line-height: 1.9; word-break: break-word; }
+  .sent .en { font-size: var(--en-size); color: var(--muted); margin-top: 2px; line-height: 1.45; }
+  .sent .en.err { color: var(--err); }
+  .sent .en.pending::after { content: "…"; animation: blink 1s infinite; }
+  .sent .en.hidden { display: none; }
+  .sent .en .tap { color: var(--faint); cursor: pointer; font-style: italic; }
+  .sent .en .retry { margin-left: 8px; font-size: 11px; padding: 1px 6px; }
+  .sent .ops { opacity: 0; display: flex; flex-direction: column; gap: 4px; padding-top: 8px; }
+  .sent:hover .ops { opacity: 1; }
+  .sent .ops button { padding: 2px 5px; font-size: 11px; line-height: 1; }
+  ruby { ruby-position: over; }
+  rt { font-size: var(--py-size); color: var(--muted); user-select: none; -webkit-user-select: none; letter-spacing: 0; }
+  body.nopinyin rt { display: none; }
+  .w { cursor: pointer; border-radius: 3px; }
+  .w:hover { background: var(--panel2); }
+  .onslide { background: var(--onslide); box-shadow: inset 0 -2px 0 var(--onslide-line); }
+  body.nohl .onslide { background: transparent; box-shadow: none; }
+  .nonfinal { color: var(--faint); }
+  #live .zh { min-height: 1.9em; }
+  #live.idle .zh::before { content: attr(data-hint); color: var(--faint); font-size: 14px; }
+  .note-row { grid-template-columns: 56px 1fr 30px; }
+  .note-row .zh { font-size: 15px; color: var(--accent2); }
+
+  /* ---------- side pane content ---------- */
+  .outline-item { display: grid; grid-template-columns: 44px 1fr; gap: 6px; padding: 5px 6px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  .outline-item:hover { background: var(--panel2); }
+  .outline-item .ot { color: var(--faint); font-variant-numeric: tabular-nums; font-size: 12px; }
+  .outline-item .ol { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .outline-item.slide .ol { color: var(--accent2); }
+  .slide-nav { display: flex; gap: 6px; align-items: center; margin-bottom: 8px; }
+  .slide-nav .cur { flex: 1; text-align: center; font-weight: 600; }
+  .clause { padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .clause .czh { font-size: 18px; line-height: 1.8; }
+  .clause .cen { font-size: 12px; color: var(--muted); }
+  .vocab-item { display: flex; gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .vocab-item .vzh { font-size: 18px; } .vocab-item .vpy { color: var(--accent); font-size: 12px; } .vocab-item .ven { color: var(--muted); flex: 1; font-size: 13px; }
+  .vocab-item button { padding: 0 6px; font-size: 11px; }
+
+  /* ---------- popover ---------- */
+  #pop { position: fixed; z-index: 50; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; min-width: 220px; max-width: 320px; box-shadow: 0 8px 30px rgba(0,0,0,.35); display: none; }
+  #pop .pzh { font-size: 26px; } #pop .ppy { color: var(--accent); margin-bottom: 6px; }
+  #pop .pen { font-size: 13px; color: var(--muted); min-height: 1.2em; margin-bottom: 8px; white-space: pre-wrap; }
+  #pop .prow { display: flex; gap: 6px; }
+
+  /* ---------- modals ---------- */
+  .modal { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: none; align-items: center; justify-content: center; z-index: 100; padding: 16px; }
+  .modal.open { display: flex; }
+  .modal .box { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; width: min(760px, 100%); max-height: 92vh; overflow-y: auto; padding: 18px 20px; }
+  .modal h2 { margin: 0 0 10px; font-size: 18px; }
+  .modal h3 { margin: 16px 0 6px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .field { margin: 8px 0; }
+  .field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; } .row > * { flex: 1; min-width: 140px; }
+  .actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }
+  .deck-item { display: grid; grid-template-columns: 24px 1fr 110px; gap: 8px; align-items: center; padding: 6px 8px; border: 1px solid var(--border); border-radius: 8px; margin: 4px 0; }
+  .deck-item .dn { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .deck-item .ds { font-size: 11px; color: var(--faint); }
+  .deck-item input[type=text] { padding: 3px 6px; font-size: 12px; }
+  .drop { border: 2px dashed var(--border); border-radius: 10px; padding: 14px; text-align: center; color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .drop.over { border-color: var(--accent); color: var(--accent); }
+  .help { font-size: 12px; color: var(--faint); margin-top: 4px; line-height: 1.4; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+  code { background: var(--panel2); padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+
+  /* ---------- floating action ---------- */
+  #fab { position: fixed; right: calc(var(--side-w) + 20px); bottom: 20px; z-index: 20; display: flex; gap: 8px; }
+  #side.hidden ~ #fab, body.sidehidden #fab { right: 20px; }
+  #fab button { padding: 10px 16px; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+
+  @media (max-width: 860px) {
+    :root { --side-w: 0px; --zh-size: 22px; }
+    #side { position: fixed; right: 0; top: 0; bottom: 0; width: min(92vw, 360px); z-index: 40; transform: translateX(100%); transition: transform .2s; border-left: 1px solid var(--border); }
+    #side.open { transform: translateX(0); }
+    #side.hidden { display: flex; }
+    #fab { right: 16px; }
+    .sent { grid-template-columns: 44px 1fr 26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <button id="btnRec" class="primary"><span class="rec-dot"></span>Start</button>
+  <span id="clock">00:00</span>
+  <span id="status">Idle</span>
+  <span id="sessionChip" class="chip" title="Current session">No session</span>
+  <span class="spacer"></span>
+  <button id="tgPinyin" class="toggle on" title="Show/hide pinyin">拼音</button>
+  <button id="tgEn" class="toggle on" title="English: shown / on tap">EN</button>
+  <button id="tgHl" class="toggle on" title="Highlight words that appear on the slides">Slide words</button>
+  <button id="tgSide" class="toggle on" title="Side pane">Pane</button>
+  <button id="btnSession" title="Choose decks for this session">Session</button>
+  <button id="btnExport" title="Export transcript">Export</button>
+  <button id="btnSettings" title="Settings">⚙</button>
+</header>
+
+<div id="layout">
+  <main id="main">
+    <div id="rows"></div>
+    <div id="live" class="sent idle">
+      <div class="t" id="liveT"></div>
+      <div class="body"><div class="zh" data-hint="Press Start to begin listening."></div></div>
+      <div></div>
+    </div>
+  </main>
+
+  <aside id="side">
+    <div class="tabs">
+      <button data-tab="outline" class="active">Outline</button>
+      <button data-tab="slide">Slide</button>
+      <button data-tab="vocab">Vocab</button>
+    </div>
+    <div class="tabpane active" id="tab-outline">
+      <div class="small muted" style="margin-bottom:6px">Paragraphs and slide changes. Click to jump.</div>
+      <div id="outline"></div>
+    </div>
+    <div class="tabpane" id="tab-slide">
+      <div class="slide-nav">
+        <button id="slidePrev" title="Previous slide">◀</button>
+        <div class="cur" id="slideCur">—</div>
+        <button id="slideNext" title="Next slide">▶</button>
+        <button id="slideAuto" class="toggle on" title="Auto-detect slide from speech">Auto</button>
+      </div>
+      <div id="slideBody" class="small muted">Load a deck in Session to see slide text here.</div>
+    </div>
+    <div class="tabpane" id="tab-vocab">
+      <div class="row" style="margin-bottom:8px">
+        <button id="vocabExport" class="small">Export CSV (Anki)</button>
+        <button id="vocabClear" class="small">Clear</button>
+      </div>
+      <div id="vocab"></div>
+    </div>
+  </aside>
+</div>
+
+<div id="fab">
+  <button id="btnNote" title="Insert a note / mark an important point">✎ Note</button>
+  <button id="btnMark" class="primary" title="Mark a boundary here and translate everything pending now">✂ Mark &amp; translate</button>
+</div>
+
+<div id="pop">
+  <div class="pzh"></div>
+  <div class="ppy"></div>
+  <div class="pen"></div>
+  <div class="prow">
+    <button class="pexplain">Explain</button>
+    <button class="psave">Save</button>
+    <button class="pcopy">Copy</button>
+    <button class="pclose ghost">✕</button>
+  </div>
+</div>
+
+<!-- ---------- Session modal ---------- -->
+<div class="modal" id="mSession">
+  <div class="box">
+    <h2>Session</h2>
+    <div class="field">
+      <label>Session name</label>
+      <input type="text" id="sessName" placeholder="e.g. JP2 神经系统 lecture 3" />
+    </div>
+    <h3>Decks for this session</h3>
+    <div class="help">Tick the deck(s) the teacher will cover. Optional slide range like <code>12-40</code> narrows the vocabulary and slide matching.</div>
+    <div id="deckList"><div class="muted small">Loading…</div></div>
+    <div class="row" style="margin-top:6px">
+      <button id="deckRefresh" class="small">Refresh list</button>
+      <button id="deckFile" class="small">Import deck.json from this device</button>
+      <input type="file" id="deckFileInput" accept=".json,application/json" multiple style="display:none" />
+    </div>
+    <div class="drop" id="deckDrop">…or drop deck.json files here (stored in this browser only)</div>
+    <h3>Vocabulary sent to Soniox</h3>
+    <div class="help">Generated from the ticked decks plus your glossary. Edit freely, one term per line. This is what biases recognition toward the right characters.</div>
+    <textarea id="sessTerms" rows="6" placeholder="Terms appear here after you tick a deck."></textarea>
+    <div class="small muted" id="sessTermsInfo"></div>
+    <div class="actions">
+      <button id="sessCancel">Cancel</button>
+      <button id="sessNew" title="Clear the transcript and start a fresh session with these decks">New session</button>
+      <button id="sessApply" class="primary">Apply to current</button>
+    </div>
+  </div>
+</div>
+
+<!-- ---------- Settings modal ---------- -->
+<div class="modal" id="mSettings">
+  <div class="box">
+    <h2>Settings</h2>
+    <h3>Transcription (Soniox)</h3>
+    <div class="field"><label>Soniox API key</label><input type="password" id="sonioxKey" placeholder="Paste Soniox API key" /></div>
+    <div class="row">
+      <div class="field"><label>Endpoint delay (ms, 500–3000)</label><input type="number" id="epDelay" min="500" max="3000" step="100" /></div>
+      <div class="field"><label>Endpoint sensitivity (-1…1)</label><input type="number" id="epSens" min="-1" max="1" step="0.1" /></div>
+      <div class="field"><label>Paragraph gap (s)</label><input type="number" id="paraGap" min="1" max="10" step="0.5" /></div>
+    </div>
+
+    <h3>Translation (any OpenAI-compatible API)</h3>
+    <div class="row">
+      <div class="field"><label>Provider preset</label>
+        <select id="provider">
+          <option value="gemini">Gemini (Google AI Studio)</option>
+          <option value="openrouter">OpenRouter</option>
+          <option value="deepseek">DeepSeek</option>
+          <option value="dashscope">Qwen (Alibaba Model Studio, intl)</option>
+          <option value="custom">Custom endpoint</option>
+        </select>
+      </div>
+      <div class="field"><label>Model</label><input type="text" id="model" list="modelList" placeholder="model id" /><datalist id="modelList"></datalist></div>
+    </div>
+    <div class="field"><label>Endpoint URL (chat completions)</label><input type="text" id="endpoint" /></div>
+    <div class="field"><label>API key</label><input type="password" id="llmKey" placeholder="Paste translation API key" /></div>
+    <div class="row">
+      <div class="field"><label>Translate</label>
+        <select id="trMode">
+          <option value="all">Every sentence</option>
+          <option value="new">Only sentences not on the slides</option>
+          <option value="tap">Only when I tap a sentence</option>
+        </select>
+      </div>
+      <div class="field"><label>Batch: sentences</label><input type="number" id="batchN" min="1" max="10" /></div>
+      <div class="field"><label>Batch: max wait (s)</label><input type="number" id="batchS" min="2" max="30" /></div>
+    </div>
+    <div class="field"><label><input type="checkbox" id="jsonMode" /> Ask for JSON output (response_format). Auto-disabled if the provider rejects it.</label></div>
+    <div class="field"><label><input type="checkbox" id="termGloss" /> Keep TCM terms in Chinese with pinyin in the English, e.g. "肝郁 (gān yù, liver qi stagnation)"</label></div>
+    <div class="field"><label>Extra instructions (appended to the system prompt)</label><textarea id="extraPrompt" rows="2"></textarea></div>
+
+    <h3>Glossary (persistent, shared across sessions)</h3>
+    <div class="help">One per line: <code>术语 = preferred English</code>. Terms are sent to Soniox and the translator every session.</div>
+    <textarea id="glossary" rows="5" placeholder="辨证论治 = pattern differentiation and treatment&#10;证 = pattern (zhèng)"></textarea>
+
+    <h3>Deck source (GitHub)</h3>
+    <div class="row">
+      <div class="field"><label>Owner</label><input type="text" id="ghOwner" placeholder="auto from URL" /></div>
+      <div class="field"><label>Repo</label><input type="text" id="ghRepo" placeholder="auto from URL" /></div>
+      <div class="field"><label>Folder</label><input type="text" id="ghPath" placeholder="decks" /></div>
+      <div class="field"><label>Branch</label><input type="text" id="ghBranch" placeholder="main" /></div>
+    </div>
+    <div class="help">Decks are listed from the repo folder via the public GitHub API, falling back to <code>decks/index.json</code>. Leave blank on GitHub Pages to auto-detect.</div>
+
+    <h3>Display</h3>
+    <div class="row">
+      <div class="field"><label>Theme</label><select id="theme"><option value="dark">Dark</option><option value="light">Light</option></select></div>
+      <div class="field"><label>Chinese size (px)</label><input type="number" id="zhSize" min="16" max="40" /></div>
+      <div class="field"><label>Time ruler every (min)</label><input type="number" id="rulerMin" min="1" max="30" /></div>
+    </div>
+
+    <h3>Test mode (no microphone)</h3>
+    <div class="help">Paste Chinese text; it is streamed as if Soniox were transcribing it, so you can try the page without a lecture.</div>
+    <textarea id="simText" rows="3" placeholder="中医学属于自然科学范畴。自然科学是研究自然界各种物质运动、变化和发展规律或本质的学科。"></textarea>
+    <div class="row">
+      <div class="field"><label>Speed (chars/sec)</label><input type="number" id="simSpeed" min="1" max="20" /></div>
+      <div class="field" style="display:flex;align-items:flex-end"><button id="simStart">Run test stream</button></div>
+    </div>
+
+    <h3>Data</h3>
+    <div class="row">
+      <button id="btnResume" class="small">Resume previous session…</button>
+      <button id="btnWipe" class="small danger">Delete all saved sessions</button>
+    </div>
+    <div class="actions">
+      <button id="setClose" class="primary">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ---------- Resume modal ---------- -->
+<div class="modal" id="mResume">
+  <div class="box">
+    <h2>Saved sessions</h2>
+    <div id="resumeList"></div>
+    <div class="actions"><button id="resumeClose">Close</button></div>
+  </div>
+</div>
+
+<!-- ---------- Note modal ---------- -->
+<div class="modal" id="mNote">
+  <div class="box" style="width:min(520px,100%)">
+    <h2>Note</h2>
+    <div class="help">Your own words. Stored inline at the current point of the transcript and exported with it.</div>
+    <textarea id="noteText" rows="3" placeholder="e.g. Teacher: 这里的证 is 证候 not 症状 — exam point"></textarea>
+    <div class="actions"><button id="noteCancel">Cancel</button><button id="noteSave" class="primary">Add note</button></div>
+  </div>
+</div>
+
+<script src="lib/pinyin-pro.js"></script>
+<script src="lib/zh-words.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
